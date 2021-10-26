@@ -442,3 +442,4 @@ D:\.CanDelete\Git\Lulus-master\Lulus.CustomerApp\obj\Debug\net5.0\Lulus.Customer
 D:\.CanDelete\Git\Lulus-master\Lulus.CustomerApp\obj\Debug\net5.0\ref\Lulus.CustomerApp.dll
 D:\.CanDelete\Git\Lulus-master\Lulus.CustomerApp\obj\Debug\net5.0\Lulus.CustomerApp.pdb
 D:\.CanDelete\Git\Lulus-master\Lulus.CustomerApp\obj\Debug\net5.0\Lulus.CustomerApp.genruntimeconfig.cache
+C:\Users\USER\Documents\GitHub\Lulus-for-coverlet-test\Lulus.CustomerApp\obj\Debug\net5.0\Lulus.CustomerApp.pdb

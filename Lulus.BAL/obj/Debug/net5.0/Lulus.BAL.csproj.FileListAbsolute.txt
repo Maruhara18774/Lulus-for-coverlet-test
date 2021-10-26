@@ -15,3 +15,5 @@ D:\.CanDelete\Git\Lulus-master\Lulus.BAL\obj\Debug\net5.0\Lulus.BAL.csproj.CopyC
 D:\.CanDelete\Git\Lulus-master\Lulus.BAL\obj\Debug\net5.0\Lulus.BAL.dll
 D:\.CanDelete\Git\Lulus-master\Lulus.BAL\obj\Debug\net5.0\ref\Lulus.BAL.dll
 D:\.CanDelete\Git\Lulus-master\Lulus.BAL\obj\Debug\net5.0\Lulus.BAL.pdb
+C:\Users\USER\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\obj\Debug\net5.0\Lulus.BAL.dll
+C:\Users\USER\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\obj\Debug\net5.0\Lulus.BAL.pdb

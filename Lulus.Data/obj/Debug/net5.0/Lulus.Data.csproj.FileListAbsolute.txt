@@ -13,3 +13,5 @@ D:\.CanDelete\Git\Lulus-master\Lulus.Data\obj\Debug\net5.0\Lulus.Data.dll
 D:\.CanDelete\Git\Lulus-master\Lulus.Data\obj\Debug\net5.0\ref\Lulus.Data.dll
 D:\.CanDelete\Git\Lulus-master\Lulus.Data\obj\Debug\net5.0\Lulus.Data.pdb
 D:\.CanDelete\Git\Lulus-master\Lulus.Data\obj\Debug\net5.0\Lulus.Data.genruntimeconfig.cache
+C:\Users\USER\Documents\GitHub\Lulus-for-coverlet-test\Lulus.Data\obj\Debug\net5.0\Lulus.Data.dll
+C:\Users\USER\Documents\GitHub\Lulus-for-coverlet-test\Lulus.Data\obj\Debug\net5.0\Lulus.Data.pdb

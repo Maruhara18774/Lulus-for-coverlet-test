@@ -13,6 +13,7 @@ namespace Lulus.UnitTests.BAL.Categories
 {
     public class CategoryTest
     {
+       
         [Fact]
         public async Task GetAllCategory_Success_WithoutData()
         {

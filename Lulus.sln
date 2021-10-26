@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31112.23
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.438
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lulus.Data", "Lulus.Data\Lulus.Data.csproj", "{CAE01CAA-FC12-4646-88CD-4D3CDA60A033}"
 EndProject
@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lulus.ViewModels", "Lulus.V
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lulus.CustomerApp", "Lulus.CustomerApp\Lulus.CustomerApp.csproj", "{26D12020-9A3F-4B80-88CF-F859180B2D79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lulus.UnitTests", "Lulus.UnitTests\Lulus.UnitTests.csproj", "{39007EFE-6A58-4FA0-A782-E1FCC08412D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lulus.UnitTests", "Lulus.UnitTests\Lulus.UnitTests.csproj", "{39007EFE-6A58-4FA0-A782-E1FCC08412D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

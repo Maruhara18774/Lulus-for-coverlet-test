@@ -72,3 +72,4 @@ D:\.CanDelete\Git\Lulus-master\Lulus.BackendApi\obj\Debug\net5.0\Lulus.BackendAp
 D:\.CanDelete\Git\Lulus-master\Lulus.BackendApi\obj\Debug\net5.0\ref\Lulus.BackendApi.dll
 D:\.CanDelete\Git\Lulus-master\Lulus.BackendApi\obj\Debug\net5.0\Lulus.BackendApi.pdb
 D:\.CanDelete\Git\Lulus-master\Lulus.BackendApi\obj\Debug\net5.0\Lulus.BackendApi.genruntimeconfig.cache
+C:\Users\USER\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BackendApi\obj\Debug\net5.0\Lulus.BackendApi.pdb

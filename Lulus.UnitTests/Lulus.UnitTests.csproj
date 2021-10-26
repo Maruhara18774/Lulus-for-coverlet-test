@@ -7,22 +7,44 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="5.0.10" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.1" />
+    <None Include="Test\coverlet.collector.tests\coverlet.collector.tests.csproj" />
+    <None Include="Test\coverlet.integration.template\coverlet.integration.template.csproj" />
+    <None Include="Test\coverlet.integration.tests\coverlet.integration.tests.csproj" />
+    <None Include="Test\coverlet.tests.xunit.extensions\coverlet.tests.xunit.extensions.csproj" />
+    <None Include="Test\coverlet.testsubject\coverlet.testsubject.csproj" />
+    <None Include="Test\coverlet.tests\coverlet.core.tests.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
+    <PackageReference Include="Moq" Version="4.16.1" />
+    <PackageReference Include="NUnit" Version="3.13.2" />
     <PackageReference Include="xunit" Version="2.4.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
-    <PackageReference Include="coverlet.collector" Version="1.3.0">
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    <PackageReference Include="coverlet.collector" Version="3.1.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Lulus.BackendApi\Lulus.BackendApi.csproj" />
     <ProjectReference Include="..\Lulus.BAL\Lulus.BAL.csproj" />
+    <ProjectReference Include="..\Lulus.CustomerApp\Lulus.CustomerApp.csproj" />
     <ProjectReference Include="..\Lulus.Data\Lulus.Data.csproj" />
+    <ProjectReference Include="..\Lulus.ViewModels\Lulus.ViewModels.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Test\coverlet.integration.tests\obj\Debug\net5.0\" />
+    <Folder Include="Test\coverlet.tests.xunit.extensions\bin\Debug\netstandard2.0\" />
+    <Folder Include="Test\coverlet.tests.xunit.extensions\obj\Debug\netstandard2.0\" />
+    <Folder Include="Test\coverlet.testsubject\obj\Debug\net5.0\" />
   </ItemGroup>
 
 </Project>

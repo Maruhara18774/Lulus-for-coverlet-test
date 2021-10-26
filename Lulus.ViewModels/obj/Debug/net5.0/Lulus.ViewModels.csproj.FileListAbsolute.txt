@@ -13,3 +13,5 @@ D:\.CanDelete\Git\Lulus-master\Lulus.ViewModels\obj\Debug\net5.0\Lulus.ViewModel
 D:\.CanDelete\Git\Lulus-master\Lulus.ViewModels\obj\Debug\net5.0\Lulus.ViewModels.dll
 D:\.CanDelete\Git\Lulus-master\Lulus.ViewModels\obj\Debug\net5.0\ref\Lulus.ViewModels.dll
 D:\.CanDelete\Git\Lulus-master\Lulus.ViewModels\obj\Debug\net5.0\Lulus.ViewModels.pdb
+C:\Users\USER\Documents\GitHub\Lulus-for-coverlet-test\Lulus.ViewModels\obj\Debug\net5.0\Lulus.ViewModels.dll
+C:\Users\USER\Documents\GitHub\Lulus-for-coverlet-test\Lulus.ViewModels\obj\Debug\net5.0\Lulus.ViewModels.pdb
