@@ -2,6 +2,7 @@
 using Lulus.Data.EF;
 using Lulus.Data.Entities;
 using Lulus.ViewModels.Feedbacks;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,6 +21,13 @@ namespace Lulus.BAL.Catalog.Feedbacks
         }
         public async Task<bool> CreateFeedback(CreateFeedbackRequest request)
         {
+            if (request.Star > 5
+                || request.Star < 1
+                || String.IsNullOrEmpty(request.Title)) return false;
+            var checkUser = await _context.Users.Where(x => x.Id == new Guid(request.UserID)).FirstOrDefaultAsync();
+            if (checkUser == null) return false;
+            var checkProduct = await _context.Products.Where(x => x.Product_ID == request.ProductID).FirstOrDefaultAsync();
+            if (checkProduct == null) return false;
             var feedback = new Feedback()
             {
                 Feedback_Rating = request.Star,
