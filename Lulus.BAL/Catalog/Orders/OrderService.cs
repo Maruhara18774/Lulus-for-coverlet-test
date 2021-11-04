@@ -20,6 +20,10 @@ namespace Lulus.BAL.Catalog.Orders
 
         public async Task<int> AddProductAsync(AddProductToCartRequest request)
         {
+            if (!(await UserIDValid(request.UserID)))
+            {
+                return 1;
+            };
             // Invalid 3: Product line not found
             var line = await _context.ProductLines.Where(x => x.ProductLine_ID == request.ProductLineID).FirstOrDefaultAsync();
             if (line == null) return 3;
