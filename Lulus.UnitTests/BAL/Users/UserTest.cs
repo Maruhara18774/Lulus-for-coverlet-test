@@ -1,6 +1,8 @@
-﻿using Lulus.BAL.Infrastructures;
+﻿using Lulus.BAL.Catalog.Users;
+using Lulus.BAL.Infrastructures;
 using Lulus.Data.EF;
 using Lulus.Data.Entities;
+using Lulus.ViewModels.Users;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -43,16 +45,36 @@ namespace Lulus.UnitTests.BAL.Users
 
             var userManagerMock = new Mock<IUserManager>();
             userManagerMock.Setup(x => x.FindByNameAsync(It.IsAny<string>())).Returns(() => Task.FromResult(sampleUser));
-            userManagerMock.Setup(x => x.GetRolesAsync(It.IsAny<User>())).Returns(() => Task.FromResult(new IList<string>() { "Customer" }));
+            IList<string> roles = new List<string>() { "Customer" };
+            userManagerMock.Setup(x => x.GetRolesAsync(It.IsAny<User>())).Returns(() => Task.FromResult(roles));
+
             var signInMangerMock = new Mock<ISignInManager>();
+            MySignInResult msir = new MySignInResult();
+            msir.SetSucceeded();
+            SignInResult sir = msir;
             signInMangerMock.Setup(x => x.PasswordSignInAsync(It.IsAny<User>(), It.IsAny<string>(), It.IsAny<bool>(), It.IsAny<bool>()))
-                .Returns(()=>Task.FromResult(new SignInResult()
-                {
-                    Succeeded = true
-                })
+                .Returns(() => Task.FromResult(sir));
+
             var configurationMock = new Mock<IConfiguration>();
+            configurationMock.Setup(x => x["Tokens:Key"]).Returns(() => "0123456789ASDQWE");
+            configurationMock.Setup(x => x["Tokens:Issuer"]).Returns(() => "https://www.lulus.com/");
 
-
+            var service = new UserService(userManagerMock.Object,signInMangerMock.Object,configurationMock.Object);
+            var request = new LoginRequest()
+            {
+                Username = sampleUser.UserName,
+                Password = "Abcd1234!",
+                RememberMe = false
+            };
+            var result = await service.Login(request);
+            Assert.NotNull(result);
+        }
+        public class MySignInResult: SignInResult
+        {
+            public void SetSucceeded()
+            {
+                this.Succeeded = true;
+            }
         }
     }
 }
