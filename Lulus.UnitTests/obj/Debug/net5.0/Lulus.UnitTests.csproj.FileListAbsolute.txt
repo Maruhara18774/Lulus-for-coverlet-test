@@ -185,3 +185,5 @@ D:\.CanDelete\Git\Lulus-master\Lulus.UnitTests\obj\Debug\net5.0\ref\Lulus.UnitTe
 D:\.CanDelete\Git\Lulus-master\Lulus.UnitTests\obj\Debug\net5.0\Lulus.UnitTests.pdb
 D:\.CanDelete\Git\Lulus-master\Lulus.UnitTests\obj\Debug\net5.0\Lulus.UnitTests.genruntimeconfig.cache
 D:\.CanDelete\Git\Lulus-master\Lulus.UnitTests\bin\Debug\net5.0\Microsoft.Extensions.Configuration.UserSecrets.dll
+D:\.CanDelete\Git\Lulus-master\Lulus.UnitTests\bin\Debug\net5.0\Castle.Core.dll
+D:\.CanDelete\Git\Lulus-master\Lulus.UnitTests\bin\Debug\net5.0\Moq.dll

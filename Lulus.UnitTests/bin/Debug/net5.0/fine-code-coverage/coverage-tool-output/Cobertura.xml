@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.7764808870732419" branch-rate="0.25" lines-covered="2661" lines-valid="3427" branches-covered="29" branches-valid="116" complexity="395" version="0" timestamp="1636018068">
+<coverage line-rate="0.7844259948468365" branch-rate="0.2672413793103448" lines-covered="2740" lines-valid="3493" branches-covered="31" branches-valid="116" complexity="403" version="0" timestamp="1636066107">
   <sources>
     <source>D:\.CanDelete\Git\Lulus-master\</source>
     <source>C:\</source>
   </sources>
   <packages>
-    <package name="Lulus.BAL" line-rate="0.19579500657030224" branch-rate="0.25" complexity="134">
+    <package name="Lulus.BAL" line-rate="0.22919334186939821" branch-rate="0.2672413793103448" complexity="140">
       <classes>
         <class name="Lulus.BAL.Catalog.Categories.CategoryService" filename="D:\.CanDelete\Git\Lulus-master\Lulus.BAL\Catalog\Categories\CategoryService.cs" line-rate="1" branch-rate="1" complexity="2">
           <methods>
@@ -1604,54 +1604,53 @@
             <line number="31" hits="0" branch="false" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.Users.UserService" filename="D:\.CanDelete\Git\Lulus-master\Lulus.BAL\Catalog\Users\UserService.cs" line-rate="0" branch-rate="0" complexity="11">
+        <class name="Lulus.BAL.Catalog.Users.UserService" filename="D:\.CanDelete\Git\Lulus-master\Lulus.BAL\Catalog\Users\UserService.cs" line-rate="0.43478260869565216" branch-rate="0.2" complexity="11">
           <methods>
-            <method name=".ctor" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="24" hits="0" branch="false" />
-                <line number="25" hits="0" branch="false" />
-                <line number="26" hits="0" branch="false" />
-                <line number="27" hits="0" branch="false" />
-                <line number="28" hits="0" branch="false" />
-                <line number="29" hits="0" branch="false" />
+                <line number="25" hits="1" branch="false" />
+                <line number="26" hits="1" branch="false" />
+                <line number="27" hits="1" branch="false" />
+                <line number="28" hits="1" branch="false" />
+                <line number="29" hits="1" branch="false" />
+                <line number="30" hits="1" branch="false" />
               </lines>
             </method>
-            <method name="Login" signature="()" line-rate="0" branch-rate="0" complexity="4">
+            <method name="Login" signature="()" line-rate="1" branch-rate="0.5" complexity="4">
               <lines>
-                <line number="31" hits="0" branch="false" />
-                <line number="32" hits="0" branch="false" />
-                <line number="33" hits="0" branch="true" condition-coverage="0% (0/2)" />
-                <line number="34" hits="0" branch="false" />
-                <line number="35" hits="0" branch="true" condition-coverage="0% (0/2)" />
-                <line number="37" hits="0" branch="false" />
-                <line number="38" hits="0" branch="false" />
-                <line number="39" hits="0" branch="false" />
-                <line number="40" hits="0" branch="false" />
-                <line number="41" hits="0" branch="false" />
-                <line number="42" hits="0" branch="false" />
-                <line number="43" hits="0" branch="false" />
-                <line number="44" hits="0" branch="false" />
-                <line number="45" hits="0" branch="false" />
-                <line number="46" hits="0" branch="false" />
-                <line number="47" hits="0" branch="false" />
-                <line number="49" hits="0" branch="false" />
-                <line number="50" hits="0" branch="false" />
-                <line number="51" hits="0" branch="false" />
-                <line number="52" hits="0" branch="false" />
-                <line number="53" hits="0" branch="false" />
-                <line number="54" hits="0" branch="false" />
-                <line number="55" hits="0" branch="false" />
-                <line number="56" hits="0" branch="false" />
+                <line number="32" hits="1" branch="false" />
+                <line number="33" hits="1" branch="false" />
+                <line number="34" hits="1" branch="true" condition-coverage="50% (1/2)" />
+                <line number="35" hits="1" branch="false" />
+                <line number="36" hits="1" branch="true" condition-coverage="50% (1/2)" />
+                <line number="38" hits="1" branch="false" />
+                <line number="39" hits="1" branch="false" />
+                <line number="40" hits="1" branch="false" />
+                <line number="41" hits="1" branch="false" />
+                <line number="42" hits="1" branch="false" />
+                <line number="43" hits="1" branch="false" />
+                <line number="44" hits="1" branch="false" />
+                <line number="45" hits="1" branch="false" />
+                <line number="46" hits="1" branch="false" />
+                <line number="47" hits="1" branch="false" />
+                <line number="48" hits="1" branch="false" />
+                <line number="50" hits="1" branch="false" />
+                <line number="51" hits="1" branch="false" />
+                <line number="52" hits="1" branch="false" />
+                <line number="53" hits="1" branch="false" />
+                <line number="54" hits="1" branch="false" />
+                <line number="55" hits="1" branch="false" />
+                <line number="56" hits="1" branch="false" />
+                <line number="57" hits="1" branch="false" />
               </lines>
             </method>
             <method name="AdminLogin" signature="()" line-rate="0" branch-rate="0" complexity="4">
               <lines>
-                <line number="58" hits="0" branch="false" />
                 <line number="59" hits="0" branch="false" />
-                <line number="60" hits="0" branch="true" condition-coverage="0% (0/2)" />
-                <line number="61" hits="0" branch="false" />
-                <line number="62" hits="0" branch="true" condition-coverage="0% (0/2)" />
-                <line number="64" hits="0" branch="false" />
+                <line number="60" hits="0" branch="false" />
+                <line number="61" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="62" hits="0" branch="false" />
+                <line number="63" hits="0" branch="true" condition-coverage="0% (0/2)" />
                 <line number="65" hits="0" branch="false" />
                 <line number="66" hits="0" branch="false" />
                 <line number="67" hits="0" branch="false" />
@@ -1662,7 +1661,7 @@
                 <line number="72" hits="0" branch="false" />
                 <line number="73" hits="0" branch="false" />
                 <line number="74" hits="0" branch="false" />
-                <line number="76" hits="0" branch="false" />
+                <line number="75" hits="0" branch="false" />
                 <line number="77" hits="0" branch="false" />
                 <line number="78" hits="0" branch="false" />
                 <line number="79" hits="0" branch="false" />
@@ -1670,11 +1669,11 @@
                 <line number="81" hits="0" branch="false" />
                 <line number="82" hits="0" branch="false" />
                 <line number="83" hits="0" branch="false" />
+                <line number="84" hits="0" branch="false" />
               </lines>
             </method>
             <method name="Register" signature="()" line-rate="0" branch-rate="0" complexity="2">
               <lines>
-                <line number="85" hits="0" branch="false" />
                 <line number="86" hits="0" branch="false" />
                 <line number="87" hits="0" branch="false" />
                 <line number="88" hits="0" branch="false" />
@@ -1684,51 +1683,51 @@
                 <line number="92" hits="0" branch="false" />
                 <line number="93" hits="0" branch="false" />
                 <line number="94" hits="0" branch="false" />
-                <line number="95" hits="0" branch="true" condition-coverage="0% (0/2)" />
-                <line number="96" hits="0" branch="false" />
+                <line number="95" hits="0" branch="false" />
+                <line number="96" hits="0" branch="true" condition-coverage="0% (0/2)" />
                 <line number="97" hits="0" branch="false" />
-                <line number="99" hits="0" branch="false" />
+                <line number="98" hits="0" branch="false" />
                 <line number="100" hits="0" branch="false" />
+                <line number="101" hits="0" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="24" hits="0" branch="false" />
-            <line number="25" hits="0" branch="false" />
-            <line number="26" hits="0" branch="false" />
-            <line number="27" hits="0" branch="false" />
-            <line number="28" hits="0" branch="false" />
-            <line number="29" hits="0" branch="false" />
-            <line number="31" hits="0" branch="false" />
-            <line number="32" hits="0" branch="false" />
-            <line number="33" hits="0" branch="true" condition-coverage="0% (0/2)" />
-            <line number="34" hits="0" branch="false" />
-            <line number="35" hits="0" branch="true" condition-coverage="0% (0/2)" />
-            <line number="37" hits="0" branch="false" />
-            <line number="38" hits="0" branch="false" />
-            <line number="39" hits="0" branch="false" />
-            <line number="40" hits="0" branch="false" />
-            <line number="41" hits="0" branch="false" />
-            <line number="42" hits="0" branch="false" />
-            <line number="43" hits="0" branch="false" />
-            <line number="44" hits="0" branch="false" />
-            <line number="45" hits="0" branch="false" />
-            <line number="46" hits="0" branch="false" />
-            <line number="47" hits="0" branch="false" />
-            <line number="49" hits="0" branch="false" />
-            <line number="50" hits="0" branch="false" />
-            <line number="51" hits="0" branch="false" />
-            <line number="52" hits="0" branch="false" />
-            <line number="53" hits="0" branch="false" />
-            <line number="54" hits="0" branch="false" />
-            <line number="55" hits="0" branch="false" />
-            <line number="56" hits="0" branch="false" />
-            <line number="58" hits="0" branch="false" />
+            <line number="25" hits="1" branch="false" />
+            <line number="26" hits="1" branch="false" />
+            <line number="27" hits="1" branch="false" />
+            <line number="28" hits="1" branch="false" />
+            <line number="29" hits="1" branch="false" />
+            <line number="30" hits="1" branch="false" />
+            <line number="32" hits="1" branch="false" />
+            <line number="33" hits="1" branch="false" />
+            <line number="34" hits="1" branch="true" condition-coverage="50% (1/2)" />
+            <line number="35" hits="1" branch="false" />
+            <line number="36" hits="1" branch="true" condition-coverage="50% (1/2)" />
+            <line number="38" hits="1" branch="false" />
+            <line number="39" hits="1" branch="false" />
+            <line number="40" hits="1" branch="false" />
+            <line number="41" hits="1" branch="false" />
+            <line number="42" hits="1" branch="false" />
+            <line number="43" hits="1" branch="false" />
+            <line number="44" hits="1" branch="false" />
+            <line number="45" hits="1" branch="false" />
+            <line number="46" hits="1" branch="false" />
+            <line number="47" hits="1" branch="false" />
+            <line number="48" hits="1" branch="false" />
+            <line number="50" hits="1" branch="false" />
+            <line number="51" hits="1" branch="false" />
+            <line number="52" hits="1" branch="false" />
+            <line number="53" hits="1" branch="false" />
+            <line number="54" hits="1" branch="false" />
+            <line number="55" hits="1" branch="false" />
+            <line number="56" hits="1" branch="false" />
+            <line number="57" hits="1" branch="false" />
             <line number="59" hits="0" branch="false" />
-            <line number="60" hits="0" branch="true" condition-coverage="0% (0/2)" />
-            <line number="61" hits="0" branch="false" />
-            <line number="62" hits="0" branch="true" condition-coverage="0% (0/2)" />
-            <line number="64" hits="0" branch="false" />
+            <line number="60" hits="0" branch="false" />
+            <line number="61" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="62" hits="0" branch="false" />
+            <line number="63" hits="0" branch="true" condition-coverage="0% (0/2)" />
             <line number="65" hits="0" branch="false" />
             <line number="66" hits="0" branch="false" />
             <line number="67" hits="0" branch="false" />
@@ -1739,7 +1738,7 @@
             <line number="72" hits="0" branch="false" />
             <line number="73" hits="0" branch="false" />
             <line number="74" hits="0" branch="false" />
-            <line number="76" hits="0" branch="false" />
+            <line number="75" hits="0" branch="false" />
             <line number="77" hits="0" branch="false" />
             <line number="78" hits="0" branch="false" />
             <line number="79" hits="0" branch="false" />
@@ -1747,7 +1746,7 @@
             <line number="81" hits="0" branch="false" />
             <line number="82" hits="0" branch="false" />
             <line number="83" hits="0" branch="false" />
-            <line number="85" hits="0" branch="false" />
+            <line number="84" hits="0" branch="false" />
             <line number="86" hits="0" branch="false" />
             <line number="87" hits="0" branch="false" />
             <line number="88" hits="0" branch="false" />
@@ -1757,11 +1756,88 @@
             <line number="92" hits="0" branch="false" />
             <line number="93" hits="0" branch="false" />
             <line number="94" hits="0" branch="false" />
-            <line number="95" hits="0" branch="true" condition-coverage="0% (0/2)" />
-            <line number="96" hits="0" branch="false" />
+            <line number="95" hits="0" branch="false" />
+            <line number="96" hits="0" branch="true" condition-coverage="0% (0/2)" />
             <line number="97" hits="0" branch="false" />
-            <line number="99" hits="0" branch="false" />
+            <line number="98" hits="0" branch="false" />
             <line number="100" hits="0" branch="false" />
+            <line number="101" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="Lulus.BAL.Infrastructures.SignInManager" filename="D:\.CanDelete\Git\Lulus-master\Lulus.BAL\Infrastructures\SignInManager.cs" line-rate="0" branch-rate="1" complexity="2">
+          <methods>
+            <method name="PasswordSignInAsync" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="19" hits="0" branch="false" />
+                <line number="20" hits="0" branch="false" />
+                <line number="21" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="0" branch="false" />
+                <line number="15" hits="0" branch="false" />
+                <line number="16" hits="0" branch="false" />
+                <line number="17" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="14" hits="0" branch="false" />
+            <line number="15" hits="0" branch="false" />
+            <line number="16" hits="0" branch="false" />
+            <line number="17" hits="0" branch="false" />
+            <line number="19" hits="0" branch="false" />
+            <line number="20" hits="0" branch="false" />
+            <line number="21" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="Lulus.BAL.Infrastructures.UserManager" filename="D:\.CanDelete\Git\Lulus-master\Lulus.BAL\Infrastructures\UserManager.cs" line-rate="0" branch-rate="1" complexity="4">
+          <methods>
+            <method name="CreateAsync" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="22" hits="0" branch="false" />
+                <line number="23" hits="0" branch="false" />
+                <line number="24" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="FindByNameAsync" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="27" hits="0" branch="false" />
+                <line number="28" hits="0" branch="false" />
+                <line number="29" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="GetRolesAsync" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="32" hits="0" branch="false" />
+                <line number="33" hits="0" branch="false" />
+                <line number="34" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="0" branch="false" />
+                <line number="17" hits="0" branch="false" />
+                <line number="18" hits="0" branch="false" />
+                <line number="19" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="16" hits="0" branch="false" />
+            <line number="17" hits="0" branch="false" />
+            <line number="18" hits="0" branch="false" />
+            <line number="19" hits="0" branch="false" />
+            <line number="22" hits="0" branch="false" />
+            <line number="23" hits="0" branch="false" />
+            <line number="24" hits="0" branch="false" />
+            <line number="27" hits="0" branch="false" />
+            <line number="28" hits="0" branch="false" />
+            <line number="29" hits="0" branch="false" />
+            <line number="32" hits="0" branch="false" />
+            <line number="33" hits="0" branch="false" />
+            <line number="34" hits="0" branch="false" />
           </lines>
         </class>
       </classes>
@@ -2042,71 +2118,71 @@
             </method>
             <method name="get_Categories" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="40" hits="24" branch="false" />
+                <line number="40" hits="25" branch="false" />
               </lines>
             </method>
             <method name="get_Countries" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="41" hits="15" branch="false" />
+                <line number="41" hits="16" branch="false" />
               </lines>
             </method>
             <method name="get_Feedbacks" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="42" hits="16" branch="false" />
+                <line number="42" hits="17" branch="false" />
               </lines>
             </method>
             <method name="get_LineQuantities" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="43" hits="22" branch="false" />
+                <line number="43" hits="23" branch="false" />
               </lines>
             </method>
             <method name="get_Orders" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="44" hits="24" branch="false" />
+                <line number="44" hits="25" branch="false" />
               </lines>
             </method>
             <method name="get_OrderDetails" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="45" hits="21" branch="false" />
+                <line number="45" hits="22" branch="false" />
               </lines>
             </method>
             <method name="get_Products" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="46" hits="30" branch="false" />
+                <line number="46" hits="31" branch="false" />
               </lines>
             </method>
             <method name="get_ProductImages" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="47" hits="17" branch="false" />
+                <line number="47" hits="18" branch="false" />
               </lines>
             </method>
             <method name="get_ProductLines" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="48" hits="25" branch="false" />
+                <line number="48" hits="26" branch="false" />
               </lines>
             </method>
             <method name="get_Sizes" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="49" hits="24" branch="false" />
+                <line number="49" hits="25" branch="false" />
               </lines>
             </method>
             <method name="get_SubCategories" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="50" hits="21" branch="false" />
+                <line number="50" hits="22" branch="false" />
               </lines>
             </method>
             <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="16" hits="15" branch="false" />
-                <line number="17" hits="15" branch="false" />
-                <line number="19" hits="15" branch="false" />
+                <line number="16" hits="16" branch="false" />
+                <line number="17" hits="16" branch="false" />
+                <line number="19" hits="16" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="16" hits="15" branch="false" />
-            <line number="17" hits="15" branch="false" />
-            <line number="19" hits="15" branch="false" />
+            <line number="16" hits="16" branch="false" />
+            <line number="17" hits="16" branch="false" />
+            <line number="19" hits="16" branch="false" />
             <line number="22" hits="1" branch="false" />
             <line number="23" hits="1" branch="false" />
             <line number="24" hits="1" branch="false" />
@@ -2123,17 +2199,17 @@
             <line number="35" hits="1" branch="false" />
             <line number="37" hits="1" branch="false" />
             <line number="38" hits="1" branch="false" />
-            <line number="40" hits="24" branch="false" />
-            <line number="41" hits="15" branch="false" />
-            <line number="42" hits="16" branch="false" />
-            <line number="43" hits="22" branch="false" />
-            <line number="44" hits="24" branch="false" />
-            <line number="45" hits="21" branch="false" />
-            <line number="46" hits="30" branch="false" />
-            <line number="47" hits="17" branch="false" />
-            <line number="48" hits="25" branch="false" />
-            <line number="49" hits="24" branch="false" />
-            <line number="50" hits="21" branch="false" />
+            <line number="40" hits="25" branch="false" />
+            <line number="41" hits="16" branch="false" />
+            <line number="42" hits="17" branch="false" />
+            <line number="43" hits="23" branch="false" />
+            <line number="44" hits="25" branch="false" />
+            <line number="45" hits="22" branch="false" />
+            <line number="46" hits="31" branch="false" />
+            <line number="47" hits="18" branch="false" />
+            <line number="48" hits="26" branch="false" />
+            <line number="49" hits="25" branch="false" />
+            <line number="50" hits="22" branch="false" />
           </lines>
         </class>
         <class name="Lulus.Data.EF.LulusDBContextFactory" filename="D:\.CanDelete\Git\Lulus-master\Lulus.Data\EF\LulusDBContextFactory.cs" line-rate="0" branch-rate="1" complexity="1">
@@ -5926,17 +6002,17 @@
           <methods>
             <method name="get_Customer_FirstName" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="13" hits="13" branch="false" />
+                <line number="13" hits="15" branch="false" />
               </lines>
             </method>
             <method name="get_Customer_LastName" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="14" hits="13" branch="false" />
+                <line number="14" hits="15" branch="false" />
               </lines>
             </method>
             <method name="get_Customer_Address" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="15" hits="13" branch="false" />
+                <line number="15" hits="14" branch="false" />
               </lines>
             </method>
             <method name="get_Orders" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -5951,16 +6027,16 @@
             </method>
           </methods>
           <lines>
-            <line number="13" hits="13" branch="false" />
-            <line number="14" hits="13" branch="false" />
-            <line number="15" hits="13" branch="false" />
+            <line number="13" hits="15" branch="false" />
+            <line number="14" hits="15" branch="false" />
+            <line number="15" hits="14" branch="false" />
             <line number="17" hits="1" branch="false" />
             <line number="19" hits="1" branch="false" />
           </lines>
         </class>
       </classes>
     </package>
-    <package name="Lulus.UnitTests" line-rate="0.9985549132947977" branch-rate="1" complexity="16">
+    <package name="Lulus.UnitTests" line-rate="0.9986449864498645" branch-rate="1" complexity="18">
       <classes>
         <class name="AutoGeneratedProgram" filename="C:\Users\Asus\.nuget\packages\microsoft.net.test.sdk\16.7.1\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
@@ -7434,9 +7510,115 @@
             <line number="516" hits="1" branch="false" />
           </lines>
         </class>
+        <class name="Lulus.UnitTests.BAL.Users.UserTest" filename="D:\.CanDelete\Git\Lulus-master\Lulus.UnitTests\BAL\Users\UserTest.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="SetSucceeded" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="75" hits="1" branch="false" />
+                <line number="76" hits="1" branch="false" />
+                <line number="77" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="Login_Success" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="23" hits="1" branch="false" />
+                <line number="24" hits="1" branch="false" />
+                <line number="25" hits="1" branch="false" />
+                <line number="28" hits="1" branch="false" />
+                <line number="29" hits="1" branch="false" />
+                <line number="30" hits="1" branch="false" />
+                <line number="31" hits="1" branch="false" />
+                <line number="32" hits="1" branch="false" />
+                <line number="33" hits="1" branch="false" />
+                <line number="34" hits="1" branch="false" />
+                <line number="35" hits="1" branch="false" />
+                <line number="36" hits="1" branch="false" />
+                <line number="37" hits="1" branch="false" />
+                <line number="38" hits="1" branch="false" />
+                <line number="39" hits="1" branch="false" />
+                <line number="40" hits="1" branch="false" />
+                <line number="41" hits="1" branch="false" />
+                <line number="42" hits="1" branch="false" />
+                <line number="43" hits="1" branch="false" />
+                <line number="44" hits="1" branch="false" />
+                <line number="46" hits="1" branch="false" />
+                <line number="47" hits="2" branch="false" />
+                <line number="48" hits="1" branch="false" />
+                <line number="49" hits="2" branch="false" />
+                <line number="51" hits="1" branch="false" />
+                <line number="52" hits="1" branch="false" />
+                <line number="53" hits="1" branch="false" />
+                <line number="54" hits="1" branch="false" />
+                <line number="55" hits="1" branch="false" />
+                <line number="56" hits="2" branch="false" />
+                <line number="58" hits="1" branch="false" />
+                <line number="59" hits="2" branch="false" />
+                <line number="60" hits="3" branch="false" />
+                <line number="62" hits="1" branch="false" />
+                <line number="63" hits="1" branch="false" />
+                <line number="64" hits="1" branch="false" />
+                <line number="65" hits="1" branch="false" />
+                <line number="66" hits="1" branch="false" />
+                <line number="67" hits="1" branch="false" />
+                <line number="68" hits="1" branch="false" />
+                <line number="69" hits="1" branch="false" />
+                <line number="70" hits="1" branch="false" />
+                <line number="71" hits="1" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="23" hits="1" branch="false" />
+            <line number="24" hits="1" branch="false" />
+            <line number="25" hits="1" branch="false" />
+            <line number="28" hits="1" branch="false" />
+            <line number="29" hits="1" branch="false" />
+            <line number="30" hits="1" branch="false" />
+            <line number="31" hits="1" branch="false" />
+            <line number="32" hits="1" branch="false" />
+            <line number="33" hits="1" branch="false" />
+            <line number="34" hits="1" branch="false" />
+            <line number="35" hits="1" branch="false" />
+            <line number="36" hits="1" branch="false" />
+            <line number="37" hits="1" branch="false" />
+            <line number="38" hits="1" branch="false" />
+            <line number="39" hits="1" branch="false" />
+            <line number="40" hits="1" branch="false" />
+            <line number="41" hits="1" branch="false" />
+            <line number="42" hits="1" branch="false" />
+            <line number="43" hits="1" branch="false" />
+            <line number="44" hits="1" branch="false" />
+            <line number="46" hits="1" branch="false" />
+            <line number="47" hits="2" branch="false" />
+            <line number="48" hits="1" branch="false" />
+            <line number="49" hits="2" branch="false" />
+            <line number="51" hits="1" branch="false" />
+            <line number="52" hits="1" branch="false" />
+            <line number="53" hits="1" branch="false" />
+            <line number="54" hits="1" branch="false" />
+            <line number="55" hits="1" branch="false" />
+            <line number="56" hits="2" branch="false" />
+            <line number="58" hits="1" branch="false" />
+            <line number="59" hits="2" branch="false" />
+            <line number="60" hits="3" branch="false" />
+            <line number="62" hits="1" branch="false" />
+            <line number="63" hits="1" branch="false" />
+            <line number="64" hits="1" branch="false" />
+            <line number="65" hits="1" branch="false" />
+            <line number="66" hits="1" branch="false" />
+            <line number="67" hits="1" branch="false" />
+            <line number="68" hits="1" branch="false" />
+            <line number="69" hits="1" branch="false" />
+            <line number="70" hits="1" branch="false" />
+            <line number="71" hits="1" branch="false" />
+            <line number="75" hits="1" branch="false" />
+            <line number="76" hits="1" branch="false" />
+            <line number="77" hits="1" branch="false" />
+          </lines>
+        </class>
       </classes>
     </package>
-    <package name="Lulus.ViewModels" line-rate="0.16049382716049382" branch-rate="1" complexity="144">
+    <package name="Lulus.ViewModels" line-rate="0.17901234567901234" branch-rate="1" complexity="144">
       <classes>
         <class name="Lulus.BAL.Catalog.Products.DTOs.Public.GetProductPagingRequest" filename="D:\.CanDelete\Git\Lulus-master\Lulus.ViewModels\Products\Public\GetProductPagingRequest.cs" line-rate="0" branch-rate="1" complexity="3">
           <methods>
@@ -8506,28 +8688,28 @@
             <line number="15" hits="0" branch="false" />
           </lines>
         </class>
-        <class name="Lulus.ViewModels.Users.LoginRequest" filename="D:\.CanDelete\Git\Lulus-master\Lulus.ViewModels\Users\LoginRequest.cs" line-rate="0" branch-rate="1" complexity="3">
+        <class name="Lulus.ViewModels.Users.LoginRequest" filename="D:\.CanDelete\Git\Lulus-master\Lulus.ViewModels\Users\LoginRequest.cs" line-rate="1" branch-rate="1" complexity="3">
           <methods>
-            <method name="get_Username" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_Username" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="11" hits="0" branch="false" />
+                <line number="11" hits="2" branch="false" />
               </lines>
             </method>
-            <method name="get_Password" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_Password" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="12" hits="0" branch="false" />
+                <line number="12" hits="2" branch="false" />
               </lines>
             </method>
-            <method name="get_RememberMe" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_RememberMe" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="14" hits="0" branch="false" />
+                <line number="14" hits="2" branch="false" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="11" hits="0" branch="false" />
-            <line number="12" hits="0" branch="false" />
-            <line number="14" hits="0" branch="false" />
+            <line number="11" hits="2" branch="false" />
+            <line number="12" hits="2" branch="false" />
+            <line number="14" hits="2" branch="false" />
           </lines>
         </class>
         <class name="Lulus.ViewModels.Users.RegisterRequest" filename="D:\.CanDelete\Git\Lulus-master\Lulus.ViewModels\Users\RegisterRequest.cs" line-rate="0" branch-rate="1" complexity="5">
