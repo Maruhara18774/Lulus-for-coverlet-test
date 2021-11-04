@@ -1,5 +1,6 @@
 ﻿
 using Lulus.BAL.Catalog.Users.Interfaces;
+using Lulus.BAL.Infrastructures;
 using Lulus.Data.Entities;
 using Lulus.ViewModels.Users;
 using Microsoft.AspNetCore.Identity;
@@ -17,11 +18,11 @@ namespace Lulus.BAL.Catalog.Users
 {
     public class UserService : IUserService
     {
-        private readonly UserManager<User> _userManager;
-        private readonly SignInManager<User> _signInManager;
+        private readonly IUserManager _userManager;
+        private readonly ISignInManager _signInManager;
         private readonly IConfiguration _configuration;
         // Identity libaries
-        public UserService(UserManager<User> userManager, SignInManager<User> signInManager, IConfiguration configuration)
+        public UserService(IUserManager userManager, ISignInManager signInManager, IConfiguration configuration)
         {
             _userManager = userManager;
             _signInManager = signInManager;
