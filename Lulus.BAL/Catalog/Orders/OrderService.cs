@@ -62,8 +62,10 @@ namespace Lulus.BAL.Catalog.Orders
 
         public async Task<bool> ChangeQuantityAsync(ChangeQuantityRequest request)
         {
+            
             var detail = await _context.OrderDetails.Where(x => x.OrderDetail_ID == request.OrderDetailID).FirstOrDefaultAsync();
             if (detail == null) return false;
+            
             var remain = await _context.LineQuantities
                 .Where(x => x.ProductLine_ID == detail.ProductLine_ID && x.Size_ID == detail.Size_ID)
                 .Select(x => x.Quantity)
