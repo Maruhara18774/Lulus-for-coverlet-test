@@ -1,0 +1,306 @@
+TpTrace Verbose: 0 : 15632, 1, 2021/11/09, 12:46:05.075, 3416551782395, datacollector.dll, Version: 16.9.1
+TpTrace Information: 0 : 15632, 1, 2021/11/09, 12:46:05.079, 3416551810352, datacollector.dll, DataCollectorMain.Run: Starting data collector run with args: --port,62657,--parentprocessid,2104,--diag,D:\.CanDelete\Git\Lulus-master\Lulus.UnitTests\bin\Debug\net5.0\fine-code-coverage\coverage-tool-output\diagnostics.datacollector.21-11-09_12-46-04_94298_4.log,--tracelevel,4
+TpTrace Information: 0 : 15632, 1, 2021/11/09, 12:46:05.079, 3416551811538, datacollector.dll, DataCollector: Monitoring parent process with id: '2104'
+TpTrace Information: 0 : 15632, 1, 2021/11/09, 12:46:05.086, 3416551880789, datacollector.dll, Trying to connect to server on socket : 127.0.0.1:62657 
+TpTrace Verbose: 0 : 15632, 1, 2021/11/09, 12:46:05.109, 3416552111039, datacollector.dll, SocketCommunicationManager : SetupClientAsync : Attempting to connect to the server.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:05.117, 3416552187490, datacollector.dll, Connected to the server successfully 
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:05.117, 3416552188619, datacollector.dll, Using the buffer size of 16384 bytes
+TpTrace Information: 0 : 15632, 1, 2021/11/09, 12:46:05.182, 3416552845406, datacollector.dll, DataCollector: Start Request Processing.
+TpTrace Information: 0 : 15632, 1, 2021/11/09, 12:46:05.186, 3416552880382, datacollector.dll, DataCollectionRequestHandler.ProcessRequests : Datacollector received message: (DataCollection.BeforeTestRunStart) -> {
+  "SettingsXml": "<RunSettings><RunConfiguration><ResultsDirectory>D:\\.CanDelete\\Git\\Lulus-master\\Lulus.UnitTests\\bin\\Debug\\net5.0\\fine-code-coverage\\coverage-tool-output</ResultsDirectory><TargetPlatform>X64</TargetPlatform><TargetFrameworkVersion>.NETCoreApp,Version=v5.0</TargetFrameworkVersion><DesignMode>False</DesignMode><CollectSourceInformation>False</CollectSourceInformation><TestAdaptersPaths>C:\\Program Files\\dotnet\\sdk\\5.0.201\\Extensions</TestAdaptersPaths></RunConfiguration><LoggerRunSettings><Loggers><Logger friendlyName=\"blame\" enabled=\"True\" /><Logger friendlyName=\"Console\" uri=\"logger://microsoft/TestPlatform/ConsoleLogger/v1\" assemblyQualifiedName=\"Microsoft.VisualStudio.TestPlatform.CommandLine.Internal.ConsoleLogger, vstest.console, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a\" codeBase=\"C:\\Program Files\\dotnet\\sdk\\5.0.201\\vstest.console.dll\" enabled=\"True\" /></Loggers></LoggerRunSettings><DataCollectionRunSettings><DataCollectors><DataCollector friendlyName=\"blame\" enabled=\"True\"><Configuration><ResultsDirectory>D:\\.CanDelete\\Git\\Lulus-master\\Lulus.UnitTests\\bin\\Debug\\net5.0\\fine-code-coverage\\coverage-tool-output</ResultsDirectory></Configuration></DataCollector></DataCollectors></DataCollectionRunSettings></RunSettings>",
+  "Sources": [
+    "D:\\.CanDelete\\Git\\Lulus-master\\Lulus.UnitTests\\bin\\Debug\\net5.0\\fine-code-coverage\\build-output\\Lulus.UnitTests.dll"
+  ],
+  "IsTelemetryOptedIn": false
+}
+TpTrace Verbose: 0 : 15632, 1, 2021/11/09, 12:46:05.221, 3416553228902, datacollector.dll, TestPluginCache: Update extensions started. Skip filter = False
+TpTrace Verbose: 0 : 15632, 1, 2021/11/09, 12:46:05.221, 3416553235376, datacollector.dll, TestPluginCache: Using directories for assembly resolution 'C:\Program Files\dotnet\sdk\5.0.201\Extensions'.
+TpTrace Verbose: 0 : 15632, 1, 2021/11/09, 12:46:05.221, 3416553235881, datacollector.dll, TestPluginCache: Updated the available extensions to 'C:\Program Files\dotnet\sdk\5.0.201\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll,C:\Program Files\dotnet\sdk\5.0.201\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll'.
+TpTrace Verbose: 0 : 15632, 1, 2021/11/09, 12:46:05.227, 3416553287339, datacollector.dll, TestPluginCache.DiscoverTestExtensions: finding test extensions in assemblies ends with: Collector.dll TPluginInfo: Microsoft.VisualStudio.TestPlatform.Common.DataCollector.DataCollectorConfig TExtension: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.DataCollector
+TpTrace Verbose: 0 : 15632, 1, 2021/11/09, 12:46:05.227, 3416553290020, datacollector.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: C:\Program Files\dotnet\sdk\5.0.201\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+C:\Program Files\dotnet\sdk\5.0.201\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+TpTrace Verbose: 0 : 15632, 1, 2021/11/09, 12:46:05.227, 3416553290496, datacollector.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: 
+TpTrace Verbose: 0 : 15632, 1, 2021/11/09, 12:46:05.227, 3416553290756, datacollector.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Information: 0 : 15632, 1, 2021/11/09, 12:46:05.227, 3416553295744, datacollector.dll, AssemblyResolver.ctor: Creating AssemblyResolver with searchDirectories C:\Program Files\dotnet\sdk\5.0.201\Extensions,C:\Program Files\dotnet\sdk\5.0.201
+TpTrace Verbose: 0 : 15632, 1, 2021/11/09, 12:46:05.229, 3416553308151, datacollector.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using extension path.
+TpTrace Verbose: 0 : 15632, 1, 2021/11/09, 12:46:05.229, 3416553310041, datacollector.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: C:\Program Files\dotnet\sdk\5.0.201\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+C:\Program Files\dotnet\sdk\5.0.201\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+TpTrace Verbose: 0 : 15632, 1, 2021/11/09, 12:46:05.229, 3416553310475, datacollector.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: 
+TpTrace Verbose: 0 : 15632, 1, 2021/11/09, 12:46:05.229, 3416553310822, datacollector.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Verbose: 0 : 15632, 1, 2021/11/09, 12:46:05.229, 3416553311297, datacollector.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using allExtensionPaths: C:\Program Files\dotnet\sdk\5.0.201\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+C:\Program Files\dotnet\sdk\5.0.201\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+TpTrace Information: 0 : 15632, 1, 2021/11/09, 12:46:05.229, 3416553312271, datacollector.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\5.0.201\Extensions,C:\Program Files\dotnet\sdk\5.0.201
+TpTrace Information: 0 : 15632, 1, 2021/11/09, 12:46:05.229, 3416553312874, datacollector.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\5.0.201\Extensions,C:\Program Files\dotnet\sdk\5.0.201
+TpTrace Information: 0 : 15632, 1, 2021/11/09, 12:46:05.229, 3416553316661, datacollector.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.BlameDataCollector: Resolving assembly.
+TpTrace Information: 0 : 15632, 1, 2021/11/09, 12:46:05.231, 3416553331506, datacollector.dll, AssemblyResolver.OnResolve: Resolved assembly: Microsoft.TestPlatform.Extensions.BlameDataCollector, from path: C:\Program Files\dotnet\sdk\5.0.201\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+TpTrace Error: 0 : 15632, 1, 2021/11/09, 12:46:05.232, 3416553342661, datacollector.dll, The type "Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector" defined in "Microsoft.TestPlatform.Extensions.BlameDataCollector.dll" does not have ExtensionUri attribute.
+TpTrace Information: 0 : 15632, 1, 2021/11/09, 12:46:05.233, 3416553354903, datacollector.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.EventLogCollector: Resolving assembly.
+TpTrace Information: 0 : 15632, 1, 2021/11/09, 12:46:05.234, 3416553366663, datacollector.dll, AssemblyResolver.OnResolve: Resolved assembly: Microsoft.TestPlatform.Extensions.EventLogCollector, from path: C:\Program Files\dotnet\sdk\5.0.201\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+TpTrace Error: 0 : 15632, 1, 2021/11/09, 12:46:05.236, 3416553380897, datacollector.dll, The type "Microsoft.TestPlatform.Extensions.EventLogCollector.EventLogDataCollector" defined in "Microsoft.TestPlatform.Extensions.EventLogCollector.dll" does not have ExtensionUri attribute.
+TpTrace Verbose: 0 : 15632, 1, 2021/11/09, 12:46:05.236, 3416553385318, datacollector.dll, TestPluginCache: Discovered the extensions using extension path 'C:\Program Files\dotnet\sdk\5.0.201\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll,C:\Program Files\dotnet\sdk\5.0.201\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll'.
+TpTrace Verbose: 0 : 15632, 1, 2021/11/09, 12:46:05.236, 3416553385804, datacollector.dll, TestPluginCache: Discoverers are ''.
+TpTrace Verbose: 0 : 15632, 1, 2021/11/09, 12:46:05.236, 3416553386151, datacollector.dll, TestPluginCache: Executors are ''.
+TpTrace Verbose: 0 : 15632, 1, 2021/11/09, 12:46:05.236, 3416553386379, datacollector.dll, TestPluginCache: Executors2 are ''.
+TpTrace Verbose: 0 : 15632, 1, 2021/11/09, 12:46:05.236, 3416553386597, datacollector.dll, TestPluginCache: Setting providers are ''.
+TpTrace Verbose: 0 : 15632, 1, 2021/11/09, 12:46:05.237, 3416553386812, datacollector.dll, TestPluginCache: Loggers are ''.
+TpTrace Information: 0 : 15632, 1, 2021/11/09, 12:46:05.238, 3416553396710, datacollector.dll, TestPluginManager.CreateTestExtension: Attempting to load test extension: Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector
+TpTrace Error: 0 : 15632, 1, 2021/11/09, 12:46:05.238, 3416553401308, datacollector.dll, The type "Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector" defined in "Microsoft.TestPlatform.Extensions.BlameDataCollector.dll" does not have ExtensionUri attribute.
+TpTrace Information: 0 : 15632, 1, 2021/11/09, 12:46:05.245, 3416553466757, datacollector.dll, Listening on Endpoint : 127.0.0.1:62659
+TpTrace Information: 0 : 15632, 1, 2021/11/09, 12:46:05.251, 3416553528343, datacollector.dll, DataCollectionRequestHandler.ProcessRequests : DataCollection started.
+TpTrace Information: 0 : 15632, 1, 2021/11/09, 12:46:05.303, 3416554053117, datacollector.dll, DataCollectionRequestHandler.ProcessRequests : Datacollector received message: (DataCollection.TestHostLaunched) -> {
+  "ProcessId": 10688
+}
+TpTrace Information: 0 : 15632, 5, 2021/11/09, 12:46:05.539, 3416556410432, datacollector.dll, Using the buffer size of 16384 bytes
+TpTrace Information: 0 : 15632, 5, 2021/11/09, 12:46:05.539, 3416556411726, datacollector.dll, Accepted Client request and set the flag
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:07.127, 3416572288778, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:07.136, 3416572384402, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:07.139, 3416572408055, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.SubCategories.ManageSubCategoryTest.DeleteSubCategory_Failed - cbe21c1d-e4e1-c8f2-5183-ebf6834a16d3' started.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:07.140, 3416572418313, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:07.140, 3416572422542, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:07.140, 3416572424029, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Categories.CategoryTest.GetAllCategory_Success_WithData - d2c8e53f-c688-6b8d-59b2-09c13158d20b' started.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:07.141, 3416572432429, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:07.141, 3416572435767, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:07.142, 3416572436885, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.SubCategories.SubCategoriesTest.GetAllSubCategory_Success_WithoutData - 38bbf66a-9b48-e5e4-7946-8dd6b83f89d7' started.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:07.143, 3416572450116, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:07.143, 3416572453351, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:07.144, 3416572462012, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Users.UserTest.Login_Failed_WrongPassword - dae8ad24-bbd1-b30f-203d-985e9a0b924e' started.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:07.145, 3416572469862, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:07.145, 3416572473491, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:07.145, 3416572474682, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Orders.OrderTest.AddProductAsync_Failed_LineNotFound - e5a8b863-3828-2e9b-30bc-fec812e78c7a' started.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:07.146, 3416572481019, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:07.146, 3416572483976, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:07.146, 3416572485155, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Feedbacks.FeedbackTest.CreateFeedback_Failed_EmptyTitle - 1dcce5e5-e189-a7c1-9ab6-b0cce7d2cc93' started.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:07.147, 3416572491238, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:07.147, 3416572494154, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:07.147, 3416572495187, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest.UdateProductLine_Failed - b8324d67-88c9-e6b4-b8af-08d09b94e296' started.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.012, 3416581143649, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.019, 3416581208829, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.025, 3416581268447, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Feedbacks.FeedbackTest.CreateFeedback_Failed_EmptyTitle - 1dcce5e5-e189-a7c1-9ab6-b0cce7d2cc93' completed
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.039, 3416581408635, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.039, 3416581413344, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.039, 3416581416699, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Feedbacks.FeedbackTest.CreateFeedback_Failed_ProductNotFound - 60802450-3bd6-65f7-c6c3-84f61b1a1e20' started.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.050, 3416581522629, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.051, 3416581527351, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.051, 3416581531310, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.SubCategories.SubCategoriesTest.GetAllSubCategory_Success_WithoutData - 38bbf66a-9b48-e5e4-7946-8dd6b83f89d7' completed
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.053, 3416581551127, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.054, 3416581557067, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.054, 3416581559954, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.SubCategories.SubCategoriesTest.GetAllCategory_Success_WithData - fe070f1a-1053-b85d-4f9b-47dde9766925' started.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.055, 3416581570810, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.055, 3416581575534, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.056, 3416581578399, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Categories.CategoryTest.GetAllCategory_Success_WithData - d2c8e53f-c688-6b8d-59b2-09c13158d20b' completed
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.057, 3416581593380, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.058, 3416581597313, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.058, 3416581599789, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Categories.CategoryTest.GetAllCategory_Success_WithoutData - 88fa148a-5f09-23a9-cf1d-94e42addb1fb' started.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.059, 3416581610315, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.059, 3416581614849, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.060, 3416581618374, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Categories.CategoryTest.GetAllCategory_Success_WithoutData - 88fa148a-5f09-23a9-cf1d-94e42addb1fb' completed
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.061, 3416581627280, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.061, 3416581630887, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.061, 3416581633159, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.SubCategories.SubCategoriesTest.GetAllCategory_Success_WithData - fe070f1a-1053-b85d-4f9b-47dde9766925' completed
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.062, 3416581643330, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.062, 3416581646425, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.063, 3416581648145, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest.UdateProductLine_Failed - b8324d67-88c9-e6b4-b8af-08d09b94e296' completed
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.066, 3416581685002, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.067, 3416581688319, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.067, 3416581690221, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest.GetAllLine_Success_WithID - a5e25522-d428-1ec2-8e69-a8c3dc84a46c' started.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.068, 3416581698336, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.068, 3416581701285, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.068, 3416581703368, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.SubCategories.ManageSubCategoryTest.DeleteSubCategory_Failed - cbe21c1d-e4e1-c8f2-5183-ebf6834a16d3' completed
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.080, 3416581822861, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.080, 3416581826472, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.081, 3416581829016, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.SubCategories.ManageSubCategoryTest.Edit_SubCategory_Failed - 23650c89-9795-6ba1-7c30-9469fda62ce8' started.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.082, 3416581838628, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.082, 3416581842661, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.082, 3416581845896, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.SubCategories.ManageSubCategoryTest.Edit_SubCategory_Failed - 23650c89-9795-6ba1-7c30-9469fda62ce8' completed
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.084, 3416581856900, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.084, 3416581860142, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.084, 3416581862173, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.SubCategories.ManageSubCategoryTest.Create_SubCategory_Failed - bab61fbc-d073-a6e9-14d6-8c5a809850b0' started.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.085, 3416581871090, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.085, 3416581875221, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.086, 3416581879393, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Orders.OrderTest.AddProductAsync_Failed_LineNotFound - e5a8b863-3828-2e9b-30bc-fec812e78c7a' completed
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.087, 3416581889061, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.087, 3416581892499, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.087, 3416581894088, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Orders.OrderTest.CheckoutAsync_Failed - 7cf0e60a-e289-bcdf-a2f9-23d32019c221' started.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.088, 3416581902251, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.088, 3416581906040, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.089, 3416581908173, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Feedbacks.FeedbackTest.CreateFeedback_Failed_ProductNotFound - 60802450-3bd6-65f7-c6c3-84f61b1a1e20' completed
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.090, 3416581919869, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.090, 3416581922745, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.090, 3416581925121, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Feedbacks.FeedbackTest.CreateFeedback_Failed_UserNotFound - ceabad03-5c92-618d-7515-8847adad9816' started.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.091, 3416581933179, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.091, 3416581935615, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.092, 3416581936951, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.SubCategories.ManageSubCategoryTest.Create_SubCategory_Failed - bab61fbc-d073-a6e9-14d6-8c5a809850b0' completed
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.092, 3416581946032, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.093, 3416581949977, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.093, 3416581953095, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Feedbacks.FeedbackTest.CreateFeedback_Failed_UserNotFound - ceabad03-5c92-618d-7515-8847adad9816' completed
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.094, 3416581963703, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.095, 3416581968350, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.095, 3416581971386, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Feedbacks.FeedbackTest.CreateFeedback_Failed_InvalidStar1 - dbcc50cb-0cd8-2183-6c0e-2a557ea78da5' started.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.096, 3416581980963, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.096, 3416581984441, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.097, 3416581987326, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Feedbacks.FeedbackTest.CreateFeedback_Failed_InvalidStar1 - dbcc50cb-0cd8-2183-6c0e-2a557ea78da5' completed
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.098, 3416581998885, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.098, 3416582004596, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.099, 3416582007619, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Feedbacks.FeedbackTest.CreateFeedback_Failed_InvalidStar2 - 37ff2c4e-90d3-63ec-d3fc-acfafc8a3afc' started.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.099, 3416582016095, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.100, 3416582020199, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.100, 3416582023506, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Feedbacks.FeedbackTest.CreateFeedback_Failed_InvalidStar2 - 37ff2c4e-90d3-63ec-d3fc-acfafc8a3afc' completed
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.101, 3416582035798, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.102, 3416582039461, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.102, 3416582042084, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Feedbacks.FeedbackTest.CreateFeedback_Success - e06d6134-2d68-7012-75b3-7092ae7d043c' started.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.103, 3416582050617, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.103, 3416582054794, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.104, 3416582058011, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Orders.OrderTest.CheckoutAsync_Failed - 7cf0e60a-e289-bcdf-a2f9-23d32019c221' completed
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.110, 3416582119056, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.110, 3416582122844, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.111, 3416582126768, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Orders.OrderTest.AddProductAsync_Failed_LineExist - 886abe07-dabd-b7ce-2f5f-ed09e0389489' started.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.113, 3416582151666, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.113, 3416582155753, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.114, 3416582158720, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest.GetAllLine_Success_WithID - a5e25522-d428-1ec2-8e69-a8c3dc84a46c' completed
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.115, 3416582171387, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.115, 3416582175560, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.116, 3416582177850, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest.DeleteImage_Failed - fa678085-e6b2-9fc7-8d54-684fcca8a6f7' started.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.120, 3416582221044, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.120, 3416582225525, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.121, 3416582228413, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Feedbacks.FeedbackTest.CreateFeedback_Success - e06d6134-2d68-7012-75b3-7092ae7d043c' completed
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.133, 3416582350939, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.133, 3416582353862, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.133, 3416582355734, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest.DeleteImage_Failed - fa678085-e6b2-9fc7-8d54-684fcca8a6f7' completed
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.135, 3416582367666, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.135, 3416582372122, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.135, 3416582374807, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest.GetAllImage_Success_WithData - f4e3d15d-5dfd-18fb-addc-9b17bc1079c9' started.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.146, 3416582479180, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.146, 3416582482904, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.146, 3416582485300, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest.GetAllImage_Success_WithData - f4e3d15d-5dfd-18fb-addc-9b17bc1079c9' completed
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.147, 3416582494994, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.148, 3416582498575, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.148, 3416582501304, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest.GetAllImage_Success_WithoutData - 1253860f-c8f1-7d9c-d246-59d04d4bbc3b' started.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.149, 3416582509827, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.149, 3416582513907, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.150, 3416582517270, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest.GetAllImage_Success_WithoutData - 1253860f-c8f1-7d9c-d246-59d04d4bbc3b' completed
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.151, 3416582528412, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.151, 3416582531620, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.151, 3416582533529, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest.Create_ProductLine_Success - b9e1c8d2-c8c3-6adf-ded6-740e4e65fab5' started.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.152, 3416582541158, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.152, 3416582544284, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.152, 3416582545998, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest.Create_ProductLine_Success - b9e1c8d2-c8c3-6adf-ded6-740e4e65fab5' completed
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.153, 3416582554787, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.154, 3416582558446, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.154, 3416582560750, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest.UdateQuantity_Failed - da1cc4a1-a23b-4e5b-b417-3f3e96fd5a2a' started.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.162, 3416582643550, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.163, 3416582648414, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.163, 3416582651833, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest.UdateQuantity_Failed - da1cc4a1-a23b-4e5b-b417-3f3e96fd5a2a' completed
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.164, 3416582663301, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.165, 3416582669345, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.165, 3416582672885, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest.AddImage_Upload - 0f3b2fb6-ee69-4fb1-5f11-72b7807b1fcc' started.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.167, 3416582687395, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.167, 3416582693224, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.167, 3416582696041, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest.AddImage_Upload - 0f3b2fb6-ee69-4fb1-5f11-72b7807b1fcc' completed
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.168, 3416582706715, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.169, 3416582711516, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.169, 3416582715027, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest.AddQuantity_Upload - d8e1e5da-fc2f-2d8e-bb50-b29923c11ea5' started.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.172, 3416582741814, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.172, 3416582745594, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.173, 3416582749110, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest.AddQuantity_Upload - d8e1e5da-fc2f-2d8e-bb50-b29923c11ea5' completed
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.189, 3416582910717, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.189, 3416582914888, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.190, 3416582918625, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Users.UserTest.Login_Failed_WrongPassword - dae8ad24-bbd1-b30f-203d-985e9a0b924e' completed
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.196, 3416582977235, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.196, 3416582981421, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.196, 3416582984003, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Users.UserTest.AdminLogin_Failed_AccountNotFound - 9057b143-0b26-327b-e672-656ce4377bff' started.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.197, 3416582995626, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.198, 3416582999696, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.198, 3416583003386, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Users.UserTest.AdminLogin_Failed_AccountNotFound - 9057b143-0b26-327b-e672-656ce4377bff' completed
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.199, 3416583016254, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.200, 3416583020376, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.200, 3416583023125, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Users.UserTest.Login_Success - b6b40913-03b4-593f-fda0-c7014dd4692c' started.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.208, 3416583100216, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.208, 3416583103849, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.208, 3416583106649, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Orders.OrderTest.AddProductAsync_Failed_LineExist - 886abe07-dabd-b7ce-2f5f-ed09e0389489' completed
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.210, 3416583118756, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.210, 3416583122785, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.210, 3416583124787, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Orders.OrderTest.AddProductAsync_Failed_SizeNotFound - 4b3d87e7-f15b-e0d9-876b-f4830fd07492' started.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.214, 3416583157414, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.214, 3416583160623, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.214, 3416583162535, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Orders.OrderTest.AddProductAsync_Failed_SizeNotFound - 4b3d87e7-f15b-e0d9-876b-f4830fd07492' completed
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.215, 3416583175357, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.216, 3416583178447, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.216, 3416583179865, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Orders.OrderTest.ChangeQuantityAsync_Failed_DetailNotFound - 0d755545-38a6-d86b-2de8-ddb9deba4911' started.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.228, 3416583305869, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.229, 3416583309420, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.229, 3416583311940, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Orders.OrderTest.ChangeQuantityAsync_Failed_DetailNotFound - 0d755545-38a6-d86b-2de8-ddb9deba4911' completed
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.230, 3416583321318, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.230, 3416583324550, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.230, 3416583326225, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Orders.OrderTest.ClearCartAsync_Failed - d15ecac6-536f-a2fd-c4f6-008d3332b43b' started.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.236, 3416583380867, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.236, 3416583383931, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.236, 3416583385412, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Orders.OrderTest.ClearCartAsync_Failed - d15ecac6-536f-a2fd-c4f6-008d3332b43b' completed
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.238, 3416583397853, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.238, 3416583401168, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.238, 3416583402969, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Orders.OrderTest.GetCurrentOrderAsync_Success_LoadCurrentCart - 9a9cbbd5-9a48-274d-01a7-f1804824eb8f' started.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.239, 3416583413824, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.240, 3416583418999, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.240, 3416583422468, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Users.UserTest.Login_Success - b6b40913-03b4-593f-fda0-c7014dd4692c' completed
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.241, 3416583434727, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.242, 3416583438429, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.242, 3416583440532, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Users.UserTest.Register_Failed - f6d7640b-dc9b-8aa3-53f2-b074c11bd20c' started.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.243, 3416583449305, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.243, 3416583452791, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.243, 3416583454553, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Users.UserTest.Register_Failed - f6d7640b-dc9b-8aa3-53f2-b074c11bd20c' completed
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.244, 3416583463432, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.245, 3416583467048, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.245, 3416583469799, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Users.UserTest.Register_Success - ba4135e9-e90d-39a2-90a6-6f7e4ed9578e' started.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.246, 3416583478885, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.246, 3416583482616, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.246, 3416583484732, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Users.UserTest.Register_Success - ba4135e9-e90d-39a2-90a6-6f7e4ed9578e' completed
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.252, 3416583538189, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.252, 3416583541858, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.252, 3416583544058, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Users.UserTest.Login_Failed_AccountNotFound - 8fea405a-651e-9d7b-aabf-87f55d807e1b' started.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.253, 3416583555692, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.254, 3416583559339, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.254, 3416583561546, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Users.UserTest.Login_Failed_AccountNotFound - 8fea405a-651e-9d7b-aabf-87f55d807e1b' completed
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.255, 3416583574374, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.256, 3416583577840, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.256, 3416583579704, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Users.UserTest.AdminLogin_Success - 80bda9c8-a456-11d2-132e-5e0669bf3f4b' started.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.260, 3416583618025, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.260, 3416583621409, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.260, 3416583622737, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Users.UserTest.AdminLogin_Success - 80bda9c8-a456-11d2-132e-5e0669bf3f4b' completed
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.261, 3416583632884, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.262, 3416583636796, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.262, 3416583638637, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Users.UserTest.AdminLogin_Failed_WrongPassword - edb7b809-b40d-2147-d3dc-c952876ebf71' started.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.266, 3416583681388, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.266, 3416583684240, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.266, 3416583686145, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Users.UserTest.AdminLogin_Failed_WrongPassword - edb7b809-b40d-2147-d3dc-c952876ebf71' completed
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.283, 3416583848741, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.283, 3416583851079, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.283, 3416583851989, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Orders.OrderTest.GetCurrentOrderAsync_Success_LoadCurrentCart - 9a9cbbd5-9a48-274d-01a7-f1804824eb8f' completed
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.284, 3416583859561, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.284, 3416583861293, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.284, 3416583862003, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Orders.OrderTest.GetCurrentOrderAsync_Success_NewCart - 684fcaf4-31e7-3c4d-ad7c-2216fe1f9ac2' started.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.299, 3416584012971, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.299, 3416584015469, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.299, 3416584016375, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Orders.OrderTest.GetCurrentOrderAsync_Success_NewCart - 684fcaf4-31e7-3c4d-ad7c-2216fe1f9ac2' completed
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.300, 3416584022862, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.300, 3416584024687, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.300, 3416584025469, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Orders.OrderTest.AddProductAsync_Success - 88597201-a4f1-7e15-b4de-d86d0e0cec06' started.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.316, 3416584185242, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.317, 3416584188009, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.317, 3416584189190, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Orders.OrderTest.AddProductAsync_Success - 88597201-a4f1-7e15-b4de-d86d0e0cec06' completed
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.318, 3416584197783, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.318, 3416584200608, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.318, 3416584201785, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Orders.OrderTest.AddProductAsync_Failed_UserInvalid - 5d16a8a2-84af-d610-4a56-1dba287374b2' started.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.319, 3416584208081, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.319, 3416584210157, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.319, 3416584211062, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'Lulus.UnitTests.BAL.Orders.OrderTest.AddProductAsync_Failed_UserInvalid - 5d16a8a2-84af-d610-4a56-1dba287374b2' completed
+TpTrace Information: 0 : 15632, 7, 2021/11/09, 12:46:08.326, 3416584284479, datacollector.dll, DataCollectionTestCaseEventHandler: Test session ended
+TpTrace Information: 0 : 15632, 1, 2021/11/09, 12:46:08.454, 3416585563670, datacollector.dll, DataCollectionRequestHandler.ProcessRequests : Datacollector received message: (DataCollection.AfterTestRunEnd) -> false
+TpTrace Information: 0 : 15632, 1, 2021/11/09, 12:46:08.455, 3416585570909, datacollector.dll, Blame Collector : Session End
+TpTrace Information: 0 : 15632, 1, 2021/11/09, 12:46:08.455, 3416585571694, datacollector.dll, BlameCollector.CollectDumpAndAbortTesthost: Custom path to dump directory was provided via VSTEST_DUMP_PATH. Skipping attachment upload, the caller is responsible for collecting and uploading the dumps themselves.
+TpTrace Information: 0 : 15632, 1, 2021/11/09, 12:46:08.455, 3416585572744, datacollector.dll, DataCollectionManager.CleanupPlugins: CleanupPlugins called
+TpTrace Verbose: 0 : 15632, 1, 2021/11/09, 12:46:08.455, 3416585573115, datacollector.dll, DataCollectionManager.CleanupPlugins: Cleaning up 1 plugins
+TpTrace Verbose: 0 : 15632, 1, 2021/11/09, 12:46:08.455, 3416585574151, datacollector.dll, dataCollectorInfo.DisposeDataCollector: calling Dispose() on Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector
+TpTrace Information: 0 : 15632, 1, 2021/11/09, 12:46:08.455, 3416585574879, datacollector.dll, DataCollectionManager.CleanupPlugins: CleanupPlugins finished
+TpTrace Information: 0 : 15632, 1, 2021/11/09, 12:46:08.460, 3416585618696, datacollector.dll, DataCollectionRequestHandler.ProcessRequests : Session End message received from server. Closing the connection.
+TpTrace Information: 0 : 15632, 1, 2021/11/09, 12:46:08.460, 3416585621386, datacollector.dll, Closing the connection !
+TpTrace Information: 0 : 15632, 1, 2021/11/09, 12:46:08.460, 3416585621971, datacollector.dll, DataCollectionRequestHandler.ProcessRequests : DataCollection completed
+TpTrace Information: 0 : 15632, 1, 2021/11/09, 12:46:08.460, 3416585622332, datacollector.dll, Program.Main: exiting datacollector process.
