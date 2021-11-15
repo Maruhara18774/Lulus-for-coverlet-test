@@ -1,0 +1,5 @@
+TpTrace Information: 0 : 25192, 1, 2021/11/08, 18:51:24.803, 5212209244303, testhost.dll, DefaultEngineInvoker.Invoke: Testhost process started with args :[--port, 50324],[--endpoint, 127.0.0.1:050324],[--role, client],[--parentprocessid, 15932],[--diag, C:\Users\ad\OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\bin\Debug\net5.0\fine-code-coverage\coverage-tool-output\diagnostics.host.21-11-08_18-51-24_63059_4.log],[--tracelevel, 4],[--datacollectionport, 50323],[--telemetryoptedin, false]
+TpTrace Information: 0 : 25192, 1, 2021/11/08, 18:51:24.809, 5212209291679, testhost.dll, Setting up debug trace listener.
+TpTrace Verbose: 0 : 25192, 1, 2021/11/08, 18:51:24.809, 5212209300192, testhost.dll, TestPlatformTraceListener.Setup: Replacing listener 0 with TestHostTraceListener.
+TpTrace Verbose: 0 : 25192, 1, 2021/11/08, 18:51:24.809, 5212209301027, testhost.dll, TestPlatformTraceListener.Setup: Added test platform trace listener.
+TpTrace Information: 0 : 25192, 1, 2021/11/08, 18:51:24.810, 5212209307634, testhost.dll, DefaultEngineInvoker.SetParentProcessExitCallback: Monitoring parent process with id: '15932'
