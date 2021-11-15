@@ -515,8 +515,8 @@ namespace Lulus.UnitTests.BAL.Orders
             Assert.Equal(6, result);
         }
 
-        [Fact]
-        public async Task ChangeQuantityAsync_Failed_DetailNotFound() 
+        /*[Fact]
+        public async Task ChangeQuantityAsync_Success() 
         {
             var builder = new DbContextOptionsBuilder<LulusDBContext>().UseInMemoryDatabase(Guid.NewGuid().ToString());
             var dbcontext = new LulusDBContext(builder.Options);
@@ -588,7 +588,7 @@ namespace Lulus.UnitTests.BAL.Orders
             });
             Assert.False(result);
 
-        }
+        }*/
         [Fact]
         public async Task CheckoutAsync_Failed()
         {

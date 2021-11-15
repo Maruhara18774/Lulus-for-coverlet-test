@@ -53,12 +53,35 @@ namespace Lulus.UnitTests.BAL.SubCategories
             });
             Assert.Equal(0, result);
         }
-       
 
-        
+        [Fact]
+        public async Task GetAllLine_Success_WithID()
+        {
+            var builder = new DbContextOptionsBuilder<LulusDBContext>().UseInMemoryDatabase(Guid.NewGuid().ToString());
+            var dbcontext = new LulusDBContext(builder.Options);
+            dbcontext.SubCategories.Add(new Data.Entities.SubCategory()
+            {
+                Category_ID=1,
+                SubCategory_ID = 2,
+               
+            });
+            await dbcontext.SaveChangesAsync();
 
 
+            var service = new ManageSubcategoryService(dbcontext);
 
-
+            var result = await service.GetSubCateDetailByID(new ViewModels.SubCategories.GetSubCateDetailByID()
+            {
+                ID=1
+            });
+            Assert.Null(result);
         }
+
+
+
+
+
+
+
+    }
     }
