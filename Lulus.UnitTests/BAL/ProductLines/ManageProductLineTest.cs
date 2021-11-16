@@ -45,6 +45,30 @@ namespace Lulus.UnitTests.BAL.ProductLines
             Assert.Equal(1, result);
         }
         [Fact]
+        public async Task AddQuantity_UpdateQuantity()
+        {
+            var builder = new DbContextOptionsBuilder<LulusDBContext>().UseInMemoryDatabase(Guid.NewGuid().ToString());
+            var dbcontext = new LulusDBContext(builder.Options);
+            dbcontext.LineQuantities.Add(new LineQuantity()
+            {
+                LineQuantity_ID = 1,
+                ProductLine_ID = 1,
+                Size_ID = 1,
+                Quantity = 5
+            });
+            await dbcontext.SaveChangesAsync();
+
+            var service = new ManageProductLineService(dbcontext);
+            var result = await service.AddQuantity(new ViewModels.LineQuantity.AddQuantityRequest()
+            {
+                ID = 1,
+                ProductLineID = 1,
+                Size_ID = 1,
+                Quantity = 2
+            });
+            Assert.Equal(1, result);
+        }
+        [Fact]
         public async Task Create_ProductLine_Success ()
         {
             var builder = new DbContextOptionsBuilder<LulusDBContext>().UseInMemoryDatabase(Guid.NewGuid().ToString());
@@ -67,7 +91,21 @@ namespace Lulus.UnitTests.BAL.ProductLines
         {
             var builder = new DbContextOptionsBuilder<LulusDBContext>().UseInMemoryDatabase(Guid.NewGuid().ToString());
             var dbcontext = new LulusDBContext(builder.Options);
-      
+     
+            var service = new ManageProductLineService(dbcontext);
+            var result = await service.DeleteImage(new ViewModels.ProductLines.DeleteImageRequest()
+            {
+                ImageID = 2
+            });
+            Assert.False(result);
+
+        }
+        [Fact]
+        public async Task DeleteImage_Success()
+        {
+            var builder = new DbContextOptionsBuilder<LulusDBContext>().UseInMemoryDatabase(Guid.NewGuid().ToString());
+            var dbcontext = new LulusDBContext(builder.Options);
+
             dbcontext.ProductLines.Add(new ProductLine()
             {
                 ProductLine_ID = 1,
@@ -87,9 +125,9 @@ namespace Lulus.UnitTests.BAL.ProductLines
             var service = new ManageProductLineService(dbcontext);
             var result = await service.DeleteImage(new ViewModels.ProductLines.DeleteImageRequest()
             {
-                ImageID = 2
+                ImageID = 1
             });
-            Assert.False(result);
+            Assert.True(result);
 
         }
         [Fact]
@@ -136,6 +174,18 @@ namespace Lulus.UnitTests.BAL.ProductLines
                 ProductLine_UpdatedDate = DateTime.Now,
                 Product_ID = 1
             });
+            dbcontext.Sizes.Add(new Size()
+            {
+                Size_ID = 1,
+                Size_Key = "S"
+            });
+            dbcontext.LineQuantities.Add(new LineQuantity()
+            {
+                LineQuantity_ID = 1,
+                ProductLine_ID = 1,
+                Size_ID = 1,
+                Quantity = 5
+            });
             await dbcontext.SaveChangesAsync();
 
 
@@ -146,6 +196,7 @@ namespace Lulus.UnitTests.BAL.ProductLines
                 ProductID=1
             });
             Assert.NotNull(result);
+            Assert.Single(result);
         }
 
         [Fact]
@@ -165,7 +216,33 @@ namespace Lulus.UnitTests.BAL.ProductLines
             Assert.False(result);
         }
         [Fact]
-        public async Task UdateQuantity_Failed()
+        public async Task UdateProductLine_Success()
+        {
+            var builder = new DbContextOptionsBuilder<LulusDBContext>().UseInMemoryDatabase(Guid.NewGuid().ToString());
+            var dbcontext = new LulusDBContext(builder.Options);
+            dbcontext.ProductLines.Add(new ProductLine()
+            {
+                ProductLine_ID = 1,
+                Texture_Name = "Red",
+                Texture_Image = "",
+                ProductLine_CreatedDate = DateTime.Now,
+                ProductLine_UpdatedDate = DateTime.Now,
+                Product_ID = 1
+            });
+            await dbcontext.SaveChangesAsync();
+
+            var service = new ManageProductLineService(dbcontext);
+            var result = await service.UpdateProductLine(new ViewModels.ProductLines.CreateProductLineRequest()
+            {
+                ProductLine_ID = 1,
+                Product_ID = 1,
+                Texture_ImageUrl = "",
+                Texture_Name = ""
+            });
+            Assert.True(result);
+        }
+        [Fact]
+        public async Task UpdateQuantity_Failed()
         {
             var builder = new DbContextOptionsBuilder<LulusDBContext>().UseInMemoryDatabase(Guid.NewGuid().ToString());
             var dbcontext = new LulusDBContext(builder.Options);
@@ -177,6 +254,41 @@ namespace Lulus.UnitTests.BAL.ProductLines
                 Quantity = 2
             });
             Assert.False(result);
+        }
+        [Fact]
+        public async Task UpdateQuantity_Success()
+        {
+            var builder = new DbContextOptionsBuilder<LulusDBContext>().UseInMemoryDatabase(Guid.NewGuid().ToString());
+            var dbcontext = new LulusDBContext(builder.Options);
+            dbcontext.ProductLines.Add(new ProductLine()
+            {
+                ProductLine_ID = 1,
+                Texture_Name = "Red",
+                Texture_Image = "",
+                ProductLine_CreatedDate = DateTime.Now,
+                ProductLine_UpdatedDate = DateTime.Now,
+                Product_ID = 1
+            });
+            dbcontext.Sizes.Add(new Size()
+            {
+                Size_ID = 1,
+                Size_Key = "S"
+            });
+            dbcontext.LineQuantities.Add(new LineQuantity()
+            {
+                LineQuantity_ID = 1,
+                ProductLine_ID = 1,
+                Size_ID = 1,
+                Quantity = 5
+            });
+            await dbcontext.SaveChangesAsync();
+            var service = new ManageProductLineService(dbcontext);
+            var result = await service.UpdateQuantity(new ViewModels.LineQuantity.UpdateQuantityRequest()
+            {
+                LineQuantityID = 1,
+                Quantity = 2
+            });
+            Assert.True(result);
         }
     }
 }

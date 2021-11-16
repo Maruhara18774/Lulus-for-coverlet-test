@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<coverage line-rate="0.8692" branch-rate="0.4568" version="1.9" timestamp="1636959344" lines-covered="3509" lines-valid="4037" branches-covered="53" branches-valid="116">
+<coverage line-rate="0.8791" branch-rate="0.5" version="1.9" timestamp="1637031283" lines-covered="3637" lines-valid="4137" branches-covered="58" branches-valid="116">
   <sources>
-    <source>C:\Users\ad\</source>
+    <source>D:\.CanDelete\Git\Lulus-master\</source>
+    <source>C:\</source>
   </sources>
   <packages>
-    <package name="Lulus.BAL" line-rate="0.46990000000000004" branch-rate="0.4568" complexity="142">
+    <package name="Lulus.BAL" line-rate="0.4993" branch-rate="0.5" complexity="142">
       <classes>
-        <class name="Lulus.BAL.Infrastructures.SignInManager" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Infrastructures\SignInManager.cs" line-rate="0" branch-rate="1" complexity="2">
+        <class name="Lulus.BAL.Infrastructures.SignInManager" filename="Lulus.BAL\Infrastructures\SignInManager.cs" line-rate="0" branch-rate="1" complexity="2">
           <methods>
             <method name="PasswordSignInAsync" signature="(Lulus.Data.Entities.User,System.String,System.Boolean,System.Boolean)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -34,7 +35,7 @@
             <line number="17" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Infrastructures.UserManager" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Infrastructures\UserManager.cs" line-rate="0" branch-rate="1" complexity="4">
+        <class name="Lulus.BAL.Infrastructures.UserManager" filename="Lulus.BAL\Infrastructures\UserManager.cs" line-rate="0" branch-rate="1" complexity="4">
           <methods>
             <method name="CreateAsync" signature="(Lulus.Data.Entities.User,System.String)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -82,7 +83,7 @@
             <line number="19" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.Users.UserService" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\Users\UserService.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.BAL.Catalog.Users.UserService" filename="Lulus.BAL\Catalog\Users\UserService.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name=".ctor" signature="(Lulus.BAL.Infrastructures.IUserManager,Lulus.BAL.Infrastructures.ISignInManager,Microsoft.Extensions.Configuration.IConfiguration)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -104,7 +105,7 @@
             <line number="30" hits="8" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.Users.UserService/&lt;Login&gt;d__4" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\Users\UserService.cs" line-rate="1" branch-rate="1" complexity="4">
+        <class name="Lulus.BAL.Catalog.Users.UserService/&lt;Login&gt;d__4" filename="Lulus.BAL\Catalog\Users\UserService.cs" line-rate="1" branch-rate="1" complexity="4">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="4">
               <lines>
@@ -178,7 +179,7 @@
             <line number="57" hits="3" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.Users.UserService/&lt;AdminLogin&gt;d__5" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\Users\UserService.cs" line-rate="1" branch-rate="1" complexity="4">
+        <class name="Lulus.BAL.Catalog.Users.UserService/&lt;AdminLogin&gt;d__5" filename="Lulus.BAL\Catalog\Users\UserService.cs" line-rate="1" branch-rate="1" complexity="4">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="4">
               <lines>
@@ -252,7 +253,7 @@
             <line number="84" hits="3" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.Users.UserService/&lt;Register&gt;d__6" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\Users\UserService.cs" line-rate="1" branch-rate="1" complexity="2">
+        <class name="Lulus.BAL.Catalog.Users.UserService/&lt;Register&gt;d__6" filename="Lulus.BAL\Catalog\Users\UserService.cs" line-rate="1" branch-rate="1" complexity="2">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
               <lines>
@@ -300,7 +301,7 @@
             <line number="101" hits="2" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.SubCategories.ManageSubcategoryService" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\SubCategories\ManageSubcategoryService.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.BAL.Catalog.SubCategories.ManageSubcategoryService" filename="Lulus.BAL\Catalog\SubCategories\ManageSubcategoryService.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name=".ctor" signature="(Lulus.Data.EF.LulusDBContext)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -318,7 +319,7 @@
             <line number="19" hits="4" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.SubCategories.ManageSubcategoryService/&lt;CreateSubCategory&gt;d__2" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\SubCategories\ManageSubcategoryService.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.BAL.Catalog.SubCategories.ManageSubcategoryService/&lt;CreateSubCategory&gt;d__2" filename="Lulus.BAL\Catalog\SubCategories\ManageSubcategoryService.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -346,7 +347,7 @@
             <line number="29" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.SubCategories.ManageSubcategoryService/&lt;DeleteSubCategory&gt;d__3" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\SubCategories\ManageSubcategoryService.cs" line-rate="0.5714" branch-rate="0.5" complexity="2">
+        <class name="Lulus.BAL.Catalog.SubCategories.ManageSubcategoryService/&lt;DeleteSubCategory&gt;d__3" filename="Lulus.BAL\Catalog\SubCategories\ManageSubcategoryService.cs" line-rate="0.5714" branch-rate="0.5" complexity="2">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0.5714" branch-rate="0.5" complexity="2">
               <lines>
@@ -378,7 +379,7 @@
             <line number="38" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.SubCategories.ManageSubcategoryService/&lt;EditSubCategory&gt;d__4" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\SubCategories\ManageSubcategoryService.cs" line-rate="0.5714" branch-rate="0.5" complexity="2">
+        <class name="Lulus.BAL.Catalog.SubCategories.ManageSubcategoryService/&lt;EditSubCategory&gt;d__4" filename="Lulus.BAL\Catalog\SubCategories\ManageSubcategoryService.cs" line-rate="0.5714" branch-rate="0.5" complexity="2">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0.5714" branch-rate="0.5" complexity="2">
               <lines>
@@ -410,7 +411,7 @@
             <line number="47" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.SubCategories.ManageSubcategoryService/&lt;GetSubCateDetailByID&gt;d__5" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\SubCategories\ManageSubcategoryService.cs" line-rate="0.25" branch-rate="0.5" complexity="2">
+        <class name="Lulus.BAL.Catalog.SubCategories.ManageSubcategoryService/&lt;GetSubCateDetailByID&gt;d__5" filename="Lulus.BAL\Catalog\SubCategories\ManageSubcategoryService.cs" line-rate="0.25" branch-rate="0.5" complexity="2">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0.25" branch-rate="0.5" complexity="2">
               <lines>
@@ -460,7 +461,7 @@
             <line number="64" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.SubCategories.SubCategoryService" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\SubCategories\SubCategoryService.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.BAL.Catalog.SubCategories.SubCategoryService" filename="Lulus.BAL\Catalog\SubCategories\SubCategoryService.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name=".ctor" signature="(Lulus.Data.EF.LulusDBContext)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -478,7 +479,7 @@
             <line number="19" hits="2" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.SubCategories.SubCategoryService/&lt;GetAllSubCategoriesByCategoryID&gt;d__2" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\SubCategories\SubCategoryService.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.BAL.Catalog.SubCategories.SubCategoryService/&lt;GetAllSubCategoriesByCategoryID&gt;d__2" filename="Lulus.BAL\Catalog\SubCategories\SubCategoryService.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -510,7 +511,7 @@
             <line number="31" hits="2" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.Products.ManageProductService" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\Products\ManageProductService.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="Lulus.BAL.Catalog.Products.ManageProductService" filename="Lulus.BAL\Catalog\Products\ManageProductService.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name=".ctor" signature="(Lulus.Data.EF.LulusDBContext)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -528,7 +529,7 @@
             <line number="28" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.Products.ManageProductService/&lt;Create&gt;d__2" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\Products\ManageProductService.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="Lulus.BAL.Catalog.Products.ManageProductService/&lt;Create&gt;d__2" filename="Lulus.BAL\Catalog\Products\ManageProductService.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -564,7 +565,7 @@
             <line number="42" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.Products.ManageProductService/&lt;Delete&gt;d__3" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\Products\ManageProductService.cs" line-rate="0" branch-rate="0" complexity="2">
+        <class name="Lulus.BAL.Catalog.Products.ManageProductService/&lt;Delete&gt;d__3" filename="Lulus.BAL\Catalog\Products\ManageProductService.cs" line-rate="0" branch-rate="0" complexity="2">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
               <lines>
@@ -594,7 +595,7 @@
             <line number="50" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.Products.ManageProductService/&lt;GetAllProduct&gt;d__4" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\Products\ManageProductService.cs" line-rate="0" branch-rate="0" complexity="6">
+        <class name="Lulus.BAL.Catalog.Products.ManageProductService/&lt;GetAllProduct&gt;d__4" filename="Lulus.BAL\Catalog\Products\ManageProductService.cs" line-rate="0" branch-rate="0" complexity="6">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="6">
               <lines>
@@ -728,7 +729,7 @@
             <line number="107" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.Products.ManageProductService/&lt;Update&gt;d__5" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\Products\ManageProductService.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="Lulus.BAL.Catalog.Products.ManageProductService/&lt;Update&gt;d__5" filename="Lulus.BAL\Catalog\Products\ManageProductService.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -758,7 +759,7 @@
             <line number="119" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.Products.ManageProductService/&lt;UpdatePrice&gt;d__6" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\Products\ManageProductService.cs" line-rate="0" branch-rate="0" complexity="2">
+        <class name="Lulus.BAL.Catalog.Products.ManageProductService/&lt;UpdatePrice&gt;d__6" filename="Lulus.BAL\Catalog\Products\ManageProductService.cs" line-rate="0" branch-rate="0" complexity="2">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
               <lines>
@@ -790,7 +791,7 @@
             <line number="130" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.Products.ProductService" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\Products\ProductService.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="Lulus.BAL.Catalog.Products.ProductService" filename="Lulus.BAL\Catalog\Products\ProductService.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name=".ctor" signature="(Lulus.Data.EF.LulusDBContext)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -808,7 +809,7 @@
             <line number="27" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.Products.ProductService/&lt;GetAllByCateID&gt;d__2" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\Products\ProductService.cs" line-rate="0" branch-rate="0" complexity="6">
+        <class name="Lulus.BAL.Catalog.Products.ProductService/&lt;GetAllByCateID&gt;d__2" filename="Lulus.BAL\Catalog\Products\ProductService.cs" line-rate="0" branch-rate="0" complexity="6">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="6">
               <lines>
@@ -946,7 +947,7 @@
             <line number="85" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.Products.ProductService/&lt;GetAllBySubCateID&gt;d__3" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\Products\ProductService.cs" line-rate="0" branch-rate="0" complexity="6">
+        <class name="Lulus.BAL.Catalog.Products.ProductService/&lt;GetAllBySubCateID&gt;d__3" filename="Lulus.BAL\Catalog\Products\ProductService.cs" line-rate="0" branch-rate="0" complexity="6">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="6">
               <lines>
@@ -1082,7 +1083,7 @@
             <line number="143" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.Products.ProductService/&lt;GetDetailByID&gt;d__4" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\Products\ProductService.cs" line-rate="0" branch-rate="0" complexity="6">
+        <class name="Lulus.BAL.Catalog.Products.ProductService/&lt;GetDetailByID&gt;d__4" filename="Lulus.BAL\Catalog\Products\ProductService.cs" line-rate="0" branch-rate="0" complexity="6">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="6">
               <lines>
@@ -1254,25 +1255,25 @@
             <line number="214" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.ProductLines.ManageProductLineService" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\ProductLines\ManageProductLineService.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.BAL.Catalog.ProductLines.ManageProductLineService" filename="Lulus.BAL\Catalog\ProductLines\ManageProductLineService.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name=".ctor" signature="(Lulus.Data.EF.LulusDBContext)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="19" hits="9" branch="False" />
-                <line number="20" hits="9" branch="False" />
-                <line number="21" hits="9" branch="False" />
-                <line number="22" hits="9" branch="False" />
+                <line number="19" hits="13" branch="False" />
+                <line number="20" hits="13" branch="False" />
+                <line number="21" hits="13" branch="False" />
+                <line number="22" hits="13" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="19" hits="9" branch="False" />
-            <line number="20" hits="9" branch="False" />
-            <line number="21" hits="9" branch="False" />
-            <line number="22" hits="9" branch="False" />
+            <line number="19" hits="13" branch="False" />
+            <line number="20" hits="13" branch="False" />
+            <line number="21" hits="13" branch="False" />
+            <line number="22" hits="13" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.ProductLines.ManageProductLineService/&lt;AddImage&gt;d__2" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\ProductLines\ManageProductLineService.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.BAL.Catalog.ProductLines.ManageProductLineService/&lt;AddImage&gt;d__2" filename="Lulus.BAL\Catalog\ProductLines\ManageProductLineService.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -1300,15 +1301,15 @@
             <line number="32" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.ProductLines.ManageProductLineService/&lt;AddQuantity&gt;d__3" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\ProductLines\ManageProductLineService.cs" line-rate="0.7368000000000001" branch-rate="0.5" complexity="2">
+        <class name="Lulus.BAL.Catalog.ProductLines.ManageProductLineService/&lt;AddQuantity&gt;d__3" filename="Lulus.BAL\Catalog\ProductLines\ManageProductLineService.cs" line-rate="1" branch-rate="1" complexity="2">
           <methods>
-            <method name="MoveNext" signature="()" line-rate="0.7368000000000001" branch-rate="0.5" complexity="2">
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
               <lines>
-                <line number="35" hits="1" branch="False" />
-                <line number="36" hits="1" branch="False" />
-                <line number="37" hits="1" branch="True" condition-coverage="50% (1/2)">
+                <line number="35" hits="2" branch="False" />
+                <line number="36" hits="2" branch="False" />
+                <line number="37" hits="2" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
-                    <condition number="203" type="jump" coverage="50%" />
+                    <condition number="203" type="jump" coverage="100%" />
                   </conditions>
                 </line>
                 <line number="38" hits="1" branch="False" />
@@ -1320,22 +1321,22 @@
                 <line number="44" hits="1" branch="False" />
                 <line number="45" hits="1" branch="False" />
                 <line number="46" hits="1" branch="False" />
-                <line number="48" hits="0" branch="False" />
-                <line number="49" hits="0" branch="False" />
-                <line number="50" hits="0" branch="False" />
-                <line number="51" hits="0" branch="False" />
-                <line number="52" hits="0" branch="False" />
-                <line number="53" hits="1" branch="False" />
-                <line number="54" hits="1" branch="False" />
+                <line number="48" hits="1" branch="False" />
+                <line number="49" hits="1" branch="False" />
+                <line number="50" hits="1" branch="False" />
+                <line number="51" hits="1" branch="False" />
+                <line number="52" hits="1" branch="False" />
+                <line number="53" hits="2" branch="False" />
+                <line number="54" hits="2" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="35" hits="1" branch="False" />
-            <line number="36" hits="1" branch="False" />
-            <line number="37" hits="1" branch="True" condition-coverage="50% (1/2)">
+            <line number="35" hits="2" branch="False" />
+            <line number="36" hits="2" branch="False" />
+            <line number="37" hits="2" branch="True" condition-coverage="100% (2/2)">
               <conditions>
-                <condition number="203" type="jump" coverage="50%" />
+                <condition number="203" type="jump" coverage="100%" />
               </conditions>
             </line>
             <line number="38" hits="1" branch="False" />
@@ -1347,16 +1348,16 @@
             <line number="44" hits="1" branch="False" />
             <line number="45" hits="1" branch="False" />
             <line number="46" hits="1" branch="False" />
-            <line number="48" hits="0" branch="False" />
-            <line number="49" hits="0" branch="False" />
-            <line number="50" hits="0" branch="False" />
-            <line number="51" hits="0" branch="False" />
-            <line number="52" hits="0" branch="False" />
-            <line number="53" hits="1" branch="False" />
-            <line number="54" hits="1" branch="False" />
+            <line number="48" hits="1" branch="False" />
+            <line number="49" hits="1" branch="False" />
+            <line number="50" hits="1" branch="False" />
+            <line number="51" hits="1" branch="False" />
+            <line number="52" hits="1" branch="False" />
+            <line number="53" hits="2" branch="False" />
+            <line number="54" hits="2" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.ProductLines.ManageProductLineService/&lt;CreateProductLine&gt;d__4" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\ProductLines\ManageProductLineService.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.BAL.Catalog.ProductLines.ManageProductLineService/&lt;CreateProductLine&gt;d__4" filename="Lulus.BAL\Catalog\ProductLines\ManageProductLineService.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -1390,39 +1391,39 @@
             <line number="68" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.ProductLines.ManageProductLineService/&lt;DeleteImage&gt;d__5" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\ProductLines\ManageProductLineService.cs" line-rate="0.5714" branch-rate="0.5" complexity="2">
+        <class name="Lulus.BAL.Catalog.ProductLines.ManageProductLineService/&lt;DeleteImage&gt;d__5" filename="Lulus.BAL\Catalog\ProductLines\ManageProductLineService.cs" line-rate="1" branch-rate="1" complexity="2">
           <methods>
-            <method name="MoveNext" signature="()" line-rate="0.5714" branch-rate="0.5" complexity="2">
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
               <lines>
-                <line number="71" hits="1" branch="False" />
-                <line number="72" hits="1" branch="False" />
-                <line number="73" hits="2" branch="True" condition-coverage="50% (1/2)">
+                <line number="71" hits="2" branch="False" />
+                <line number="72" hits="2" branch="False" />
+                <line number="73" hits="3" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
-                    <condition number="203" type="jump" coverage="50%" />
+                    <condition number="203" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="74" hits="0" branch="False" />
-                <line number="75" hits="0" branch="False" />
-                <line number="76" hits="0" branch="False" />
-                <line number="77" hits="1" branch="False" />
+                <line number="74" hits="1" branch="False" />
+                <line number="75" hits="1" branch="False" />
+                <line number="76" hits="1" branch="False" />
+                <line number="77" hits="2" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="71" hits="1" branch="False" />
-            <line number="72" hits="1" branch="False" />
-            <line number="73" hits="2" branch="True" condition-coverage="50% (1/2)">
+            <line number="71" hits="2" branch="False" />
+            <line number="72" hits="2" branch="False" />
+            <line number="73" hits="3" branch="True" condition-coverage="100% (2/2)">
               <conditions>
-                <condition number="203" type="jump" coverage="50%" />
+                <condition number="203" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="74" hits="0" branch="False" />
-            <line number="75" hits="0" branch="False" />
-            <line number="76" hits="0" branch="False" />
-            <line number="77" hits="1" branch="False" />
+            <line number="74" hits="1" branch="False" />
+            <line number="75" hits="1" branch="False" />
+            <line number="76" hits="1" branch="False" />
+            <line number="77" hits="2" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.ProductLines.ManageProductLineService/&lt;GetAllImage&gt;d__6" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\ProductLines\ManageProductLineService.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.BAL.Catalog.ProductLines.ManageProductLineService/&lt;GetAllImage&gt;d__6" filename="Lulus.BAL\Catalog\ProductLines\ManageProductLineService.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -1456,9 +1457,9 @@
             <line number="91" hits="2" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.ProductLines.ManageProductLineService/&lt;GetAllLinesByID&gt;d__7" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\ProductLines\ManageProductLineService.cs" line-rate="0.8636" branch-rate="0.8332999999999999" complexity="6">
+        <class name="Lulus.BAL.Catalog.ProductLines.ManageProductLineService/&lt;GetAllLinesByID&gt;d__7" filename="Lulus.BAL\Catalog\ProductLines\ManageProductLineService.cs" line-rate="1" branch-rate="1" complexity="6">
           <methods>
-            <method name="MoveNext" signature="()" line-rate="0.8636" branch-rate="0.8332999999999999" complexity="6">
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="6">
               <lines>
                 <line number="94" hits="1" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
@@ -1502,17 +1503,17 @@
                 <line number="125" hits="1" branch="False" />
                 <line number="126" hits="1" branch="False" />
                 <line number="127" hits="1" branch="False" />
-                <line number="128" hits="3" branch="True" condition-coverage="50% (1/2)">
+                <line number="128" hits="5" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
-                    <condition number="2149" type="jump" coverage="50%" />
+                    <condition number="2149" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="129" hits="0" branch="False" />
-                <line number="130" hits="0" branch="False" />
-                <line number="131" hits="0" branch="False" />
-                <line number="132" hits="0" branch="False" />
-                <line number="133" hits="0" branch="False" />
-                <line number="134" hits="0" branch="False" />
+                <line number="129" hits="1" branch="False" />
+                <line number="130" hits="1" branch="False" />
+                <line number="131" hits="1" branch="False" />
+                <line number="132" hits="1" branch="False" />
+                <line number="133" hits="1" branch="False" />
+                <line number="134" hits="1" branch="False" />
                 <line number="135" hits="1" branch="False" />
                 <line number="136" hits="1" branch="False" />
                 <line number="137" hits="1" branch="False" />
@@ -1562,93 +1563,93 @@
             <line number="125" hits="1" branch="False" />
             <line number="126" hits="1" branch="False" />
             <line number="127" hits="1" branch="False" />
-            <line number="128" hits="3" branch="True" condition-coverage="50% (1/2)">
+            <line number="128" hits="5" branch="True" condition-coverage="100% (2/2)">
               <conditions>
-                <condition number="2149" type="jump" coverage="50%" />
+                <condition number="2149" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="129" hits="0" branch="False" />
-            <line number="130" hits="0" branch="False" />
-            <line number="131" hits="0" branch="False" />
-            <line number="132" hits="0" branch="False" />
-            <line number="133" hits="0" branch="False" />
-            <line number="134" hits="0" branch="False" />
+            <line number="129" hits="1" branch="False" />
+            <line number="130" hits="1" branch="False" />
+            <line number="131" hits="1" branch="False" />
+            <line number="132" hits="1" branch="False" />
+            <line number="133" hits="1" branch="False" />
+            <line number="134" hits="1" branch="False" />
             <line number="135" hits="1" branch="False" />
             <line number="136" hits="1" branch="False" />
             <line number="137" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.ProductLines.ManageProductLineService/&lt;UpdateProductLine&gt;d__8" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\ProductLines\ManageProductLineService.cs" line-rate="0.4" branch-rate="0.5" complexity="2">
+        <class name="Lulus.BAL.Catalog.ProductLines.ManageProductLineService/&lt;UpdateProductLine&gt;d__8" filename="Lulus.BAL\Catalog\ProductLines\ManageProductLineService.cs" line-rate="1" branch-rate="1" complexity="2">
           <methods>
-            <method name="MoveNext" signature="()" line-rate="0.4" branch-rate="0.5" complexity="2">
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
               <lines>
-                <line number="140" hits="1" branch="False" />
-                <line number="141" hits="1" branch="False" />
-                <line number="142" hits="2" branch="True" condition-coverage="50% (1/2)">
+                <line number="140" hits="2" branch="False" />
+                <line number="141" hits="2" branch="False" />
+                <line number="142" hits="3" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
-                    <condition number="203" type="jump" coverage="50%" />
+                    <condition number="203" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="143" hits="0" branch="False" />
-                <line number="144" hits="0" branch="False" />
-                <line number="145" hits="0" branch="False" />
-                <line number="146" hits="0" branch="False" />
-                <line number="147" hits="0" branch="False" />
-                <line number="148" hits="0" branch="False" />
-                <line number="149" hits="1" branch="False" />
+                <line number="143" hits="1" branch="False" />
+                <line number="144" hits="1" branch="False" />
+                <line number="145" hits="1" branch="False" />
+                <line number="146" hits="1" branch="False" />
+                <line number="147" hits="1" branch="False" />
+                <line number="148" hits="1" branch="False" />
+                <line number="149" hits="2" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="140" hits="1" branch="False" />
-            <line number="141" hits="1" branch="False" />
-            <line number="142" hits="2" branch="True" condition-coverage="50% (1/2)">
+            <line number="140" hits="2" branch="False" />
+            <line number="141" hits="2" branch="False" />
+            <line number="142" hits="3" branch="True" condition-coverage="100% (2/2)">
               <conditions>
-                <condition number="203" type="jump" coverage="50%" />
+                <condition number="203" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="143" hits="0" branch="False" />
-            <line number="144" hits="0" branch="False" />
-            <line number="145" hits="0" branch="False" />
-            <line number="146" hits="0" branch="False" />
-            <line number="147" hits="0" branch="False" />
-            <line number="148" hits="0" branch="False" />
-            <line number="149" hits="1" branch="False" />
+            <line number="143" hits="1" branch="False" />
+            <line number="144" hits="1" branch="False" />
+            <line number="145" hits="1" branch="False" />
+            <line number="146" hits="1" branch="False" />
+            <line number="147" hits="1" branch="False" />
+            <line number="148" hits="1" branch="False" />
+            <line number="149" hits="2" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.ProductLines.ManageProductLineService/&lt;UpdateQuantity&gt;d__9" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\ProductLines\ManageProductLineService.cs" line-rate="0.5714" branch-rate="0.5" complexity="2">
+        <class name="Lulus.BAL.Catalog.ProductLines.ManageProductLineService/&lt;UpdateQuantity&gt;d__9" filename="Lulus.BAL\Catalog\ProductLines\ManageProductLineService.cs" line-rate="1" branch-rate="1" complexity="2">
           <methods>
-            <method name="MoveNext" signature="()" line-rate="0.5714" branch-rate="0.5" complexity="2">
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
               <lines>
-                <line number="152" hits="1" branch="False" />
-                <line number="153" hits="1" branch="False" />
-                <line number="154" hits="2" branch="True" condition-coverage="50% (1/2)">
+                <line number="152" hits="2" branch="False" />
+                <line number="153" hits="2" branch="False" />
+                <line number="154" hits="3" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
-                    <condition number="203" type="jump" coverage="50%" />
+                    <condition number="203" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="155" hits="0" branch="False" />
-                <line number="156" hits="0" branch="False" />
-                <line number="157" hits="0" branch="False" />
-                <line number="158" hits="1" branch="False" />
+                <line number="155" hits="1" branch="False" />
+                <line number="156" hits="1" branch="False" />
+                <line number="157" hits="1" branch="False" />
+                <line number="158" hits="2" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="152" hits="1" branch="False" />
-            <line number="153" hits="1" branch="False" />
-            <line number="154" hits="2" branch="True" condition-coverage="50% (1/2)">
+            <line number="152" hits="2" branch="False" />
+            <line number="153" hits="2" branch="False" />
+            <line number="154" hits="3" branch="True" condition-coverage="100% (2/2)">
               <conditions>
-                <condition number="203" type="jump" coverage="50%" />
+                <condition number="203" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="155" hits="0" branch="False" />
-            <line number="156" hits="0" branch="False" />
-            <line number="157" hits="0" branch="False" />
-            <line number="158" hits="1" branch="False" />
+            <line number="155" hits="1" branch="False" />
+            <line number="156" hits="1" branch="False" />
+            <line number="157" hits="1" branch="False" />
+            <line number="158" hits="2" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.Orders.OrderService" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\Orders\OrderService.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.BAL.Catalog.Orders.OrderService" filename="Lulus.BAL\Catalog\Orders\OrderService.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name=".ctor" signature="(Lulus.Data.EF.LulusDBContext)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -1666,7 +1667,7 @@
             <line number="19" hits="9" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.Orders.OrderService/&lt;&gt;c" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\Orders\OrderService.cs" line-rate="0.5" branch-rate="1" complexity="2">
+        <class name="Lulus.BAL.Catalog.Orders.OrderService/&lt;&gt;c" filename="Lulus.BAL\Catalog\Orders\OrderService.cs" line-rate="0.5" branch-rate="1" complexity="2">
           <methods>
             <method name="&lt;GetCheckoutInforAsync&gt;b__6_2" signature="(Lulus.Data.Entities.OrderDetail)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -1684,7 +1685,7 @@
             <line number="167" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.Orders.OrderService/&lt;AddProductAsync&gt;d__2" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\Orders\OrderService.cs" line-rate="1" branch-rate="0.8332999999999999" complexity="12">
+        <class name="Lulus.BAL.Catalog.Orders.OrderService/&lt;AddProductAsync&gt;d__2" filename="Lulus.BAL\Catalog\Orders\OrderService.cs" line-rate="1" branch-rate="0.8332999999999999" complexity="12">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="0.8332999999999999" complexity="12">
               <lines>
@@ -1806,7 +1807,7 @@
             <line number="61" hits="5" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.Orders.OrderService/&lt;ChangeQuantityAsync&gt;d__3" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\Orders\OrderService.cs" line-rate="0" branch-rate="0" complexity="4">
+        <class name="Lulus.BAL.Catalog.Orders.OrderService/&lt;ChangeQuantityAsync&gt;d__3" filename="Lulus.BAL\Catalog\Orders\OrderService.cs" line-rate="0" branch-rate="0" complexity="4">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="4">
               <lines>
@@ -1856,7 +1857,7 @@
             <line number="77" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.Orders.OrderService/&lt;CheckoutAsync&gt;d__4" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\Orders\OrderService.cs" line-rate="0.44439999999999996" branch-rate="0.5" complexity="2">
+        <class name="Lulus.BAL.Catalog.Orders.OrderService/&lt;CheckoutAsync&gt;d__4" filename="Lulus.BAL\Catalog\Orders\OrderService.cs" line-rate="0.44439999999999996" branch-rate="0.5" complexity="2">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0.44439999999999996" branch-rate="0.5" complexity="2">
               <lines>
@@ -1892,7 +1893,7 @@
             <line number="88" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.Orders.OrderService/&lt;ClearCartAsync&gt;d__5" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\Orders\OrderService.cs" line-rate="0.3636" branch-rate="0.25" complexity="4">
+        <class name="Lulus.BAL.Catalog.Orders.OrderService/&lt;ClearCartAsync&gt;d__5" filename="Lulus.BAL\Catalog\Orders\OrderService.cs" line-rate="0.3636" branch-rate="0.25" complexity="4">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0.3636" branch-rate="0.25" complexity="4">
               <lines>
@@ -1940,7 +1941,7 @@
             <line number="101" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.Orders.OrderService/&lt;GetCheckoutInforAsync&gt;d__6" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\Orders\OrderService.cs" line-rate="0" branch-rate="0" complexity="9">
+        <class name="Lulus.BAL.Catalog.Orders.OrderService/&lt;GetCheckoutInforAsync&gt;d__6" filename="Lulus.BAL\Catalog\Orders\OrderService.cs" line-rate="0" branch-rate="0" complexity="9">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="9">
               <lines>
@@ -2032,7 +2033,7 @@
             <line number="136" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.Orders.OrderService/&lt;GetCurrentOrderAsync&gt;d__7" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\Orders\OrderService.cs" line-rate="1" branch-rate="0.5555" complexity="9">
+        <class name="Lulus.BAL.Catalog.Orders.OrderService/&lt;GetCurrentOrderAsync&gt;d__7" filename="Lulus.BAL\Catalog\Orders\OrderService.cs" line-rate="1" branch-rate="0.5555" complexity="9">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="0.5555" complexity="9">
               <lines>
@@ -2162,7 +2163,7 @@
             <line number="193" hits="2" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.Orders.OrderService/&lt;RemoveProductAsync&gt;d__8" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\Orders\OrderService.cs" line-rate="0" branch-rate="0" complexity="4">
+        <class name="Lulus.BAL.Catalog.Orders.OrderService/&lt;RemoveProductAsync&gt;d__8" filename="Lulus.BAL\Catalog\Orders\OrderService.cs" line-rate="0" branch-rate="0" complexity="4">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="4">
               <lines>
@@ -2206,7 +2207,7 @@
             <line number="204" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.Orders.OrderService/&lt;UserIDValid&gt;d__9" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\Orders\OrderService.cs" line-rate="1" branch-rate="1" complexity="2">
+        <class name="Lulus.BAL.Catalog.Orders.OrderService/&lt;UserIDValid&gt;d__9" filename="Lulus.BAL\Catalog\Orders\OrderService.cs" line-rate="1" branch-rate="1" complexity="2">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
               <lines>
@@ -2234,7 +2235,7 @@
             <line number="210" hits="5" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.Orders.OrderService/&lt;GetCurrentCartIDAsync&gt;d__10" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\Orders\OrderService.cs" line-rate="1" branch-rate="1" complexity="2">
+        <class name="Lulus.BAL.Catalog.Orders.OrderService/&lt;GetCurrentCartIDAsync&gt;d__10" filename="Lulus.BAL\Catalog\Orders\OrderService.cs" line-rate="1" branch-rate="1" complexity="2">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
               <lines>
@@ -2284,7 +2285,7 @@
             <line number="228" hits="2" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.Orders.OrderService/&lt;GetOrders&gt;d__11" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\Orders\OrderService.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="Lulus.BAL.Catalog.Orders.OrderService/&lt;GetOrders&gt;d__11" filename="Lulus.BAL\Catalog\Orders\OrderService.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -2318,7 +2319,7 @@
             <line number="242" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.Feedbacks.FeedbackService" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\Feedbacks\FeedbackService.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.BAL.Catalog.Feedbacks.FeedbackService" filename="Lulus.BAL\Catalog\Feedbacks\FeedbackService.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name=".ctor" signature="(Lulus.Data.EF.LulusDBContext)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -2336,7 +2337,7 @@
             <line number="21" hits="6" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.Feedbacks.FeedbackService/&lt;CreateFeedback&gt;d__2" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\Feedbacks\FeedbackService.cs" line-rate="1" branch-rate="1" complexity="10">
+        <class name="Lulus.BAL.Catalog.Feedbacks.FeedbackService/&lt;CreateFeedback&gt;d__2" filename="Lulus.BAL\Catalog\Feedbacks\FeedbackService.cs" line-rate="1" branch-rate="1" complexity="10">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="10">
               <lines>
@@ -2416,7 +2417,7 @@
             <line number="43" hits="6" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.Categories.CategoryService" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\Categories\CategoryService.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.BAL.Catalog.Categories.CategoryService" filename="Lulus.BAL\Catalog\Categories\CategoryService.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name=".ctor" signature="(Lulus.Data.EF.LulusDBContext)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -2434,7 +2435,7 @@
             <line number="20" hits="2" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.BAL.Catalog.Categories.CategoryService/&lt;GetAllCategory&gt;d__2" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.BAL\Catalog\Categories\CategoryService.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.BAL.Catalog.Categories.CategoryService/&lt;GetAllCategory&gt;d__2" filename="Lulus.BAL\Catalog\Categories\CategoryService.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -2470,7 +2471,7 @@
     </package>
     <package name="Lulus.Data" line-rate="0.9906" branch-rate="1" complexity="101">
       <classes>
-        <class name="Lulus.Data.Entities.Category" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.Data\Entities\Category.cs" line-rate="1" branch-rate="1" complexity="3">
+        <class name="Lulus.Data.Entities.Category" filename="Lulus.Data\Entities\Category.cs" line-rate="1" branch-rate="1" complexity="3">
           <methods>
             <method name="get_Category_ID" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -2494,7 +2495,7 @@
             <line number="14" hits="9" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.Data.Entities.Country" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.Data\Entities\Country.cs" line-rate="1" branch-rate="1" complexity="2">
+        <class name="Lulus.Data.Entities.Country" filename="Lulus.Data\Entities\Country.cs" line-rate="1" branch-rate="1" complexity="2">
           <methods>
             <method name="get_Country_ID" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -2512,7 +2513,7 @@
             <line number="12" hits="8" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.Data.Entities.Feedback" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.Data\Entities\Feedback.cs" line-rate="0.6666" branch-rate="1" complexity="9">
+        <class name="Lulus.Data.Entities.Feedback" filename="Lulus.Data\Entities\Feedback.cs" line-rate="0.6666" branch-rate="1" complexity="9">
           <methods>
             <method name="get_Feedback_ID" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -2572,16 +2573,16 @@
             <line number="26" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.Data.Entities.LineQuantity" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.Data\Entities\LineQuantity.cs" line-rate="1" branch-rate="1" complexity="6">
+        <class name="Lulus.Data.Entities.LineQuantity" filename="Lulus.Data\Entities\LineQuantity.cs" line-rate="1" branch-rate="1" complexity="6">
           <methods>
             <method name="get_LineQuantity_ID" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="12" hits="163" branch="False" />
+                <line number="12" hits="166" branch="False" />
               </lines>
             </method>
             <method name="get_ProductLine_ID" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="14" hits="164" branch="False" />
+                <line number="14" hits="168" branch="False" />
               </lines>
             </method>
             <method name="get_ProductLine" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -2591,7 +2592,7 @@
             </method>
             <method name="get_Size_ID" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="18" hits="164" branch="False" />
+                <line number="18" hits="168" branch="False" />
               </lines>
             </method>
             <method name="get_Size" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -2601,20 +2602,20 @@
             </method>
             <method name="get_Quantity" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="22" hits="164" branch="False" />
+                <line number="22" hits="169" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="12" hits="163" branch="False" />
-            <line number="14" hits="164" branch="False" />
+            <line number="12" hits="166" branch="False" />
+            <line number="14" hits="168" branch="False" />
             <line number="16" hits="78" branch="False" />
-            <line number="18" hits="164" branch="False" />
+            <line number="18" hits="168" branch="False" />
             <line number="20" hits="78" branch="False" />
-            <line number="22" hits="164" branch="False" />
+            <line number="22" hits="169" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.Data.Entities.Order" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.Data\Entities\Order.cs" line-rate="0.8571" branch-rate="1" complexity="7">
+        <class name="Lulus.Data.Entities.Order" filename="Lulus.Data\Entities\Order.cs" line-rate="0.8571" branch-rate="1" complexity="7">
           <methods>
             <method name="get_Order_ID" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -2662,7 +2663,7 @@
             <line number="24" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.Data.Entities.OrderDetail" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.Data\Entities\OrderDetail.cs" line-rate="0.6666" branch-rate="1" complexity="9">
+        <class name="Lulus.Data.Entities.OrderDetail" filename="Lulus.Data\Entities\OrderDetail.cs" line-rate="0.6666" branch-rate="1" complexity="9">
           <methods>
             <method name="get_OrderDetail_ID" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -2722,7 +2723,7 @@
             <line number="26" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.Data.Entities.Product" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.Data\Entities\Product.cs" line-rate="1" branch-rate="1" complexity="10">
+        <class name="Lulus.Data.Entities.Product" filename="Lulus.Data\Entities\Product.cs" line-rate="1" branch-rate="1" complexity="10">
           <methods>
             <method name="get_Product_ID" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -2788,7 +2789,7 @@
             <line number="28" hits="6" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.Data.Entities.ProductImage" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.Data\Entities\ProductImage.cs" line-rate="1" branch-rate="1" complexity="4">
+        <class name="Lulus.Data.Entities.ProductImage" filename="Lulus.Data\Entities\ProductImage.cs" line-rate="1" branch-rate="1" complexity="4">
           <methods>
             <method name="get_ProductImage_ID" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -2818,36 +2819,36 @@
             <line number="17" hits="74" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.Data.Entities.ProductLine" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.Data\Entities\ProductLine.cs" line-rate="1" branch-rate="1" complexity="10">
+        <class name="Lulus.Data.Entities.ProductLine" filename="Lulus.Data\Entities\ProductLine.cs" line-rate="1" branch-rate="1" complexity="10">
           <methods>
             <method name="get_ProductLine_ID" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="11" hits="35" branch="False" />
+                <line number="11" hits="37" branch="False" />
               </lines>
             </method>
             <method name="get_Texture_Name" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="13" hits="36" branch="False" />
+                <line number="13" hits="39" branch="False" />
               </lines>
             </method>
             <method name="get_Texture_Image" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="15" hits="36" branch="False" />
+                <line number="15" hits="39" branch="False" />
               </lines>
             </method>
             <method name="get_ProductLine_CreatedDate" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="17" hits="36" branch="False" />
+                <line number="17" hits="38" branch="False" />
               </lines>
             </method>
             <method name="get_ProductLine_UpdatedDate" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="19" hits="36" branch="False" />
+                <line number="19" hits="39" branch="False" />
               </lines>
             </method>
             <method name="get_Product_ID" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="21" hits="37" branch="False" />
+                <line number="21" hits="40" branch="False" />
               </lines>
             </method>
             <method name="get_LineQuantities" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -2872,28 +2873,28 @@
             </method>
           </methods>
           <lines>
-            <line number="11" hits="35" branch="False" />
-            <line number="13" hits="36" branch="False" />
-            <line number="15" hits="36" branch="False" />
-            <line number="17" hits="36" branch="False" />
-            <line number="19" hits="36" branch="False" />
-            <line number="21" hits="37" branch="False" />
+            <line number="11" hits="37" branch="False" />
+            <line number="13" hits="39" branch="False" />
+            <line number="15" hits="39" branch="False" />
+            <line number="17" hits="38" branch="False" />
+            <line number="19" hits="39" branch="False" />
+            <line number="21" hits="40" branch="False" />
             <line number="23" hits="13" branch="False" />
             <line number="24" hits="13" branch="False" />
             <line number="25" hits="13" branch="False" />
             <line number="26" hits="13" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.Data.Entities.Size" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.Data\Entities\Size.cs" line-rate="1" branch-rate="1" complexity="4">
+        <class name="Lulus.Data.Entities.Size" filename="Lulus.Data\Entities\Size.cs" line-rate="1" branch-rate="1" complexity="4">
           <methods>
             <method name="get_Size_ID" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="11" hits="25" branch="False" />
+                <line number="11" hits="27" branch="False" />
               </lines>
             </method>
             <method name="get_Size_Key" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="13" hits="25" branch="False" />
+                <line number="13" hits="27" branch="False" />
               </lines>
             </method>
             <method name="get_LineQuantities" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -2908,13 +2909,13 @@
             </method>
           </methods>
           <lines>
-            <line number="11" hits="25" branch="False" />
-            <line number="13" hits="25" branch="False" />
+            <line number="11" hits="27" branch="False" />
+            <line number="13" hits="27" branch="False" />
             <line number="15" hits="9" branch="False" />
             <line number="16" hits="9" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.Data.Entities.SubCategory" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.Data\Entities\SubCategory.cs" line-rate="1" branch-rate="1" complexity="5">
+        <class name="Lulus.Data.Entities.SubCategory" filename="Lulus.Data\Entities\SubCategory.cs" line-rate="1" branch-rate="1" complexity="5">
           <methods>
             <method name="get_SubCategory_ID" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -2950,7 +2951,7 @@
             <line number="18" hits="50" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.Data.Entities.User" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.Data\Entities\User.cs" line-rate="1" branch-rate="1" complexity="5">
+        <class name="Lulus.Data.Entities.User" filename="Lulus.Data\Entities\User.cs" line-rate="1" branch-rate="1" complexity="5">
           <methods>
             <method name="get_Customer_FirstName" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -2986,7 +2987,7 @@
             <line number="19" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.Data.EF.LulusDBContext" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.Data\EF\LulusDBContext.cs" line-rate="1" branch-rate="1" complexity="13">
+        <class name="Lulus.Data.EF.LulusDBContext" filename="Lulus.Data\EF\LulusDBContext.cs" line-rate="1" branch-rate="1" complexity="13">
           <methods>
             <method name="OnModelCreating" signature="(Microsoft.EntityFrameworkCore.ModelBuilder)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -3010,64 +3011,64 @@
             </method>
             <method name="get_Categories" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="40" hits="51" branch="False" />
+                <line number="40" hits="55" branch="False" />
               </lines>
             </method>
             <method name="get_Countries" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="41" hits="40" branch="False" />
+                <line number="41" hits="44" branch="False" />
               </lines>
             </method>
             <method name="get_Feedbacks" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="42" hits="41" branch="False" />
+                <line number="42" hits="45" branch="False" />
               </lines>
             </method>
             <method name="get_LineQuantities" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="43" hits="53" branch="False" />
+                <line number="43" hits="62" branch="False" />
               </lines>
             </method>
             <method name="get_Orders" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="44" hits="51" branch="False" />
+                <line number="44" hits="55" branch="False" />
               </lines>
             </method>
             <method name="get_OrderDetails" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="45" hits="46" branch="False" />
+                <line number="45" hits="50" branch="False" />
               </lines>
             </method>
             <method name="get_Products" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="46" hits="57" branch="False" />
+                <line number="46" hits="61" branch="False" />
               </lines>
             </method>
             <method name="get_ProductImages" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="47" hits="48" branch="False" />
+                <line number="47" hits="54" branch="False" />
               </lines>
             </method>
             <method name="get_ProductLines" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="48" hits="57" branch="False" />
+                <line number="48" hits="64" branch="False" />
               </lines>
             </method>
             <method name="get_Sizes" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="49" hits="51" branch="False" />
+                <line number="49" hits="58" branch="False" />
               </lines>
             </method>
             <method name="get_SubCategories" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="50" hits="55" branch="False" />
+                <line number="50" hits="59" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="(Microsoft.EntityFrameworkCore.DbContextOptions)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="16" hits="40" branch="False" />
-                <line number="17" hits="40" branch="False" />
-                <line number="19" hits="40" branch="False" />
+                <line number="16" hits="44" branch="False" />
+                <line number="17" hits="44" branch="False" />
+                <line number="19" hits="44" branch="False" />
               </lines>
             </method>
           </methods>
@@ -3088,23 +3089,23 @@
             <line number="35" hits="1" branch="False" />
             <line number="37" hits="1" branch="False" />
             <line number="38" hits="1" branch="False" />
-            <line number="40" hits="51" branch="False" />
-            <line number="41" hits="40" branch="False" />
-            <line number="42" hits="41" branch="False" />
-            <line number="43" hits="53" branch="False" />
-            <line number="44" hits="51" branch="False" />
-            <line number="45" hits="46" branch="False" />
-            <line number="46" hits="57" branch="False" />
-            <line number="47" hits="48" branch="False" />
-            <line number="48" hits="57" branch="False" />
-            <line number="49" hits="51" branch="False" />
-            <line number="50" hits="55" branch="False" />
-            <line number="16" hits="40" branch="False" />
-            <line number="17" hits="40" branch="False" />
-            <line number="19" hits="40" branch="False" />
+            <line number="40" hits="55" branch="False" />
+            <line number="41" hits="44" branch="False" />
+            <line number="42" hits="45" branch="False" />
+            <line number="43" hits="62" branch="False" />
+            <line number="44" hits="55" branch="False" />
+            <line number="45" hits="50" branch="False" />
+            <line number="46" hits="61" branch="False" />
+            <line number="47" hits="54" branch="False" />
+            <line number="48" hits="64" branch="False" />
+            <line number="49" hits="58" branch="False" />
+            <line number="50" hits="59" branch="False" />
+            <line number="16" hits="44" branch="False" />
+            <line number="17" hits="44" branch="False" />
+            <line number="19" hits="44" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.Data.EF.LulusDBContextFactory" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.Data\EF\LulusDBContextFactory.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="Lulus.Data.EF.LulusDBContextFactory" filename="Lulus.Data\EF\LulusDBContextFactory.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="CreateDbContext" signature="(System.String[])" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -3134,7 +3135,7 @@
             <line number="28" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.Data.EF.ModalSeedData" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.Data\EF\ModalSeedData.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.Data.EF.ModalSeedData" filename="Lulus.Data\EF\ModalSeedData.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="Seed" signature="(Microsoft.EntityFrameworkCore.ModelBuilder)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -6410,7 +6411,7 @@
             <line number="1647" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.Data.Configurations.CategoryConfiguration" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.Data\Configurations\CategoryConfiguration.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.Data.Configurations.CategoryConfiguration" filename="Lulus.Data\Configurations\CategoryConfiguration.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="Configure" signature="(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1&lt;Lulus.Data.Entities.Category&gt;)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -6428,7 +6429,7 @@
             <line number="19" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.Data.Configurations.CountryConfiguration" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.Data\Configurations\CountryConfiguration.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.Data.Configurations.CountryConfiguration" filename="Lulus.Data\Configurations\CountryConfiguration.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="Configure" signature="(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1&lt;Lulus.Data.Entities.Country&gt;)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -6446,7 +6447,7 @@
             <line number="19" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.Data.Configurations.FeedbackConfiguration" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.Data\Configurations\FeedbackConfiguration.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.Data.Configurations.FeedbackConfiguration" filename="Lulus.Data\Configurations\FeedbackConfiguration.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="Configure" signature="(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1&lt;Lulus.Data.Entities.Feedback&gt;)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -6468,7 +6469,7 @@
             <line number="23" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.Data.Configurations.LineQuantityConfiguration" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.Data\Configurations\LineQuantityConfiguration.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.Data.Configurations.LineQuantityConfiguration" filename="Lulus.Data\Configurations\LineQuantityConfiguration.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="Configure" signature="(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1&lt;Lulus.Data.Entities.LineQuantity&gt;)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -6490,7 +6491,7 @@
             <line number="24" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.Data.Configurations.OrderConfiguration" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.Data\Configurations\OrderConfiguration.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.Data.Configurations.OrderConfiguration" filename="Lulus.Data\Configurations\OrderConfiguration.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="Configure" signature="(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1&lt;Lulus.Data.Entities.Order&gt;)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -6512,7 +6513,7 @@
             <line number="23" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.Data.Configurations.OrderDetailConfiguration" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.Data\Configurations\OrderDetailConfiguration.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.Data.Configurations.OrderDetailConfiguration" filename="Lulus.Data\Configurations\OrderDetailConfiguration.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="Configure" signature="(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1&lt;Lulus.Data.Entities.OrderDetail&gt;)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -6540,7 +6541,7 @@
             <line number="25" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.Data.Configurations.ProductConfiguration" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.Data\Configurations\ProductConfiguration.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.Data.Configurations.ProductConfiguration" filename="Lulus.Data\Configurations\ProductConfiguration.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="Configure" signature="(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1&lt;Lulus.Data.Entities.Product&gt;)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -6566,7 +6567,7 @@
             <line number="29" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.Data.Configurations.ProductImageConfiguration" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.Data\Configurations\ProductImageConfiguration.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.Data.Configurations.ProductImageConfiguration" filename="Lulus.Data\Configurations\ProductImageConfiguration.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="Configure" signature="(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1&lt;Lulus.Data.Entities.ProductImage&gt;)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -6586,7 +6587,7 @@
             <line number="19" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.Data.Configurations.ProductLineConfiguration" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.Data\Configurations\ProductLineConfiguration.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.Data.Configurations.ProductLineConfiguration" filename="Lulus.Data\Configurations\ProductLineConfiguration.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="Configure" signature="(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1&lt;Lulus.Data.Entities.ProductLine&gt;)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -6606,7 +6607,7 @@
             <line number="20" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.Data.Configurations.SizeConfiguration" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.Data\Configurations\SizeConfiguration.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.Data.Configurations.SizeConfiguration" filename="Lulus.Data\Configurations\SizeConfiguration.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="Configure" signature="(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1&lt;Lulus.Data.Entities.Size&gt;)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -6624,7 +6625,7 @@
             <line number="18" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.Data.Configurations.SubCategoryConfiguration" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.Data\Configurations\SubCategoryConfiguration.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.Data.Configurations.SubCategoryConfiguration" filename="Lulus.Data\Configurations\SubCategoryConfiguration.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="Configure" signature="(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1&lt;Lulus.Data.Entities.SubCategory&gt;)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -6644,7 +6645,7 @@
             <line number="20" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.Data.Configurations.UserConfiguration" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.Data\Configurations\UserConfiguration.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.Data.Configurations.UserConfiguration" filename="Lulus.Data\Configurations\UserConfiguration.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="Configure" signature="(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1&lt;Lulus.Data.Entities.User&gt;)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -6662,9 +6663,9 @@
         </class>
       </classes>
     </package>
-    <package name="Lulus.UnitTests" line-rate="0.9992" branch-rate="1" complexity="75">
+    <package name="Lulus.UnitTests" line-rate="0.9992" branch-rate="1" complexity="79">
       <classes>
-        <class name="AutoGeneratedProgram" filename=".nuget\packages\microsoft.net.test.sdk\16.7.1\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="AutoGeneratedProgram" filename="Users\Asus\.nuget\packages\microsoft.net.test.sdk\16.7.1\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="Main" signature="(System.String[])" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -6676,7 +6677,7 @@
             <line number="4" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.Users.UserTest/&lt;&gt;c__DisplayClass0_0" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\Users\UserTest.cs" line-rate="1" branch-rate="1" complexity="3">
+        <class name="Lulus.UnitTests.BAL.Users.UserTest/&lt;&gt;c__DisplayClass0_0" filename="Lulus.UnitTests\BAL\Users\UserTest.cs" line-rate="1" branch-rate="1" complexity="3">
           <methods>
             <method name="&lt;Login_Success&gt;b__1" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -6700,7 +6701,7 @@
             <line number="56" hits="2" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.Users.UserTest/&lt;&gt;c" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\Users\UserTest.cs" line-rate="1" branch-rate="1" complexity="14">
+        <class name="Lulus.UnitTests.BAL.Users.UserTest/&lt;&gt;c" filename="Lulus.UnitTests\BAL\Users\UserTest.cs" line-rate="1" branch-rate="1" complexity="14">
           <methods>
             <method name="&lt;Login_Success&gt;b__0_7" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -6790,7 +6791,7 @@
             <line number="330" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.Users.UserTest/&lt;Login_Success&gt;d__0" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\Users\UserTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.Users.UserTest/&lt;Login_Success&gt;d__0" filename="Lulus.UnitTests\BAL\Users\UserTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -6876,7 +6877,7 @@
             <line number="71" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.Users.UserTest/&lt;&gt;c__DisplayClass1_0" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\Users\UserTest.cs" line-rate="1" branch-rate="1" complexity="2">
+        <class name="Lulus.UnitTests.BAL.Users.UserTest/&lt;&gt;c__DisplayClass1_0" filename="Lulus.UnitTests\BAL\Users\UserTest.cs" line-rate="1" branch-rate="1" complexity="2">
           <methods>
             <method name="&lt;Login_Failed_AccountNotFound&gt;b__3" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -6894,7 +6895,7 @@
             <line number="88" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.Users.UserTest/&lt;Login_Failed_AccountNotFound&gt;d__1" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\Users\UserTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.Users.UserTest/&lt;Login_Failed_AccountNotFound&gt;d__1" filename="Lulus.UnitTests\BAL\Users\UserTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -6946,7 +6947,7 @@
             <line number="103" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.Users.UserTest/&lt;&gt;c__DisplayClass2_0" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\Users\UserTest.cs" line-rate="1" branch-rate="1" complexity="3">
+        <class name="Lulus.UnitTests.BAL.Users.UserTest/&lt;&gt;c__DisplayClass2_0" filename="Lulus.UnitTests\BAL\Users\UserTest.cs" line-rate="1" branch-rate="1" complexity="3">
           <methods>
             <method name="&lt;Login_Failed_WrongPassword&gt;b__1" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -6970,7 +6971,7 @@
             <line number="138" hits="2" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.Users.UserTest/&lt;Login_Failed_WrongPassword&gt;d__2" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\Users\UserTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.Users.UserTest/&lt;Login_Failed_WrongPassword&gt;d__2" filename="Lulus.UnitTests\BAL\Users\UserTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -7054,7 +7055,7 @@
             <line number="153" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.Users.UserTest/&lt;&gt;c__DisplayClass3_0" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\Users\UserTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.Users.UserTest/&lt;&gt;c__DisplayClass3_0" filename="Lulus.UnitTests\BAL\Users\UserTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="&lt;Register_Success&gt;b__1" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -7066,7 +7067,7 @@
             <line number="164" hits="2" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.Users.UserTest/&lt;Register_Success&gt;d__3" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\Users\UserTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.Users.UserTest/&lt;Register_Success&gt;d__3" filename="Lulus.UnitTests\BAL\Users\UserTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -7118,7 +7119,7 @@
             <line number="181" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.Users.UserTest/&lt;&gt;c__DisplayClass4_0" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\Users\UserTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.Users.UserTest/&lt;&gt;c__DisplayClass4_0" filename="Lulus.UnitTests\BAL\Users\UserTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="&lt;Register_Failed&gt;b__1" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -7130,7 +7131,7 @@
             <line number="191" hits="2" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.Users.UserTest/&lt;Register_Failed&gt;d__4" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\Users\UserTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.Users.UserTest/&lt;Register_Failed&gt;d__4" filename="Lulus.UnitTests\BAL\Users\UserTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -7180,7 +7181,7 @@
             <line number="208" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.Users.UserTest/&lt;&gt;c__DisplayClass5_0" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\Users\UserTest.cs" line-rate="1" branch-rate="1" complexity="3">
+        <class name="Lulus.UnitTests.BAL.Users.UserTest/&lt;&gt;c__DisplayClass5_0" filename="Lulus.UnitTests\BAL\Users\UserTest.cs" line-rate="1" branch-rate="1" complexity="3">
           <methods>
             <method name="&lt;AdminLogin_Success&gt;b__1" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -7204,7 +7205,7 @@
             <line number="244" hits="2" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.Users.UserTest/&lt;AdminLogin_Success&gt;d__5" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\Users\UserTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.Users.UserTest/&lt;AdminLogin_Success&gt;d__5" filename="Lulus.UnitTests\BAL\Users\UserTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -7290,7 +7291,7 @@
             <line number="259" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.Users.UserTest/&lt;&gt;c__DisplayClass6_0" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\Users\UserTest.cs" line-rate="1" branch-rate="1" complexity="2">
+        <class name="Lulus.UnitTests.BAL.Users.UserTest/&lt;&gt;c__DisplayClass6_0" filename="Lulus.UnitTests\BAL\Users\UserTest.cs" line-rate="1" branch-rate="1" complexity="2">
           <methods>
             <method name="&lt;AdminLogin_Failed_AccountNotFound&gt;b__3" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -7308,7 +7309,7 @@
             <line number="276" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.Users.UserTest/&lt;AdminLogin_Failed_AccountNotFound&gt;d__6" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\Users\UserTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.Users.UserTest/&lt;AdminLogin_Failed_AccountNotFound&gt;d__6" filename="Lulus.UnitTests\BAL\Users\UserTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -7360,7 +7361,7 @@
             <line number="291" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.Users.UserTest/&lt;&gt;c__DisplayClass7_0" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\Users\UserTest.cs" line-rate="1" branch-rate="1" complexity="3">
+        <class name="Lulus.UnitTests.BAL.Users.UserTest/&lt;&gt;c__DisplayClass7_0" filename="Lulus.UnitTests\BAL\Users\UserTest.cs" line-rate="1" branch-rate="1" complexity="3">
           <methods>
             <method name="&lt;AdminLogin_Failed_WrongPassword&gt;b__1" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -7384,7 +7385,7 @@
             <line number="326" hits="2" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.Users.UserTest/&lt;AdminLogin_Failed_WrongPassword&gt;d__7" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\Users\UserTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.Users.UserTest/&lt;AdminLogin_Failed_WrongPassword&gt;d__7" filename="Lulus.UnitTests\BAL\Users\UserTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -7468,7 +7469,7 @@
             <line number="341" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.Users.MySignInResult" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\Users\UserTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.Users.MySignInResult" filename="Lulus.UnitTests\BAL\Users\UserTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="SetSucceeded" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -7484,7 +7485,7 @@
             <line number="348" hits="4" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.Users.MyIdentityResult" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\Users\UserTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.Users.MyIdentityResult" filename="Lulus.UnitTests\BAL\Users\UserTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="SetSucceeded" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -7500,7 +7501,7 @@
             <line number="355" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.SubCategories.ManageSubCategoryTest" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\SubCategories\ManageSubCategoryTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.SubCategories.ManageSubCategoryTest" filename="Lulus.UnitTests\BAL\SubCategories\ManageSubCategoryTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="DeleteSubCategory_Failed" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -7524,7 +7525,7 @@
             <line number="39" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.SubCategories.ManageSubCategoryTest/&lt;Create_SubCategory_Failed&gt;d__0" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\SubCategories\ManageSubCategoryTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.SubCategories.ManageSubCategoryTest/&lt;Create_SubCategory_Failed&gt;d__0" filename="Lulus.UnitTests\BAL\SubCategories\ManageSubCategoryTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -7556,7 +7557,7 @@
             <line number="28" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.SubCategories.ManageSubCategoryTest/&lt;Edit_SubCategory_Failed&gt;d__2" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\SubCategories\ManageSubCategoryTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.SubCategories.ManageSubCategoryTest/&lt;Edit_SubCategory_Failed&gt;d__2" filename="Lulus.UnitTests\BAL\SubCategories\ManageSubCategoryTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -7590,7 +7591,7 @@
             <line number="55" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.SubCategories.ManageSubCategoryTest/&lt;GetAllLine_Success_WithID&gt;d__3" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\SubCategories\ManageSubCategoryTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.SubCategories.ManageSubCategoryTest/&lt;GetAllLine_Success_WithID&gt;d__3" filename="Lulus.UnitTests\BAL\SubCategories\ManageSubCategoryTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -7634,7 +7635,7 @@
             <line number="78" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.SubCategories.SubCategoriesTest/&lt;GetAllSubCategory_Success_WithoutData&gt;d__0" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\SubCategories\SubCategoriesTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.SubCategories.SubCategoriesTest/&lt;GetAllSubCategory_Success_WithoutData&gt;d__0" filename="Lulus.UnitTests\BAL\SubCategories\SubCategoriesTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -7658,7 +7659,7 @@
             <line number="25" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.SubCategories.SubCategoriesTest/&lt;GetAllCategory_Success_WithData&gt;d__1" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\SubCategories\SubCategoriesTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.SubCategories.SubCategoriesTest/&lt;GetAllCategory_Success_WithData&gt;d__1" filename="Lulus.UnitTests\BAL\SubCategories\SubCategoriesTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -7690,7 +7691,7 @@
             <line number="45" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest/&lt;AddImage_Upload&gt;d__0" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\ProductLines\ManageProductLineTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest/&lt;AddImage_Upload&gt;d__0" filename="Lulus.UnitTests\BAL\ProductLines\ManageProductLineTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -7722,7 +7723,7 @@
             <line number="30" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest/&lt;AddQuantity_Upload&gt;d__1" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\ProductLines\ManageProductLineTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest/&lt;AddQuantity_Upload&gt;d__1" filename="Lulus.UnitTests\BAL\ProductLines\ManageProductLineTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -7756,13 +7757,14 @@
             <line number="46" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest/&lt;Create_ProductLine_Success&gt;d__2" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\ProductLines\ManageProductLineTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest/&lt;AddQuantity_UpdateQuantity&gt;d__2" filename="Lulus.UnitTests\BAL\ProductLines\ManageProductLineTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
                 <line number="49" hits="1" branch="False" />
                 <line number="50" hits="1" branch="False" />
                 <line number="51" hits="1" branch="False" />
+                <line number="52" hits="1" branch="False" />
                 <line number="53" hits="1" branch="False" />
                 <line number="54" hits="1" branch="False" />
                 <line number="55" hits="1" branch="False" />
@@ -7770,10 +7772,16 @@
                 <line number="57" hits="1" branch="False" />
                 <line number="58" hits="1" branch="False" />
                 <line number="59" hits="1" branch="False" />
-                <line number="60" hits="1" branch="False" />
-                <line number="61" hits="2" branch="False" />
+                <line number="61" hits="1" branch="False" />
                 <line number="62" hits="1" branch="False" />
+                <line number="63" hits="1" branch="False" />
                 <line number="64" hits="1" branch="False" />
+                <line number="65" hits="1" branch="False" />
+                <line number="66" hits="1" branch="False" />
+                <line number="67" hits="1" branch="False" />
+                <line number="68" hits="1" branch="False" />
+                <line number="69" hits="1" branch="False" />
+                <line number="70" hits="1" branch="False" />
               </lines>
             </method>
           </methods>
@@ -7781,6 +7789,7 @@
             <line number="49" hits="1" branch="False" />
             <line number="50" hits="1" branch="False" />
             <line number="51" hits="1" branch="False" />
+            <line number="52" hits="1" branch="False" />
             <line number="53" hits="1" branch="False" />
             <line number="54" hits="1" branch="False" />
             <line number="55" hits="1" branch="False" />
@@ -7788,25 +7797,25 @@
             <line number="57" hits="1" branch="False" />
             <line number="58" hits="1" branch="False" />
             <line number="59" hits="1" branch="False" />
-            <line number="60" hits="1" branch="False" />
-            <line number="61" hits="2" branch="False" />
+            <line number="61" hits="1" branch="False" />
             <line number="62" hits="1" branch="False" />
+            <line number="63" hits="1" branch="False" />
             <line number="64" hits="1" branch="False" />
+            <line number="65" hits="1" branch="False" />
+            <line number="66" hits="1" branch="False" />
+            <line number="67" hits="1" branch="False" />
+            <line number="68" hits="1" branch="False" />
+            <line number="69" hits="1" branch="False" />
+            <line number="70" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest/&lt;DeleteImage_Failed&gt;d__3" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\ProductLines\ManageProductLineTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest/&lt;Create_ProductLine_Success&gt;d__3" filename="Lulus.UnitTests\BAL\ProductLines\ManageProductLineTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="67" hits="1" branch="False" />
-                <line number="68" hits="1" branch="False" />
-                <line number="69" hits="1" branch="False" />
-                <line number="71" hits="1" branch="False" />
-                <line number="72" hits="1" branch="False" />
                 <line number="73" hits="1" branch="False" />
                 <line number="74" hits="1" branch="False" />
                 <line number="75" hits="1" branch="False" />
-                <line number="76" hits="1" branch="False" />
                 <line number="77" hits="1" branch="False" />
                 <line number="78" hits="1" branch="False" />
                 <line number="79" hits="1" branch="False" />
@@ -7815,28 +7824,16 @@
                 <line number="82" hits="1" branch="False" />
                 <line number="83" hits="1" branch="False" />
                 <line number="84" hits="1" branch="False" />
-                <line number="85" hits="1" branch="False" />
+                <line number="85" hits="2" branch="False" />
                 <line number="86" hits="1" branch="False" />
-                <line number="87" hits="1" branch="False" />
                 <line number="88" hits="1" branch="False" />
-                <line number="89" hits="1" branch="False" />
-                <line number="90" hits="1" branch="False" />
-                <line number="91" hits="1" branch="False" />
-                <line number="92" hits="1" branch="False" />
-                <line number="94" hits="1" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="67" hits="1" branch="False" />
-            <line number="68" hits="1" branch="False" />
-            <line number="69" hits="1" branch="False" />
-            <line number="71" hits="1" branch="False" />
-            <line number="72" hits="1" branch="False" />
             <line number="73" hits="1" branch="False" />
             <line number="74" hits="1" branch="False" />
             <line number="75" hits="1" branch="False" />
-            <line number="76" hits="1" branch="False" />
             <line number="77" hits="1" branch="False" />
             <line number="78" hits="1" branch="False" />
             <line number="79" hits="1" branch="False" />
@@ -7845,164 +7842,169 @@
             <line number="82" hits="1" branch="False" />
             <line number="83" hits="1" branch="False" />
             <line number="84" hits="1" branch="False" />
-            <line number="85" hits="1" branch="False" />
+            <line number="85" hits="2" branch="False" />
             <line number="86" hits="1" branch="False" />
-            <line number="87" hits="1" branch="False" />
             <line number="88" hits="1" branch="False" />
-            <line number="89" hits="1" branch="False" />
-            <line number="90" hits="1" branch="False" />
-            <line number="91" hits="1" branch="False" />
-            <line number="92" hits="1" branch="False" />
-            <line number="94" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest/&lt;GetAllImage_Success_WithoutData&gt;d__4" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\ProductLines\ManageProductLineTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest/&lt;DeleteImage_Failed&gt;d__4" filename="Lulus.UnitTests\BAL\ProductLines\ManageProductLineTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
+                <line number="91" hits="1" branch="False" />
+                <line number="92" hits="1" branch="False" />
+                <line number="93" hits="1" branch="False" />
+                <line number="95" hits="1" branch="False" />
+                <line number="96" hits="1" branch="False" />
                 <line number="97" hits="1" branch="False" />
                 <line number="98" hits="1" branch="False" />
                 <line number="99" hits="1" branch="False" />
                 <line number="100" hits="1" branch="False" />
                 <line number="102" hits="1" branch="False" />
-                <line number="104" hits="1" branch="False" />
-                <line number="105" hits="1" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
+            <line number="91" hits="1" branch="False" />
+            <line number="92" hits="1" branch="False" />
+            <line number="93" hits="1" branch="False" />
+            <line number="95" hits="1" branch="False" />
+            <line number="96" hits="1" branch="False" />
             <line number="97" hits="1" branch="False" />
             <line number="98" hits="1" branch="False" />
             <line number="99" hits="1" branch="False" />
             <line number="100" hits="1" branch="False" />
             <line number="102" hits="1" branch="False" />
-            <line number="104" hits="1" branch="False" />
-            <line number="105" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest/&lt;GetAllImage_Success_WithData&gt;d__5" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\ProductLines\ManageProductLineTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest/&lt;DeleteImage_Success&gt;d__5" filename="Lulus.UnitTests\BAL\ProductLines\ManageProductLineTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
+                <line number="105" hits="1" branch="False" />
+                <line number="106" hits="1" branch="False" />
+                <line number="107" hits="1" branch="False" />
                 <line number="109" hits="1" branch="False" />
                 <line number="110" hits="1" branch="False" />
                 <line number="111" hits="1" branch="False" />
+                <line number="112" hits="1" branch="False" />
+                <line number="113" hits="1" branch="False" />
                 <line number="114" hits="1" branch="False" />
+                <line number="115" hits="1" branch="False" />
                 <line number="116" hits="1" branch="False" />
                 <line number="117" hits="1" branch="False" />
                 <line number="118" hits="1" branch="False" />
                 <line number="119" hits="1" branch="False" />
                 <line number="120" hits="1" branch="False" />
                 <line number="121" hits="1" branch="False" />
+                <line number="122" hits="1" branch="False" />
+                <line number="123" hits="1" branch="False" />
+                <line number="124" hits="1" branch="False" />
+                <line number="125" hits="1" branch="False" />
+                <line number="126" hits="1" branch="False" />
+                <line number="127" hits="1" branch="False" />
+                <line number="128" hits="1" branch="False" />
+                <line number="129" hits="1" branch="False" />
+                <line number="130" hits="1" branch="False" />
+                <line number="132" hits="1" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
+            <line number="105" hits="1" branch="False" />
+            <line number="106" hits="1" branch="False" />
+            <line number="107" hits="1" branch="False" />
             <line number="109" hits="1" branch="False" />
             <line number="110" hits="1" branch="False" />
             <line number="111" hits="1" branch="False" />
+            <line number="112" hits="1" branch="False" />
+            <line number="113" hits="1" branch="False" />
             <line number="114" hits="1" branch="False" />
+            <line number="115" hits="1" branch="False" />
             <line number="116" hits="1" branch="False" />
             <line number="117" hits="1" branch="False" />
             <line number="118" hits="1" branch="False" />
             <line number="119" hits="1" branch="False" />
             <line number="120" hits="1" branch="False" />
             <line number="121" hits="1" branch="False" />
-          </lines>
-        </class>
-        <class name="Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest/&lt;GetAllLine_Success_WithID&gt;d__6" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\ProductLines\ManageProductLineTest.cs" line-rate="1" branch-rate="1" complexity="1">
-          <methods>
-            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="127" hits="1" branch="False" />
-                <line number="128" hits="1" branch="False" />
-                <line number="129" hits="1" branch="False" />
-                <line number="130" hits="1" branch="False" />
-                <line number="131" hits="1" branch="False" />
-                <line number="132" hits="1" branch="False" />
-                <line number="133" hits="1" branch="False" />
-                <line number="134" hits="1" branch="False" />
-                <line number="135" hits="1" branch="False" />
-                <line number="136" hits="1" branch="False" />
-                <line number="137" hits="1" branch="False" />
-                <line number="138" hits="1" branch="False" />
-                <line number="139" hits="1" branch="False" />
-                <line number="142" hits="1" branch="False" />
-                <line number="144" hits="1" branch="False" />
-                <line number="145" hits="1" branch="False" />
-                <line number="146" hits="1" branch="False" />
-                <line number="147" hits="1" branch="False" />
-                <line number="148" hits="1" branch="False" />
-                <line number="149" hits="1" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
+            <line number="122" hits="1" branch="False" />
+            <line number="123" hits="1" branch="False" />
+            <line number="124" hits="1" branch="False" />
+            <line number="125" hits="1" branch="False" />
+            <line number="126" hits="1" branch="False" />
             <line number="127" hits="1" branch="False" />
             <line number="128" hits="1" branch="False" />
             <line number="129" hits="1" branch="False" />
             <line number="130" hits="1" branch="False" />
-            <line number="131" hits="1" branch="False" />
             <line number="132" hits="1" branch="False" />
-            <line number="133" hits="1" branch="False" />
-            <line number="134" hits="1" branch="False" />
-            <line number="135" hits="1" branch="False" />
-            <line number="136" hits="1" branch="False" />
-            <line number="137" hits="1" branch="False" />
-            <line number="138" hits="1" branch="False" />
-            <line number="139" hits="1" branch="False" />
-            <line number="142" hits="1" branch="False" />
-            <line number="144" hits="1" branch="False" />
-            <line number="145" hits="1" branch="False" />
-            <line number="146" hits="1" branch="False" />
-            <line number="147" hits="1" branch="False" />
-            <line number="148" hits="1" branch="False" />
-            <line number="149" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest/&lt;UdateProductLine_Failed&gt;d__7" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\ProductLines\ManageProductLineTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest/&lt;GetAllImage_Success_WithoutData&gt;d__6" filename="Lulus.UnitTests\BAL\ProductLines\ManageProductLineTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="153" hits="1" branch="False" />
-                <line number="154" hits="1" branch="False" />
-                <line number="155" hits="1" branch="False" />
-                <line number="157" hits="1" branch="False" />
-                <line number="158" hits="1" branch="False" />
-                <line number="159" hits="1" branch="False" />
-                <line number="160" hits="1" branch="False" />
-                <line number="161" hits="1" branch="False" />
-                <line number="162" hits="1" branch="False" />
-                <line number="163" hits="1" branch="False" />
-                <line number="164" hits="1" branch="False" />
-                <line number="165" hits="1" branch="False" />
-                <line number="166" hits="1" branch="False" />
+                <line number="135" hits="1" branch="False" />
+                <line number="136" hits="1" branch="False" />
+                <line number="137" hits="1" branch="False" />
+                <line number="138" hits="1" branch="False" />
+                <line number="140" hits="1" branch="False" />
+                <line number="142" hits="1" branch="False" />
+                <line number="143" hits="1" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="153" hits="1" branch="False" />
-            <line number="154" hits="1" branch="False" />
-            <line number="155" hits="1" branch="False" />
-            <line number="157" hits="1" branch="False" />
-            <line number="158" hits="1" branch="False" />
-            <line number="159" hits="1" branch="False" />
-            <line number="160" hits="1" branch="False" />
-            <line number="161" hits="1" branch="False" />
-            <line number="162" hits="1" branch="False" />
-            <line number="163" hits="1" branch="False" />
-            <line number="164" hits="1" branch="False" />
-            <line number="165" hits="1" branch="False" />
-            <line number="166" hits="1" branch="False" />
+            <line number="135" hits="1" branch="False" />
+            <line number="136" hits="1" branch="False" />
+            <line number="137" hits="1" branch="False" />
+            <line number="138" hits="1" branch="False" />
+            <line number="140" hits="1" branch="False" />
+            <line number="142" hits="1" branch="False" />
+            <line number="143" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest/&lt;UdateQuantity_Failed&gt;d__8" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\ProductLines\ManageProductLineTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest/&lt;GetAllImage_Success_WithData&gt;d__7" filename="Lulus.UnitTests\BAL\ProductLines\ManageProductLineTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
+                <line number="147" hits="1" branch="False" />
+                <line number="148" hits="1" branch="False" />
+                <line number="149" hits="1" branch="False" />
+                <line number="152" hits="1" branch="False" />
+                <line number="154" hits="1" branch="False" />
+                <line number="155" hits="1" branch="False" />
+                <line number="156" hits="1" branch="False" />
+                <line number="157" hits="1" branch="False" />
+                <line number="158" hits="1" branch="False" />
+                <line number="159" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="147" hits="1" branch="False" />
+            <line number="148" hits="1" branch="False" />
+            <line number="149" hits="1" branch="False" />
+            <line number="152" hits="1" branch="False" />
+            <line number="154" hits="1" branch="False" />
+            <line number="155" hits="1" branch="False" />
+            <line number="156" hits="1" branch="False" />
+            <line number="157" hits="1" branch="False" />
+            <line number="158" hits="1" branch="False" />
+            <line number="159" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest/&lt;GetAllLine_Success_WithID&gt;d__8" filename="Lulus.UnitTests\BAL\ProductLines\ManageProductLineTest.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="165" hits="1" branch="False" />
+                <line number="166" hits="1" branch="False" />
+                <line number="167" hits="1" branch="False" />
+                <line number="168" hits="1" branch="False" />
                 <line number="169" hits="1" branch="False" />
                 <line number="170" hits="1" branch="False" />
                 <line number="171" hits="1" branch="False" />
+                <line number="172" hits="1" branch="False" />
                 <line number="173" hits="1" branch="False" />
                 <line number="174" hits="1" branch="False" />
                 <line number="175" hits="1" branch="False" />
@@ -8011,13 +8013,35 @@
                 <line number="178" hits="1" branch="False" />
                 <line number="179" hits="1" branch="False" />
                 <line number="180" hits="1" branch="False" />
+                <line number="181" hits="1" branch="False" />
+                <line number="182" hits="1" branch="False" />
+                <line number="183" hits="1" branch="False" />
+                <line number="184" hits="1" branch="False" />
+                <line number="185" hits="1" branch="False" />
+                <line number="186" hits="1" branch="False" />
+                <line number="187" hits="1" branch="False" />
+                <line number="188" hits="1" branch="False" />
+                <line number="189" hits="1" branch="False" />
+                <line number="192" hits="1" branch="False" />
+                <line number="194" hits="1" branch="False" />
+                <line number="195" hits="1" branch="False" />
+                <line number="196" hits="1" branch="False" />
+                <line number="197" hits="1" branch="False" />
+                <line number="198" hits="1" branch="False" />
+                <line number="199" hits="1" branch="False" />
+                <line number="200" hits="1" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
+            <line number="165" hits="1" branch="False" />
+            <line number="166" hits="1" branch="False" />
+            <line number="167" hits="1" branch="False" />
+            <line number="168" hits="1" branch="False" />
             <line number="169" hits="1" branch="False" />
             <line number="170" hits="1" branch="False" />
             <line number="171" hits="1" branch="False" />
+            <line number="172" hits="1" branch="False" />
             <line number="173" hits="1" branch="False" />
             <line number="174" hits="1" branch="False" />
             <line number="175" hits="1" branch="False" />
@@ -8026,9 +8050,226 @@
             <line number="178" hits="1" branch="False" />
             <line number="179" hits="1" branch="False" />
             <line number="180" hits="1" branch="False" />
+            <line number="181" hits="1" branch="False" />
+            <line number="182" hits="1" branch="False" />
+            <line number="183" hits="1" branch="False" />
+            <line number="184" hits="1" branch="False" />
+            <line number="185" hits="1" branch="False" />
+            <line number="186" hits="1" branch="False" />
+            <line number="187" hits="1" branch="False" />
+            <line number="188" hits="1" branch="False" />
+            <line number="189" hits="1" branch="False" />
+            <line number="192" hits="1" branch="False" />
+            <line number="194" hits="1" branch="False" />
+            <line number="195" hits="1" branch="False" />
+            <line number="196" hits="1" branch="False" />
+            <line number="197" hits="1" branch="False" />
+            <line number="198" hits="1" branch="False" />
+            <line number="199" hits="1" branch="False" />
+            <line number="200" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.Orders.OrderTest/&lt;GetCurrentOrderAsync_Success_NewCart&gt;d__0" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\Orders\OrderTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest/&lt;UdateProductLine_Failed&gt;d__9" filename="Lulus.UnitTests\BAL\ProductLines\ManageProductLineTest.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="204" hits="1" branch="False" />
+                <line number="205" hits="1" branch="False" />
+                <line number="206" hits="1" branch="False" />
+                <line number="208" hits="1" branch="False" />
+                <line number="209" hits="1" branch="False" />
+                <line number="210" hits="1" branch="False" />
+                <line number="211" hits="1" branch="False" />
+                <line number="212" hits="1" branch="False" />
+                <line number="213" hits="1" branch="False" />
+                <line number="214" hits="1" branch="False" />
+                <line number="215" hits="1" branch="False" />
+                <line number="216" hits="1" branch="False" />
+                <line number="217" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="204" hits="1" branch="False" />
+            <line number="205" hits="1" branch="False" />
+            <line number="206" hits="1" branch="False" />
+            <line number="208" hits="1" branch="False" />
+            <line number="209" hits="1" branch="False" />
+            <line number="210" hits="1" branch="False" />
+            <line number="211" hits="1" branch="False" />
+            <line number="212" hits="1" branch="False" />
+            <line number="213" hits="1" branch="False" />
+            <line number="214" hits="1" branch="False" />
+            <line number="215" hits="1" branch="False" />
+            <line number="216" hits="1" branch="False" />
+            <line number="217" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest/&lt;UdateProductLine_Success&gt;d__10" filename="Lulus.UnitTests\BAL\ProductLines\ManageProductLineTest.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="220" hits="1" branch="False" />
+                <line number="221" hits="1" branch="False" />
+                <line number="222" hits="1" branch="False" />
+                <line number="223" hits="1" branch="False" />
+                <line number="224" hits="1" branch="False" />
+                <line number="225" hits="1" branch="False" />
+                <line number="226" hits="1" branch="False" />
+                <line number="227" hits="1" branch="False" />
+                <line number="228" hits="1" branch="False" />
+                <line number="229" hits="1" branch="False" />
+                <line number="230" hits="1" branch="False" />
+                <line number="231" hits="1" branch="False" />
+                <line number="232" hits="1" branch="False" />
+                <line number="234" hits="1" branch="False" />
+                <line number="235" hits="1" branch="False" />
+                <line number="236" hits="1" branch="False" />
+                <line number="237" hits="1" branch="False" />
+                <line number="238" hits="1" branch="False" />
+                <line number="239" hits="1" branch="False" />
+                <line number="240" hits="1" branch="False" />
+                <line number="241" hits="1" branch="False" />
+                <line number="242" hits="1" branch="False" />
+                <line number="243" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="220" hits="1" branch="False" />
+            <line number="221" hits="1" branch="False" />
+            <line number="222" hits="1" branch="False" />
+            <line number="223" hits="1" branch="False" />
+            <line number="224" hits="1" branch="False" />
+            <line number="225" hits="1" branch="False" />
+            <line number="226" hits="1" branch="False" />
+            <line number="227" hits="1" branch="False" />
+            <line number="228" hits="1" branch="False" />
+            <line number="229" hits="1" branch="False" />
+            <line number="230" hits="1" branch="False" />
+            <line number="231" hits="1" branch="False" />
+            <line number="232" hits="1" branch="False" />
+            <line number="234" hits="1" branch="False" />
+            <line number="235" hits="1" branch="False" />
+            <line number="236" hits="1" branch="False" />
+            <line number="237" hits="1" branch="False" />
+            <line number="238" hits="1" branch="False" />
+            <line number="239" hits="1" branch="False" />
+            <line number="240" hits="1" branch="False" />
+            <line number="241" hits="1" branch="False" />
+            <line number="242" hits="1" branch="False" />
+            <line number="243" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest/&lt;UpdateQuantity_Failed&gt;d__11" filename="Lulus.UnitTests\BAL\ProductLines\ManageProductLineTest.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="246" hits="1" branch="False" />
+                <line number="247" hits="1" branch="False" />
+                <line number="248" hits="1" branch="False" />
+                <line number="250" hits="1" branch="False" />
+                <line number="251" hits="1" branch="False" />
+                <line number="252" hits="1" branch="False" />
+                <line number="253" hits="1" branch="False" />
+                <line number="254" hits="1" branch="False" />
+                <line number="255" hits="1" branch="False" />
+                <line number="256" hits="1" branch="False" />
+                <line number="257" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="246" hits="1" branch="False" />
+            <line number="247" hits="1" branch="False" />
+            <line number="248" hits="1" branch="False" />
+            <line number="250" hits="1" branch="False" />
+            <line number="251" hits="1" branch="False" />
+            <line number="252" hits="1" branch="False" />
+            <line number="253" hits="1" branch="False" />
+            <line number="254" hits="1" branch="False" />
+            <line number="255" hits="1" branch="False" />
+            <line number="256" hits="1" branch="False" />
+            <line number="257" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest/&lt;UpdateQuantity_Success&gt;d__12" filename="Lulus.UnitTests\BAL\ProductLines\ManageProductLineTest.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="260" hits="1" branch="False" />
+                <line number="261" hits="1" branch="False" />
+                <line number="262" hits="1" branch="False" />
+                <line number="263" hits="1" branch="False" />
+                <line number="264" hits="1" branch="False" />
+                <line number="265" hits="1" branch="False" />
+                <line number="266" hits="1" branch="False" />
+                <line number="267" hits="1" branch="False" />
+                <line number="268" hits="1" branch="False" />
+                <line number="269" hits="1" branch="False" />
+                <line number="270" hits="1" branch="False" />
+                <line number="271" hits="1" branch="False" />
+                <line number="272" hits="1" branch="False" />
+                <line number="273" hits="1" branch="False" />
+                <line number="274" hits="1" branch="False" />
+                <line number="275" hits="1" branch="False" />
+                <line number="276" hits="1" branch="False" />
+                <line number="277" hits="1" branch="False" />
+                <line number="278" hits="1" branch="False" />
+                <line number="279" hits="1" branch="False" />
+                <line number="280" hits="1" branch="False" />
+                <line number="281" hits="1" branch="False" />
+                <line number="282" hits="1" branch="False" />
+                <line number="283" hits="1" branch="False" />
+                <line number="284" hits="1" branch="False" />
+                <line number="285" hits="1" branch="False" />
+                <line number="286" hits="1" branch="False" />
+                <line number="287" hits="1" branch="False" />
+                <line number="288" hits="1" branch="False" />
+                <line number="289" hits="1" branch="False" />
+                <line number="290" hits="1" branch="False" />
+                <line number="291" hits="1" branch="False" />
+                <line number="292" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="260" hits="1" branch="False" />
+            <line number="261" hits="1" branch="False" />
+            <line number="262" hits="1" branch="False" />
+            <line number="263" hits="1" branch="False" />
+            <line number="264" hits="1" branch="False" />
+            <line number="265" hits="1" branch="False" />
+            <line number="266" hits="1" branch="False" />
+            <line number="267" hits="1" branch="False" />
+            <line number="268" hits="1" branch="False" />
+            <line number="269" hits="1" branch="False" />
+            <line number="270" hits="1" branch="False" />
+            <line number="271" hits="1" branch="False" />
+            <line number="272" hits="1" branch="False" />
+            <line number="273" hits="1" branch="False" />
+            <line number="274" hits="1" branch="False" />
+            <line number="275" hits="1" branch="False" />
+            <line number="276" hits="1" branch="False" />
+            <line number="277" hits="1" branch="False" />
+            <line number="278" hits="1" branch="False" />
+            <line number="279" hits="1" branch="False" />
+            <line number="280" hits="1" branch="False" />
+            <line number="281" hits="1" branch="False" />
+            <line number="282" hits="1" branch="False" />
+            <line number="283" hits="1" branch="False" />
+            <line number="284" hits="1" branch="False" />
+            <line number="285" hits="1" branch="False" />
+            <line number="286" hits="1" branch="False" />
+            <line number="287" hits="1" branch="False" />
+            <line number="288" hits="1" branch="False" />
+            <line number="289" hits="1" branch="False" />
+            <line number="290" hits="1" branch="False" />
+            <line number="291" hits="1" branch="False" />
+            <line number="292" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="Lulus.UnitTests.BAL.Orders.OrderTest/&lt;GetCurrentOrderAsync_Success_NewCart&gt;d__0" filename="Lulus.UnitTests\BAL\Orders\OrderTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -8092,7 +8333,7 @@
             <line number="50" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.Orders.OrderTest/&lt;GetCurrentOrderAsync_Success_LoadCurrentCart&gt;d__1" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\Orders\OrderTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.Orders.OrderTest/&lt;GetCurrentOrderAsync_Success_LoadCurrentCart&gt;d__1" filename="Lulus.UnitTests\BAL\Orders\OrderTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -8274,7 +8515,7 @@
             <line number="142" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.Orders.OrderTest/&lt;AddProductAsync_Success&gt;d__2" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\Orders\OrderTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.Orders.OrderTest/&lt;AddProductAsync_Success&gt;d__2" filename="Lulus.UnitTests\BAL\Orders\OrderTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -8426,7 +8667,7 @@
             <line number="219" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.Orders.OrderTest/&lt;AddProductAsync_Failed_UserInvalid&gt;d__3" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\Orders\OrderTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.Orders.OrderTest/&lt;AddProductAsync_Failed_UserInvalid&gt;d__3" filename="Lulus.UnitTests\BAL\Orders\OrderTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -8548,7 +8789,7 @@
             <line number="281" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.Orders.OrderTest/&lt;AddProductAsync_Failed_LineNotFound&gt;d__4" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\Orders\OrderTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.Orders.OrderTest/&lt;AddProductAsync_Failed_LineNotFound&gt;d__4" filename="Lulus.UnitTests\BAL\Orders\OrderTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -8682,7 +8923,7 @@
             <line number="349" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.Orders.OrderTest/&lt;AddProductAsync_Failed_SizeNotFound&gt;d__5" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\Orders\OrderTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.Orders.OrderTest/&lt;AddProductAsync_Failed_SizeNotFound&gt;d__5" filename="Lulus.UnitTests\BAL\Orders\OrderTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -8824,7 +9065,7 @@
             <line number="421" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.Orders.OrderTest/&lt;AddProductAsync_Failed_LineExist&gt;d__6" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\Orders\OrderTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.Orders.OrderTest/&lt;AddProductAsync_Failed_LineExist&gt;d__6" filename="Lulus.UnitTests\BAL\Orders\OrderTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -9010,7 +9251,7 @@
             <line number="516" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.Orders.OrderTest/&lt;CheckoutAsync_Failed&gt;d__7" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\Orders\OrderTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.Orders.OrderTest/&lt;CheckoutAsync_Failed&gt;d__7" filename="Lulus.UnitTests\BAL\Orders\OrderTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -9150,7 +9391,7 @@
             <line number="661" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.Orders.OrderTest/&lt;ClearCartAsync_Failed&gt;d__8" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\Orders\OrderTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.Orders.OrderTest/&lt;ClearCartAsync_Failed&gt;d__8" filename="Lulus.UnitTests\BAL\Orders\OrderTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -9290,7 +9531,7 @@
             <line number="731" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.Feedbacks.FeedbackTest/&lt;CreateFeedback_Success&gt;d__0" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\Feedbacks\FeedbackTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.Feedbacks.FeedbackTest/&lt;CreateFeedback_Success&gt;d__0" filename="Lulus.UnitTests\BAL\Feedbacks\FeedbackTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -9380,7 +9621,7 @@
             <line number="63" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.Feedbacks.FeedbackTest/&lt;CreateFeedback_Failed_UserNotFound&gt;d__1" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\Feedbacks\FeedbackTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.Feedbacks.FeedbackTest/&lt;CreateFeedback_Failed_UserNotFound&gt;d__1" filename="Lulus.UnitTests\BAL\Feedbacks\FeedbackTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -9438,7 +9679,7 @@
             <line number="94" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.Feedbacks.FeedbackTest/&lt;CreateFeedback_Failed_ProductNotFound&gt;d__2" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\Feedbacks\FeedbackTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.Feedbacks.FeedbackTest/&lt;CreateFeedback_Failed_ProductNotFound&gt;d__2" filename="Lulus.UnitTests\BAL\Feedbacks\FeedbackTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -9508,7 +9749,7 @@
             <line number="131" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.Feedbacks.FeedbackTest/&lt;CreateFeedback_Failed_InvalidStar1&gt;d__3" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\Feedbacks\FeedbackTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.Feedbacks.FeedbackTest/&lt;CreateFeedback_Failed_InvalidStar1&gt;d__3" filename="Lulus.UnitTests\BAL\Feedbacks\FeedbackTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -9598,7 +9839,7 @@
             <line number="178" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.Feedbacks.FeedbackTest/&lt;CreateFeedback_Failed_InvalidStar2&gt;d__4" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\Feedbacks\FeedbackTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.Feedbacks.FeedbackTest/&lt;CreateFeedback_Failed_InvalidStar2&gt;d__4" filename="Lulus.UnitTests\BAL\Feedbacks\FeedbackTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -9688,7 +9929,7 @@
             <line number="225" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.Feedbacks.FeedbackTest/&lt;CreateFeedback_Failed_EmptyTitle&gt;d__5" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\Feedbacks\FeedbackTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.Feedbacks.FeedbackTest/&lt;CreateFeedback_Failed_EmptyTitle&gt;d__5" filename="Lulus.UnitTests\BAL\Feedbacks\FeedbackTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -9778,7 +10019,7 @@
             <line number="272" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.Categories.CategoryTest/&lt;GetAllCategory_Success_WithoutData&gt;d__0" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\Categories\CategoryTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.Categories.CategoryTest/&lt;GetAllCategory_Success_WithoutData&gt;d__0" filename="Lulus.UnitTests\BAL\Categories\CategoryTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -9802,7 +10043,7 @@
             <line number="26" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.UnitTests.BAL.Categories.CategoryTest/&lt;GetAllCategory_Success_WithData&gt;d__1" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.UnitTests\BAL\Categories\CategoryTest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.UnitTests.BAL.Categories.CategoryTest/&lt;GetAllCategory_Success_WithData&gt;d__1" filename="Lulus.UnitTests\BAL\Categories\CategoryTest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -9842,9 +10083,9 @@
         </class>
       </classes>
     </package>
-    <package name="Lulus.ViewModels" line-rate="0.40740000000000004" branch-rate="1" complexity="144">
+    <package name="Lulus.ViewModels" line-rate="0.4382" branch-rate="1" complexity="144">
       <classes>
-        <class name="Lulus.BAL.Catalog.Products.DTOs.Public.GetProductPagingRequest" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.ViewModels\Products\Public\GetProductPagingRequest.cs" line-rate="0" branch-rate="1" complexity="3">
+        <class name="Lulus.BAL.Catalog.Products.DTOs.Public.GetProductPagingRequest" filename="Lulus.ViewModels\Products\Public\GetProductPagingRequest.cs" line-rate="0" branch-rate="1" complexity="3">
           <methods>
             <method name="get_ID" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -9874,7 +10115,7 @@
             <line number="17" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.ViewModels.Users.LoginRequest" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.ViewModels\Users\LoginRequest.cs" line-rate="1" branch-rate="1" complexity="3">
+        <class name="Lulus.ViewModels.Users.LoginRequest" filename="Lulus.ViewModels\Users\LoginRequest.cs" line-rate="1" branch-rate="1" complexity="3">
           <methods>
             <method name="get_Username" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -9898,7 +10139,7 @@
             <line number="14" hits="10" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.ViewModels.Users.RegisterRequest" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.ViewModels\Users\RegisterRequest.cs" line-rate="1" branch-rate="1" complexity="5">
+        <class name="Lulus.ViewModels.Users.RegisterRequest" filename="Lulus.ViewModels\Users\RegisterRequest.cs" line-rate="1" branch-rate="1" complexity="5">
           <methods>
             <method name="get_Email" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -9934,7 +10175,7 @@
             <line number="15" hits="4" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.ViewModels.SubCategories.CreateSubCategoryRequest" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.ViewModels\SubCategories\CreateSubCategoryRequest.cs" line-rate="1" branch-rate="1" complexity="2">
+        <class name="Lulus.ViewModels.SubCategories.CreateSubCategoryRequest" filename="Lulus.ViewModels\SubCategories\CreateSubCategoryRequest.cs" line-rate="1" branch-rate="1" complexity="2">
           <methods>
             <method name="get_CategoryID" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -9952,7 +10193,7 @@
             <line number="12" hits="2" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.ViewModels.SubCategories.EditSubCategoryRequest" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.ViewModels\SubCategories\EditSubCategoryRequest.cs" line-rate="1" branch-rate="1" complexity="3">
+        <class name="Lulus.ViewModels.SubCategories.EditSubCategoryRequest" filename="Lulus.ViewModels\SubCategories\EditSubCategoryRequest.cs" line-rate="1" branch-rate="1" complexity="3">
           <methods>
             <method name="get_ID" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -9976,7 +10217,7 @@
             <line number="13" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.ViewModels.SubCategories.GetAllSubCategoriesByCategoryIDRequest" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.ViewModels\SubCategories\GetAllSubCategoriesByCategoryIDRequest.cs" line-rate="0.3333" branch-rate="1" complexity="3">
+        <class name="Lulus.ViewModels.SubCategories.GetAllSubCategoriesByCategoryIDRequest" filename="Lulus.ViewModels\SubCategories\GetAllSubCategoriesByCategoryIDRequest.cs" line-rate="0.3333" branch-rate="1" complexity="3">
           <methods>
             <method name="get_CategoryID" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -10006,7 +10247,7 @@
             <line number="16" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.ViewModels.SubCategories.GetSubCateDetailByID" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.ViewModels\SubCategories\GetSubCateDetailByID.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.ViewModels.SubCategories.GetSubCateDetailByID" filename="Lulus.ViewModels\SubCategories\GetSubCateDetailByID.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="get_ID" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -10018,7 +10259,7 @@
             <line number="11" hits="2" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.ViewModels.SubCategories.SubCateViewModel" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.ViewModels\SubCategories\SubCateViewModel.cs" line-rate="0" branch-rate="1" complexity="4">
+        <class name="Lulus.ViewModels.SubCategories.SubCateViewModel" filename="Lulus.ViewModels\SubCategories\SubCateViewModel.cs" line-rate="0" branch-rate="1" complexity="4">
           <methods>
             <method name="get_ID" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -10048,7 +10289,7 @@
             <line number="15" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.ViewModels.Sizes.SizeViewModel" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.ViewModels\Sizes\SizeViewModel.cs" line-rate="0" branch-rate="1" complexity="3">
+        <class name="Lulus.ViewModels.Sizes.SizeViewModel" filename="Lulus.ViewModels\Sizes\SizeViewModel.cs" line-rate="0" branch-rate="1" complexity="3">
           <methods>
             <method name="get_ID" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -10072,7 +10313,7 @@
             <line number="14" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.ViewModels.Products.GetProductDetailRequest" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.ViewModels\Products\GetProductDetailRequest.cs" line-rate="0" branch-rate="1" complexity="3">
+        <class name="Lulus.ViewModels.Products.GetProductDetailRequest" filename="Lulus.ViewModels\Products\GetProductDetailRequest.cs" line-rate="0" branch-rate="1" complexity="3">
           <methods>
             <method name="get_ID" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -10096,7 +10337,7 @@
             <line number="13" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.ViewModels.Products.PagedResult`1" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.ViewModels\Products\PagedResult.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="Lulus.ViewModels.Products.PagedResult`1" filename="Lulus.ViewModels\Products\PagedResult.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="set_Items" signature="(System.Collections.Generic.List`1&lt;T&gt;)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -10108,7 +10349,7 @@
             <line number="13" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.ViewModels.Products.ProductViewModel" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.ViewModels\Products\ProductViewModel.cs" line-rate="0" branch-rate="1" complexity="9">
+        <class name="Lulus.ViewModels.Products.ProductViewModel" filename="Lulus.ViewModels\Products\ProductViewModel.cs" line-rate="0" branch-rate="1" complexity="9">
           <methods>
             <method name="get_ID" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -10168,7 +10409,7 @@
             <line number="29" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.ViewModels.Products.Manage.GetProductPagingRequest" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.ViewModels\Products\Manage\GetProductPagingRequest.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="Lulus.ViewModels.Products.Manage.GetProductPagingRequest" filename="Lulus.ViewModels\Products\Manage\GetProductPagingRequest.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="get_Keyword" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -10180,7 +10421,7 @@
             <line number="13" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.ViewModels.Products.Manage.ProductCreateRequest" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.ViewModels\Products\Manage\ProductCreateRequest.cs" line-rate="0" branch-rate="1" complexity="5">
+        <class name="Lulus.ViewModels.Products.Manage.ProductCreateRequest" filename="Lulus.ViewModels\Products\Manage\ProductCreateRequest.cs" line-rate="0" branch-rate="1" complexity="5">
           <methods>
             <method name="get_Name" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -10216,7 +10457,7 @@
             <line number="20" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.ViewModels.Products.Manage.ProductUpdateRequest" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.ViewModels\Products\Manage\ProductUpdateRequest.cs" line-rate="0" branch-rate="1" complexity="7">
+        <class name="Lulus.ViewModels.Products.Manage.ProductUpdateRequest" filename="Lulus.ViewModels\Products\Manage\ProductUpdateRequest.cs" line-rate="0" branch-rate="1" complexity="7">
           <methods>
             <method name="get_Id" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -10264,7 +10505,7 @@
             <line number="24" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.ViewModels.Products.Manage.UpdatePriceRequest" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.ViewModels\Products\Manage\UpdatePriceRequest.cs" line-rate="0" branch-rate="1" complexity="3">
+        <class name="Lulus.ViewModels.Products.Manage.UpdatePriceRequest" filename="Lulus.ViewModels\Products\Manage\UpdatePriceRequest.cs" line-rate="0" branch-rate="1" complexity="3">
           <methods>
             <method name="get_ProductID" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -10288,7 +10529,7 @@
             <line number="15" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.ViewModels.ProductLines.AddImageRequest" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.ViewModels\ProductLines\AddImageRequest.cs" line-rate="0.6666" branch-rate="1" complexity="3">
+        <class name="Lulus.ViewModels.ProductLines.AddImageRequest" filename="Lulus.ViewModels\ProductLines\AddImageRequest.cs" line-rate="0.6666" branch-rate="1" complexity="3">
           <methods>
             <method name="get_ProductLineID" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -10312,21 +10553,21 @@
             <line number="14" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.ViewModels.ProductLines.CreateProductLineRequest" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.ViewModels\ProductLines\CreateProductLineRequest.cs" line-rate="1" branch-rate="1" complexity="5">
+        <class name="Lulus.ViewModels.ProductLines.CreateProductLineRequest" filename="Lulus.ViewModels\ProductLines\CreateProductLineRequest.cs" line-rate="1" branch-rate="1" complexity="5">
           <methods>
             <method name="get_ProductLine_ID" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="12" hits="3" branch="False" />
+                <line number="12" hits="5" branch="False" />
               </lines>
             </method>
             <method name="get_Texture_Name" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="14" hits="3" branch="False" />
+                <line number="14" hits="5" branch="False" />
               </lines>
             </method>
             <method name="get_Texture_ImageUrl" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="16" hits="3" branch="False" />
+                <line number="16" hits="5" branch="False" />
               </lines>
             </method>
             <method name="get_Texture_Image" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -10336,31 +10577,31 @@
             </method>
             <method name="get_Product_ID" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="19" hits="3" branch="False" />
+                <line number="19" hits="5" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="12" hits="3" branch="False" />
-            <line number="14" hits="3" branch="False" />
-            <line number="16" hits="3" branch="False" />
+            <line number="12" hits="5" branch="False" />
+            <line number="14" hits="5" branch="False" />
+            <line number="16" hits="5" branch="False" />
             <line number="17" hits="1" branch="False" />
-            <line number="19" hits="3" branch="False" />
+            <line number="19" hits="5" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.ViewModels.ProductLines.DeleteImageRequest" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.ViewModels\ProductLines\DeleteImageRequest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.ViewModels.ProductLines.DeleteImageRequest" filename="Lulus.ViewModels\ProductLines\DeleteImageRequest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="get_ImageID" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="11" hits="2" branch="False" />
+                <line number="11" hits="4" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="11" hits="2" branch="False" />
+            <line number="11" hits="4" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.ViewModels.ProductLines.GetAllImageByIDRequest" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.ViewModels\ProductLines\GetAllImageByIDRequest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.ViewModels.ProductLines.GetAllImageByIDRequest" filename="Lulus.ViewModels\ProductLines\GetAllImageByIDRequest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="get_ProductLineID" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -10372,7 +10613,7 @@
             <line number="11" hits="3" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.ViewModels.ProductLines.GetAllLinesByIDRequest" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.ViewModels\ProductLines\GetAllLinesByIDRequest.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Lulus.ViewModels.ProductLines.GetAllLinesByIDRequest" filename="Lulus.ViewModels\ProductLines\GetAllLinesByIDRequest.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="get_ProductID" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -10384,7 +10625,7 @@
             <line number="11" hits="2" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.ViewModels.ProductLines.GetProductLineByIDRequest" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.ViewModels\ProductLines\GetProductLineByIDRequest.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="Lulus.ViewModels.ProductLines.GetProductLineByIDRequest" filename="Lulus.ViewModels\ProductLines\GetProductLineByIDRequest.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="get_ID" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -10396,7 +10637,7 @@
             <line number="11" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.ViewModels.ProductLines.ProductLineViewModel" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.ViewModels\ProductLines\ProductLineViewModel.cs" line-rate="0.8" branch-rate="1" complexity="10">
+        <class name="Lulus.ViewModels.ProductLines.ProductLineViewModel" filename="Lulus.ViewModels\ProductLines\ProductLineViewModel.cs" line-rate="0.8" branch-rate="1" complexity="10">
           <methods>
             <method name="get_ID" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -10462,7 +10703,7 @@
             <line number="29" hits="2" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.ViewModels.ProductImages.ProductImageViewModel" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.ViewModels\ProductImages\ProductImageViewModel.cs" line-rate="0" branch-rate="1" complexity="4">
+        <class name="Lulus.ViewModels.ProductImages.ProductImageViewModel" filename="Lulus.ViewModels\ProductImages\ProductImageViewModel.cs" line-rate="0" branch-rate="1" complexity="4">
           <methods>
             <method name="get_ID" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -10492,7 +10733,7 @@
             <line number="17" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.ViewModels.Order.AddProductToCartRequest" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.ViewModels\Order\AddProductToCartRequest.cs" line-rate="1" branch-rate="1" complexity="4">
+        <class name="Lulus.ViewModels.Order.AddProductToCartRequest" filename="Lulus.ViewModels\Order\AddProductToCartRequest.cs" line-rate="1" branch-rate="1" complexity="4">
           <methods>
             <method name="get_UserID" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -10522,7 +10763,7 @@
             <line number="14" hits="13" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.ViewModels.Order.ChangeQuantityRequest" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.ViewModels\Order\ChangeQuantityRequest.cs" line-rate="0" branch-rate="1" complexity="2">
+        <class name="Lulus.ViewModels.Order.ChangeQuantityRequest" filename="Lulus.ViewModels\Order\ChangeQuantityRequest.cs" line-rate="0" branch-rate="1" complexity="2">
           <methods>
             <method name="get_OrderDetailID" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -10540,7 +10781,7 @@
             <line number="12" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.ViewModels.Order.CurrentCartRespond" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.ViewModels\Order\CurrentCartRespond.cs" line-rate="1" branch-rate="1" complexity="5">
+        <class name="Lulus.ViewModels.Order.CurrentCartRespond" filename="Lulus.ViewModels\Order\CurrentCartRespond.cs" line-rate="1" branch-rate="1" complexity="5">
           <methods>
             <method name="get_Order_ID" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -10576,7 +10817,7 @@
             <line number="19" hits="6" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.ViewModels.Order.OrderDetailInCart" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.ViewModels\Order\OrderDetailInCart.cs" line-rate="1" branch-rate="1" complexity="9">
+        <class name="Lulus.ViewModels.Order.OrderDetailInCart" filename="Lulus.ViewModels\Order\OrderDetailInCart.cs" line-rate="1" branch-rate="1" complexity="9">
           <methods>
             <method name="get_OrderDetail_ID" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -10636,7 +10877,7 @@
             <line number="22" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.ViewModels.Order.OrderRespond" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.ViewModels\Order\OrderRespond.cs" line-rate="0" branch-rate="1" complexity="5">
+        <class name="Lulus.ViewModels.Order.OrderRespond" filename="Lulus.ViewModels\Order\OrderRespond.cs" line-rate="0" branch-rate="1" complexity="5">
           <methods>
             <method name="get_Order_ID" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -10672,7 +10913,37 @@
             <line number="18" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.ViewModels.LineQuantity.AddQuantityRequest" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.ViewModels\LineQuantity\AddQuantityRequest.cs" line-rate="1" branch-rate="1" complexity="4">
+        <class name="Lulus.ViewModels.LineQuantity.AddQuantityRequest" filename="Lulus.ViewModels\LineQuantity\AddQuantityRequest.cs" line-rate="1" branch-rate="1" complexity="4">
+          <methods>
+            <method name="get_ID" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="3" branch="False" />
+              </lines>
+            </method>
+            <method name="get_ProductLineID" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="4" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Size_ID" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="4" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Quantity" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="4" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="3" branch="False" />
+            <line number="12" hits="4" branch="False" />
+            <line number="14" hits="4" branch="False" />
+            <line number="16" hits="4" branch="False" />
+          </lines>
+        </class>
+        <class name="Lulus.ViewModels.LineQuantity.LineQuantityViewModel" filename="Lulus.ViewModels\LineQuantity\LineQuantityViewModel.cs" line-rate="1" branch-rate="1" complexity="5">
           <methods>
             <method name="get_ID" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -10681,82 +10952,52 @@
             </method>
             <method name="get_ProductLineID" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="12" hits="2" branch="False" />
+                <line number="12" hits="1" branch="False" />
               </lines>
             </method>
-            <method name="get_Size_ID" signature="()" line-rate="1" branch-rate="1" complexity="1">
+            <method name="get_SizeID" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="14" hits="2" branch="False" />
+                <line number="13" hits="2" branch="False" />
               </lines>
             </method>
             <method name="get_Quantity" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="16" hits="2" branch="False" />
+                <line number="14" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="get_SizeKey" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="1" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
             <line number="11" hits="1" branch="False" />
-            <line number="12" hits="2" branch="False" />
-            <line number="14" hits="2" branch="False" />
-            <line number="16" hits="2" branch="False" />
+            <line number="12" hits="1" branch="False" />
+            <line number="13" hits="2" branch="False" />
+            <line number="14" hits="1" branch="False" />
+            <line number="15" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.ViewModels.LineQuantity.LineQuantityViewModel" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.ViewModels\LineQuantity\LineQuantityViewModel.cs" line-rate="0" branch-rate="1" complexity="5">
-          <methods>
-            <method name="get_ID" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="11" hits="0" branch="False" />
-              </lines>
-            </method>
-            <method name="get_ProductLineID" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="12" hits="0" branch="False" />
-              </lines>
-            </method>
-            <method name="get_SizeID" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="13" hits="0" branch="False" />
-              </lines>
-            </method>
-            <method name="get_Quantity" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="14" hits="0" branch="False" />
-              </lines>
-            </method>
-            <method name="get_SizeKey" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="15" hits="0" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="11" hits="0" branch="False" />
-            <line number="12" hits="0" branch="False" />
-            <line number="13" hits="0" branch="False" />
-            <line number="14" hits="0" branch="False" />
-            <line number="15" hits="0" branch="False" />
-          </lines>
-        </class>
-        <class name="Lulus.ViewModels.LineQuantity.UpdateQuantityRequest" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.ViewModels\LineQuantity\UpdateQuantityRequest.cs" line-rate="1" branch-rate="1" complexity="2">
+        <class name="Lulus.ViewModels.LineQuantity.UpdateQuantityRequest" filename="Lulus.ViewModels\LineQuantity\UpdateQuantityRequest.cs" line-rate="1" branch-rate="1" complexity="2">
           <methods>
             <method name="get_LineQuantityID" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="11" hits="2" branch="False" />
+                <line number="11" hits="4" branch="False" />
               </lines>
             </method>
             <method name="get_Quantity" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="12" hits="1" branch="False" />
+                <line number="12" hits="3" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="11" hits="2" branch="False" />
-            <line number="12" hits="1" branch="False" />
+            <line number="11" hits="4" branch="False" />
+            <line number="12" hits="3" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.ViewModels.Feedbacks.CreateFeedbackRequest" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.ViewModels\Feedbacks\CreateFeedbackRequest.cs" line-rate="0.6" branch-rate="1" complexity="7">
+        <class name="Lulus.ViewModels.Feedbacks.CreateFeedbackRequest" filename="Lulus.ViewModels\Feedbacks\CreateFeedbackRequest.cs" line-rate="0.6" branch-rate="1" complexity="7">
           <methods>
             <method name="get_Star" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -10810,7 +11051,7 @@
             <line number="20" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.ViewModels.Feedbacks.FeedbackViewModel" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.ViewModels\Feedbacks\FeedbackViewModel.cs" line-rate="0" branch-rate="1" complexity="7">
+        <class name="Lulus.ViewModels.Feedbacks.FeedbackViewModel" filename="Lulus.ViewModels\Feedbacks\FeedbackViewModel.cs" line-rate="0" branch-rate="1" complexity="7">
           <methods>
             <method name="get_ID" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -10858,7 +11099,7 @@
             <line number="22" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.ViewModels.Common.PagedResultBase" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.ViewModels\Common\PagedResultBase.cs" line-rate="0" branch-rate="1" complexity="4">
+        <class name="Lulus.ViewModels.Common.PagedResultBase" filename="Lulus.ViewModels\Common\PagedResultBase.cs" line-rate="0" branch-rate="1" complexity="4">
           <methods>
             <method name="get_PageIndex" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -10894,7 +11135,7 @@
             <line number="23" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.ViewModels.Common.PagedViewModel`1" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.ViewModels\Common\PagedViewModel.cs" line-rate="0" branch-rate="1" complexity="2">
+        <class name="Lulus.ViewModels.Common.PagedViewModel`1" filename="Lulus.ViewModels\Common\PagedViewModel.cs" line-rate="0" branch-rate="1" complexity="2">
           <methods>
             <method name="get_Items" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -10912,7 +11153,7 @@
             <line number="12" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.ViewModels.Common.PagingRequestBase" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.ViewModels\Common\PagingRequestBase.cs" line-rate="0" branch-rate="1" complexity="4">
+        <class name="Lulus.ViewModels.Common.PagingRequestBase" filename="Lulus.ViewModels\Common\PagingRequestBase.cs" line-rate="0" branch-rate="1" complexity="4">
           <methods>
             <method name="get_PageIndex" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -10954,7 +11195,7 @@
             <line number="22" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Lulus.ViewModels.Categories.CategoryViewModel" filename="OneDrive\Documents\GitHub\Lulus-for-coverlet-test\Lulus.ViewModels\Categories\CategoryViewModel.cs" line-rate="1" branch-rate="1" complexity="2">
+        <class name="Lulus.ViewModels.Categories.CategoryViewModel" filename="Lulus.ViewModels\Categories\CategoryViewModel.cs" line-rate="1" branch-rate="1" complexity="2">
           <methods>
             <method name="get_ID" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
