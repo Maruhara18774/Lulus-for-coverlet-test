@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 using Lulus.Data.Enums;
+using Lulus.ViewModels.Order;
 
 namespace Lulus.UnitTests.BAL.Orders
 {
@@ -514,8 +515,179 @@ namespace Lulus.UnitTests.BAL.Orders
 
             Assert.Equal(6, result);
         }
+        [Fact]
+        public async Task AddProductAsync_Failed_DontHaveEnoughQuantity1()
+        {
+            var builder = new DbContextOptionsBuilder<LulusDBContext>().UseInMemoryDatabase(Guid.NewGuid().ToString());
+            var dbcontext = new LulusDBContext(builder.Options);
 
-        /*[Fact]
+            // Sample data
+            var hasher = new PasswordHasher<User>();
+            dbcontext.Users.Add(new User()
+            {
+                Id = new Guid("61AE2038-97F2-45E5-91AE-08D961FA9BE8"),
+                Email = "annalee@shop.com",
+                NormalizedEmail = "ANNALEE@SHOP.COM",
+                UserName = "annalee",
+                NormalizedUserName = "ANNALEE",
+                PhoneNumber = "012545454541",
+                PasswordHash = hasher.HashPassword(null, "Abcd1234!"),
+                Customer_FirstName = "Anna",
+                Customer_LastName = "Lee",
+                Customer_Address = "22 St. Wall Street, Brooklyn, American",
+                SecurityStamp = "NQLC7NG4A7DTOJ5DETPA35OHKTOZMMYP"
+            });
+            dbcontext.Orders.Add(new Order()
+            {
+                Order_ID = 3,
+                CreatedDate = DateTime.Now,
+                Order_Total = 0,
+                User_ID = new Guid("61AE2038-97F2-45E5-91AE-08D961FA9BE8"),
+                Status = OrderStatus.Choosing,
+            });
+
+            dbcontext.Categories.Add(new Category()
+            {
+                Category_ID = 1,
+                Category_Name = "My category"
+            });
+            dbcontext.SubCategories.Add(new SubCategory()
+            {
+                SubCategory_ID = 1,
+                Category_ID = 1,
+                SubCategory_Name = "My subcategory"
+            });
+            dbcontext.Products.Add(new Product()
+            {
+                Product_ID = 1,
+                Product_Name = "Sample product",
+                Product_Price = 50,
+                Product_SalePrice = 50,
+                Product_Description = "",
+                SubCategory_ID = 1,
+                Status = ProductStatus.Stocking
+            });
+            dbcontext.ProductLines.Add(new ProductLine()
+            {
+                ProductLine_ID = 1,
+                Texture_Name = "Red",
+                Texture_Image = "",
+                ProductLine_CreatedDate = DateTime.Now,
+                ProductLine_UpdatedDate = DateTime.Now,
+                Product_ID = 1
+            });
+            dbcontext.Sizes.Add(new Size()
+            {
+                Size_ID = 1,
+                Size_Key = "XXL",
+            });
+            dbcontext.LineQuantities.Add(new LineQuantity()
+            {
+                LineQuantity_ID = 1,
+                ProductLine_ID = 1,
+                Size_ID = 1,
+                Quantity = 1
+            });
+            dbcontext.OrderDetails.Add(new OrderDetail()
+            {
+                OrderDetail_ID = 1,
+                OrderDetail_Quantity = 2,
+                OrderDetail_Total = 100,
+                Order_ID = 3,
+                ProductLine_ID = 1,
+                Size_ID = 1
+            });
+            await dbcontext.SaveChangesAsync();
+
+            var service = new OrderService(dbcontext);
+            var result = await service.AddProductAsync(new ViewModels.Order.AddProductToCartRequest()
+            {
+                UserID = new Guid("61AE2038-97F2-45E5-91AE-08D961FA9BE8"),
+                ProductLineID = 1,
+                Quantity = 2,
+                SizeID = 1
+            });
+
+            Assert.Equal(5, result);
+        }
+        [Fact]
+        public async Task AddProductAsync_Failed_DontHaveEnoughQuantity2()
+        {
+            var builder = new DbContextOptionsBuilder<LulusDBContext>().UseInMemoryDatabase(Guid.NewGuid().ToString());
+            var dbcontext = new LulusDBContext(builder.Options);
+
+            // Sample data
+            var hasher = new PasswordHasher<User>();
+            dbcontext.Users.Add(new User()
+            {
+                Id = new Guid("61AE2038-97F2-45E5-91AE-08D961FA9BE8"),
+                Email = "annalee@shop.com",
+                NormalizedEmail = "ANNALEE@SHOP.COM",
+                UserName = "annalee",
+                NormalizedUserName = "ANNALEE",
+                PhoneNumber = "012545454541",
+                PasswordHash = hasher.HashPassword(null, "Abcd1234!"),
+                Customer_FirstName = "Anna",
+                Customer_LastName = "Lee",
+                Customer_Address = "22 St. Wall Street, Brooklyn, American",
+                SecurityStamp = "NQLC7NG4A7DTOJ5DETPA35OHKTOZMMYP"
+            });
+            dbcontext.Categories.Add(new Category()
+            {
+                Category_ID = 1,
+                Category_Name = "My category"
+            });
+            dbcontext.SubCategories.Add(new SubCategory()
+            {
+                SubCategory_ID = 1,
+                Category_ID = 1,
+                SubCategory_Name = "My subcategory"
+            });
+            dbcontext.Products.Add(new Product()
+            {
+                Product_ID = 1,
+                Product_Name = "Sample product",
+                Product_Price = 50,
+                Product_SalePrice = 50,
+                Product_Description = "",
+                SubCategory_ID = 1,
+                Status = ProductStatus.Stocking
+            });
+            dbcontext.ProductLines.Add(new ProductLine()
+            {
+                ProductLine_ID = 1,
+                Texture_Name = "Red",
+                Texture_Image = "",
+                ProductLine_CreatedDate = DateTime.Now,
+                ProductLine_UpdatedDate = DateTime.Now,
+                Product_ID = 1
+            });
+            dbcontext.Sizes.Add(new Size()
+            {
+                Size_ID = 1,
+                Size_Key = "XXL",
+            });
+            dbcontext.LineQuantities.Add(new LineQuantity()
+            {
+                LineQuantity_ID = 1,
+                ProductLine_ID = 1,
+                Size_ID = 1,
+                Quantity = 1
+            });
+            await dbcontext.SaveChangesAsync();
+
+            var service = new OrderService(dbcontext);
+            var result = await service.AddProductAsync(new ViewModels.Order.AddProductToCartRequest()
+            {
+                UserID = new Guid("61AE2038-97F2-45E5-91AE-08D961FA9BE8"),
+                ProductLineID = 1,
+                Quantity = 2,
+                SizeID = 1
+            });
+
+            Assert.Equal(5, result);
+        }
+        [Fact]
         public async Task ChangeQuantityAsync_Success() 
         {
             var builder = new DbContextOptionsBuilder<LulusDBContext>().UseInMemoryDatabase(Guid.NewGuid().ToString());
@@ -537,26 +709,22 @@ namespace Lulus.UnitTests.BAL.Orders
                 Customer_Address = "22 St. Wall Street, Brooklyn, American",
                 SecurityStamp = "NQLC7NG4A7DTOJ5DETPA35OHKTOZMMYP"
             });
-            dbcontext.Categories.Add(new Category()
+            dbcontext.Orders.Add(new Order()
             {
-                Category_ID = 1,
-                Category_Name = "My category"
+                Order_ID = 3,
+                CreatedDate = DateTime.Now,
+                Order_Total = 0,
+                User_ID = new Guid("61AE2038-97F2-45E5-91AE-08D961FA9BE8"),
+                Status = OrderStatus.Choosing,
             });
-            dbcontext.SubCategories.Add(new SubCategory()
+            dbcontext.OrderDetails.Add(new OrderDetail()
             {
-                SubCategory_ID = 1,
-                Category_ID = 1,
-                SubCategory_Name = "My subcategory"
-            });
-            dbcontext.Products.Add(new Product()
-            {
-                Product_ID = 1,
-                Product_Name = "Sample product",
-                Product_Price = 50,
-                Product_SalePrice = 50,
-                Product_Description = "",
-                SubCategory_ID = 1,
-                Status = ProductStatus.Stocking
+                OrderDetail_ID = 1,
+                OrderDetail_Quantity = 2,
+                OrderDetail_Total = 100,
+                Order_ID = 3,
+                ProductLine_ID = 1,
+                Size_ID = 1
             });
             dbcontext.ProductLines.Add(new ProductLine()
             {
@@ -567,11 +735,6 @@ namespace Lulus.UnitTests.BAL.Orders
                 ProductLine_UpdatedDate = DateTime.Now,
                 Product_ID = 1
             });
-            dbcontext.Sizes.Add(new Size()
-            {
-                Size_ID = 1,
-                Size_Key = "XXL",
-            });
             dbcontext.LineQuantities.Add(new LineQuantity()
             {
                 LineQuantity_ID = 1,
@@ -579,18 +742,34 @@ namespace Lulus.UnitTests.BAL.Orders
                 Size_ID = 1,
                 Quantity = 5
             });
+
             await dbcontext.SaveChangesAsync();
             var service = new OrderService(dbcontext);
-            var result = await service.ChangeQuantityAsync(new ViewModels.Order.ChangeQuantityRequest()
+            var result = await service.ChangeQuantityAsync(new ChangeQuantityRequest()
             {
                 OrderDetailID =1,
-                Quantity =2
+                Quantity =3
+            });
+            Assert.True(result);
+
+        }
+        [Fact]
+        public async Task ChangeQuantityAsync_Failed_NullDetail()
+        {
+            var builder = new DbContextOptionsBuilder<LulusDBContext>().UseInMemoryDatabase(Guid.NewGuid().ToString());
+            var dbcontext = new LulusDBContext(builder.Options);
+
+            await dbcontext.SaveChangesAsync();
+            var service = new OrderService(dbcontext);
+            var result = await service.ChangeQuantityAsync(new ChangeQuantityRequest()
+            {
+                OrderDetailID = 1,
+                Quantity = 3
             });
             Assert.False(result);
-
-        }*/
+        }
         [Fact]
-        public async Task CheckoutAsync_Failed()
+        public async Task ChangeQuantityAsync_Failed_DontHaveEnough()
         {
             var builder = new DbContextOptionsBuilder<LulusDBContext>().UseInMemoryDatabase(Guid.NewGuid().ToString());
             var dbcontext = new LulusDBContext(builder.Options);
@@ -611,26 +790,22 @@ namespace Lulus.UnitTests.BAL.Orders
                 Customer_Address = "22 St. Wall Street, Brooklyn, American",
                 SecurityStamp = "NQLC7NG4A7DTOJ5DETPA35OHKTOZMMYP"
             });
-            dbcontext.Categories.Add(new Category()
+            dbcontext.Orders.Add(new Order()
             {
-                Category_ID = 1,
-                Category_Name = "My category"
+                Order_ID = 3,
+                CreatedDate = DateTime.Now,
+                Order_Total = 0,
+                User_ID = new Guid("61AE2038-97F2-45E5-91AE-08D961FA9BE8"),
+                Status = OrderStatus.Choosing,
             });
-            dbcontext.SubCategories.Add(new SubCategory()
+            dbcontext.OrderDetails.Add(new OrderDetail()
             {
-                SubCategory_ID = 1,
-                Category_ID = 1,
-                SubCategory_Name = "My subcategory"
-            });
-            dbcontext.Products.Add(new Product()
-            {
-                Product_ID = 1,
-                Product_Name = "Sample product",
-                Product_Price = 50,
-                Product_SalePrice = 50,
-                Product_Description = "",
-                SubCategory_ID = 1,
-                Status = ProductStatus.Stocking
+                OrderDetail_ID = 1,
+                OrderDetail_Quantity = 2,
+                OrderDetail_Total = 100,
+                Order_ID = 3,
+                ProductLine_ID = 1,
+                Size_ID = 1
             });
             dbcontext.ProductLines.Add(new ProductLine()
             {
@@ -641,19 +816,60 @@ namespace Lulus.UnitTests.BAL.Orders
                 ProductLine_UpdatedDate = DateTime.Now,
                 Product_ID = 1
             });
-            dbcontext.Sizes.Add(new Size()
-            {
-                Size_ID = 1,
-                Size_Key = "XXL",
-            });
             dbcontext.LineQuantities.Add(new LineQuantity()
             {
                 LineQuantity_ID = 1,
                 ProductLine_ID = 1,
                 Size_ID = 1,
-                Quantity = 5
+                Quantity = 1
+            });
+
+            await dbcontext.SaveChangesAsync();
+            var service = new OrderService(dbcontext);
+            var result = await service.ChangeQuantityAsync(new ChangeQuantityRequest()
+            {
+                OrderDetailID = 1,
+                Quantity = 3
+            });
+            Assert.False(result);
+        }
+        [Fact]
+        public async Task CheckoutAsync_Success()
+        {
+            var builder = new DbContextOptionsBuilder<LulusDBContext>().UseInMemoryDatabase(Guid.NewGuid().ToString());
+            var dbcontext = new LulusDBContext(builder.Options);
+
+            // Sample data
+            dbcontext.Orders.Add(new Order()
+            {
+                Order_ID = 3,
+                CreatedDate = DateTime.Now,
+                Order_Total = 0,
+                User_ID = new Guid("61AE2038-97F2-45E5-91AE-08D961FA9BE8"),
+                Status = OrderStatus.Choosing,
+            });
+            dbcontext.OrderDetails.Add(new OrderDetail()
+            {
+                OrderDetail_ID = 1,
+                OrderDetail_Quantity = 2,
+                OrderDetail_Total = 100,
+                Order_ID = 3,
+                ProductLine_ID = 1,
+                Size_ID = 1
             });
             await dbcontext.SaveChangesAsync();
+            var service = new OrderService(dbcontext);
+            var result = await service.CheckoutAsync(3);
+            Assert.True(result);
+
+        }
+        [Fact]
+        public async Task CheckoutAsync_Failed()
+        {
+            var builder = new DbContextOptionsBuilder<LulusDBContext>().UseInMemoryDatabase(Guid.NewGuid().ToString());
+            var dbcontext = new LulusDBContext(builder.Options);
+
+            // Sample data
             var service = new OrderService(dbcontext);
             var result = await service.CheckoutAsync(new int());
             Assert.False(result);
@@ -666,6 +882,46 @@ namespace Lulus.UnitTests.BAL.Orders
             var dbcontext = new LulusDBContext(builder.Options);
 
             // Sample data
+            var service = new OrderService(dbcontext);
+            var result = await service.ClearCartAsync(new int());
+            Assert.False(result);
+        }
+        [Fact]
+        public async Task ClearCartAsync_Success()
+        {
+            var builder = new DbContextOptionsBuilder<LulusDBContext>().UseInMemoryDatabase(Guid.NewGuid().ToString());
+            var dbcontext = new LulusDBContext(builder.Options);
+
+            // Sample data
+            dbcontext.Orders.Add(new Order()
+            {
+                Order_ID = 3,
+                CreatedDate = DateTime.Now,
+                Order_Total = 0,
+                User_ID = new Guid("61AE2038-97F2-45E5-91AE-08D961FA9BE8"),
+                Status = OrderStatus.Choosing,
+            });
+            dbcontext.OrderDetails.Add(new OrderDetail()
+            {
+                OrderDetail_ID = 1,
+                OrderDetail_Quantity = 2,
+                OrderDetail_Total = 100,
+                Order_ID = 3,
+                ProductLine_ID = 1,
+                Size_ID = 1
+            });
+            await dbcontext.SaveChangesAsync();
+            var service = new OrderService(dbcontext);
+            var result = await service.ClearCartAsync(3);
+            Assert.True(result);
+        }
+        [Fact]
+        public async Task GetCheckoutInforAsync_Success()
+        {
+            var builder = new DbContextOptionsBuilder<LulusDBContext>().UseInMemoryDatabase(Guid.NewGuid().ToString());
+            var dbcontext = new LulusDBContext(builder.Options);
+
+            // Sample data
             var hasher = new PasswordHasher<User>();
             dbcontext.Users.Add(new User()
             {
@@ -681,6 +937,15 @@ namespace Lulus.UnitTests.BAL.Orders
                 Customer_Address = "22 St. Wall Street, Brooklyn, American",
                 SecurityStamp = "NQLC7NG4A7DTOJ5DETPA35OHKTOZMMYP"
             });
+            dbcontext.Orders.Add(new Order()
+            {
+                Order_ID = 3,
+                CreatedDate = DateTime.Now,
+                Order_Total = 0,
+                User_ID = new Guid("61AE2038-97F2-45E5-91AE-08D961FA9BE8"),
+                Status = OrderStatus.Choosing,
+            });
+
             dbcontext.Categories.Add(new Category()
             {
                 Category_ID = 1,
@@ -721,17 +986,140 @@ namespace Lulus.UnitTests.BAL.Orders
                 LineQuantity_ID = 1,
                 ProductLine_ID = 1,
                 Size_ID = 1,
-                Quantity = 5
+                Quantity = 1
+            });
+            dbcontext.OrderDetails.Add(new OrderDetail()
+            {
+                OrderDetail_ID = 1,
+                OrderDetail_Quantity = 2,
+                OrderDetail_Total = 100,
+                Order_ID = 3,
+                ProductLine_ID = 1,
+                Size_ID = 1
+            });
+            dbcontext.ProductImages.Add(new ProductImage()
+            {
+                ProductImage_ID = 1,
+                ProductImage_Image = "a",
+                ProductLine_ID = 1
             });
             await dbcontext.SaveChangesAsync();
             var service = new OrderService(dbcontext);
-            var result = await service.ClearCartAsync(new int());
-            Assert.False(result);
-
+            var result = await service.GetCheckoutInforAsync(3);
+            Assert.NotNull(result);
         }
+        [Fact]
+        public async Task GetCheckoutInforAsync_Failed_OrderNull()
+        {
+            var builder = new DbContextOptionsBuilder<LulusDBContext>().UseInMemoryDatabase(Guid.NewGuid().ToString());
+            var dbcontext = new LulusDBContext(builder.Options);
 
-       
+            var service = new OrderService(dbcontext);
+            var result = await service.GetCheckoutInforAsync(3);
+            Assert.Null(result);
+        }
+        [Fact]
+        public async Task RemoveProductAsync_Success()
+        {
+            var builder = new DbContextOptionsBuilder<LulusDBContext>().UseInMemoryDatabase(Guid.NewGuid().ToString());
+            var dbcontext = new LulusDBContext(builder.Options);
 
-        
+            // Sample data
+            dbcontext.Orders.Add(new Order()
+            {
+                Order_ID = 3,
+                CreatedDate = DateTime.Now,
+                Order_Total = 0,
+                User_ID = new Guid("61AE2038-97F2-45E5-91AE-08D961FA9BE8"),
+                Status = OrderStatus.Choosing,
+            });
+            dbcontext.OrderDetails.Add(new OrderDetail()
+            {
+                OrderDetail_ID = 1,
+                OrderDetail_Quantity = 2,
+                OrderDetail_Total = 100,
+                Order_ID = 3,
+                ProductLine_ID = 1,
+                Size_ID = 1
+            });
+            await dbcontext.SaveChangesAsync();
+            var service = new OrderService(dbcontext);
+            var result = await service.RemoveProductAsync(1);
+            Assert.True(result);
+        }
+        [Fact]
+        public async Task RemoveProductAsync_Failed_DetailNull()
+        {
+            var builder = new DbContextOptionsBuilder<LulusDBContext>().UseInMemoryDatabase(Guid.NewGuid().ToString());
+            var dbcontext = new LulusDBContext(builder.Options);
+
+            var service = new OrderService(dbcontext);
+            var result = await service.RemoveProductAsync(1);
+            Assert.False(result);
+        }
+        [Fact]
+        public async Task RemoveProductAsync_Failed_StatusNotChoosing()
+        {
+            var builder = new DbContextOptionsBuilder<LulusDBContext>().UseInMemoryDatabase(Guid.NewGuid().ToString());
+            var dbcontext = new LulusDBContext(builder.Options);
+
+            // Sample data
+            dbcontext.Orders.Add(new Order()
+            {
+                Order_ID = 3,
+                CreatedDate = DateTime.Now,
+                Order_Total = 0,
+                User_ID = new Guid("61AE2038-97F2-45E5-91AE-08D961FA9BE8"),
+                Status = OrderStatus.New,
+            });
+            dbcontext.OrderDetails.Add(new OrderDetail()
+            {
+                OrderDetail_ID = 1,
+                OrderDetail_Quantity = 2,
+                OrderDetail_Total = 100,
+                Order_ID = 3,
+                ProductLine_ID = 1,
+                Size_ID = 1
+            });
+            await dbcontext.SaveChangesAsync();
+            var service = new OrderService(dbcontext);
+            var result = await service.RemoveProductAsync(1);
+            Assert.False(result);
+        }
+        [Fact]
+        public async Task GetOrders_Success()
+        {
+            var builder = new DbContextOptionsBuilder<LulusDBContext>().UseInMemoryDatabase(Guid.NewGuid().ToString());
+            var dbcontext = new LulusDBContext(builder.Options);
+
+            // Sample data
+            var hasher = new PasswordHasher<User>();
+            dbcontext.Users.Add(new User()
+            {
+                Id = new Guid("61AE2038-97F2-45E5-91AE-08D961FA9BE8"),
+                Email = "annalee@shop.com",
+                NormalizedEmail = "ANNALEE@SHOP.COM",
+                UserName = "annalee",
+                NormalizedUserName = "ANNALEE",
+                PhoneNumber = "012545454541",
+                PasswordHash = hasher.HashPassword(null, "Abcd1234!"),
+                Customer_FirstName = "Anna",
+                Customer_LastName = "Lee",
+                Customer_Address = "22 St. Wall Street, Brooklyn, American",
+                SecurityStamp = "NQLC7NG4A7DTOJ5DETPA35OHKTOZMMYP"
+            });
+            dbcontext.Orders.Add(new Order()
+            {
+                Order_ID = 3,
+                CreatedDate = DateTime.Now,
+                Order_Total = 0,
+                User_ID = new Guid("61AE2038-97F2-45E5-91AE-08D961FA9BE8"),
+                Status = OrderStatus.New,
+            });
+            await dbcontext.SaveChangesAsync();
+            var service = new OrderService(dbcontext);
+            var result = await service.GetOrders(new Guid("61AE2038-97F2-45E5-91AE-08D961FA9BE8"));
+            Assert.NotNull(result);
+        }
     }
 }

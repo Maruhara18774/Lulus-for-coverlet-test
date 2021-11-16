@@ -1,5 +1,7 @@
 ﻿using Lulus.BAL.Catalog.SubCategories;
 using Lulus.Data.EF;
+using Lulus.Data.Entities;
+using Lulus.ViewModels.SubCategories;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -37,6 +39,20 @@ namespace Lulus.UnitTests.BAL.SubCategories
             var result = service.DeleteSubCategory(new int() );
             Assert.NotNull(result);
         }
+        [Fact]
+        public void DeleteSubCategory_Success()
+        {
+            var builder = new DbContextOptionsBuilder<LulusDBContext>().UseInMemoryDatabase(Guid.NewGuid().ToString());
+            var dbcontext = new LulusDBContext(builder.Options);
+            dbcontext.SubCategories.Add(new SubCategory()
+            {
+                Category_ID = 1
+            });
+
+            var service = new ManageSubcategoryService(dbcontext);
+            var result = service.DeleteSubCategory(1);
+            Assert.NotNull(result);
+        }
 
         [Fact]
         public async Task Edit_SubCategory_Failed()
@@ -53,20 +69,35 @@ namespace Lulus.UnitTests.BAL.SubCategories
             });
             Assert.Equal(0, result);
         }
-
         [Fact]
-        public async Task GetAllLine_Success_WithID()
+        public async Task Edit_SubCategory_Success()
         {
             var builder = new DbContextOptionsBuilder<LulusDBContext>().UseInMemoryDatabase(Guid.NewGuid().ToString());
             var dbcontext = new LulusDBContext(builder.Options);
-            dbcontext.SubCategories.Add(new Data.Entities.SubCategory()
+            dbcontext.SubCategories.Add(new SubCategory()
             {
-                Category_ID=1,
-                SubCategory_ID = 2,
-               
+                SubCategory_ID = 1,
+                SubCategory_Name = "Jordan",
+                Category_ID = 1
             });
             await dbcontext.SaveChangesAsync();
 
+            var service = new ManageSubcategoryService(dbcontext);
+            var result = await service.EditSubCategory(new ViewModels.SubCategories.EditSubCategoryRequest()
+            {
+                CategoryID = 1,
+                Name = "",
+                ID = 1
+            });
+            Assert.Equal(1, result);
+        }
+
+        [Fact]
+        public async Task GetSubCateDetailByID_Failed()
+        {
+            var builder = new DbContextOptionsBuilder<LulusDBContext>().UseInMemoryDatabase(Guid.NewGuid().ToString());
+            var dbcontext = new LulusDBContext(builder.Options);
+            await dbcontext.SaveChangesAsync();
 
             var service = new ManageSubcategoryService(dbcontext);
 
@@ -76,12 +107,32 @@ namespace Lulus.UnitTests.BAL.SubCategories
             });
             Assert.Null(result);
         }
+        [Fact]
+        public async Task GetSubCateDetailByID_Success()
+        {
+            var builder = new DbContextOptionsBuilder<LulusDBContext>().UseInMemoryDatabase(Guid.NewGuid().ToString());
+            var dbcontext = new LulusDBContext(builder.Options);
+            dbcontext.Categories.Add(new Category()
+            {
+                Category_ID = 1,
+                Category_Name = "Jordan"
+            });
+            dbcontext.SubCategories.Add(new Data.Entities.SubCategory()
+            {
+                Category_ID = 1,
+                SubCategory_ID = 1,
 
+            });
+            await dbcontext.SaveChangesAsync();
 
+            var service = new ManageSubcategoryService(dbcontext);
 
-
-
-
+            var result = await service.GetSubCateDetailByID(new ViewModels.SubCategories.GetSubCateDetailByID()
+            {
+                ID = 1
+            });
+            Assert.NotNull(result);
+        }
 
     }
     }
