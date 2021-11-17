@@ -147,7 +147,7 @@ namespace Lulus.BAL.Catalog.Products
             var query = from p in _context.Products
                         where p.Product_ID == request.ID
                         select p;
-            if (query == null) return null;
+            if (query.Count() == 0) return null;
             ProductViewModel result = await query.Select(p => new ProductViewModel()
             {
                 ID = p.Product_ID,

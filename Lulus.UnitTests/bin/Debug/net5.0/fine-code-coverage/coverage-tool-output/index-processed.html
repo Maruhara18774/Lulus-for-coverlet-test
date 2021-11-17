@@ -12,285 +12,165 @@
 
 <title>Summary - Coverage Report</title>
 
-<style type="text/css">html { font-family: 'Segoe UI', '-apple-system', BlinkMacSystemFont, Roboto, 'Helvetica Neue', Helvetica, Ubuntu, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; margin: 0; padding: 0; font-size: 0.9em; background-color: #fff; height: 100%; }
+<style type="text/css">html { font-family: "Segoe UI", "-apple-system", BlinkMacSystemFont, Roboto, "Helvetica Neue", Helvetica, Ubuntu, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; margin: 0; padding: 0; font-size: 0.9em; height: 100%; background-color: rgba(37, 37, 38, 1) }
 
-body { margin: 0; padding: 0; height: 100%; color: #000; }
+body { margin: 0; padding: 0; height: 100%; color: rgb(0, 0, 0) }
 
-h1 { font-size: 1.2em; font-weight: normal; color: #000; background-color: rgba(248,248,248,1); padding: 10px; margin: 20px -20px 20px -20px;  }
+h1 { font-size: 1.2em; font-weight: normal; color: rgb(0, 0, 0); background-color: rgba(248, 248, 248, 1); padding: 10px; margin: 20px -20px }
 
-h1:first-of-type { margin-top: 0; }
+h1:first-of-type { margin-top: 0 }
 
-h2 { font-size: 1.0em; font-weight: bold; margin: 10px 0 15px 0; padding: 0; }
+h2 { font-size: 1em; font-weight: bold; margin: 10px 0 15px; padding: 0 }
 
-h3 { font-size: 1.0em; font-weight: bold; margin: 0 0 10px 0; padding: 0; display: inline-block; }
+h3 { font-size: 1em; font-weight: bold; margin: 0 0 10px; padding: 0; display: inline-block }
 
-a { color: #0078D4; text-decoration: none; }
+a { color: rgba(0, 151, 251, 1); cursor: pointer; text-decoration: none }
 
-a:hover { color: #000; text-decoration: underline; }
+a:hover { color: rgba(0, 151, 251, 1); cursor: pointer; text-decoration: none }
 
-h1 a.back { background-color: #e8e8e8; display: inline-block; margin: -12px 5px -10px -10px; padding: 10px; border-right: 1px solid #fff; }
+h1 a.back { background-color: rgb(232, 232, 232); display: inline-block; margin: -12px 5px -10px -10px; padding: 10px; border-right: 1px solid rgb(255, 255, 255) }
 
-h1 a.back:hover { background-color: #ccc; text-decoration: none; }
+h1 a.back:hover { background-color: rgb(204, 204, 204); text-decoration: none }
 
-h1 a.button { color: #000; background-color: #dcdcdc; margin: -5px 0 0 10px; padding: 5px 8px 5px 8px; border: 1px solid #c1c1c1; font-size: 0.9em; border-radius: 3px; float:right; }
+h1 a.button { color: rgb(0, 0, 0); background-color: rgb(220, 220, 220); margin: -5px 0 0 10px; padding: 5px 8px; border: 1px solid rgb(193, 193, 193); font-size: 0.9em; border-radius: 3px; float: right }
 
-h1 a.button:hover { background-color: #f4f4f4; }
+h1 a.button:hover { background-color: rgb(244, 244, 244) }
 
-h1 a.button i { position: relative; top: 1px; }
+h1 a.button i { position: relative; top: 1px }
 
+.container { margin: auto; display: flex; min-height: 100%; background-color: rgba(37, 37, 38, 1) }
 
+.containerleft { padding: 0 20px 20px }
 
-.container { margin: auto; background-color: #fff; display: flex; min-height: 100%; }
+.containerright { width: 340px; min-width: 340px; background-color: rgb(255, 255, 255); height: 100% }
 
-.containerleft { padding: 0 20px 20px 20px; }
+.containerrightfixed { position: fixed; padding: 0 20px 20px; border-left: 1px solid rgb(234, 234, 234); width: 300px; height: 100%; top: 0; bottom: 0 }
 
-.containerright { width: 340px; min-width: 340px; background-color: #fff; height: 100%; }
+.containerrightfixed h1 { background-color: rgba(248, 248, 248, 1) }
 
-.containerrightfixed { position: fixed; padding: 0 20px 20px 20px; border-left: solid 1px #EAEAEA; width: 300px; overflow-y: auto; height: 100%; top: 0; bottom: 0; }
+.containerrightfixed label,.containerright a { white-space: nowrap; overflow: hidden; display: inline-block; width: 100%; max-width: 300px }
 
-.containerrightfixed h1 { background-color: rgba(248,248,248,1); }
+.containerright a { margin-bottom: 3px }
 
-.containerrightfixed label, .containerright a { white-space: nowrap; overflow: hidden; display: inline-block; width: 100%; max-width: 300px; text-overflow: ellipsis; }
+@media screen and (max-width: 1200px) { .container { box-shadow: none; width: 100% } .containerright { display: none } }
 
-.containerright a { margin-bottom: 3px; }
+.footer { font-size: 0.7em; text-align: center; margin-top: 35px }
 
+th { text-align: left }
 
+.table-fixed-ignore-me { table-layout: fixed }
 
-@media screen and (max-width:1200px){ 
+.overview { border-collapse: collapse; width: 100%; overflow-wrap: break-word; border: 1px solid rgba(0, 0, 0, 1) }
 
-    .container { box-shadow: none; width: 100%; }
+.overview th { border-collapse: collapse; padding: 5px 4px; background-color: rgba(37, 37, 38, 1); border: 1px solid rgba(0, 0, 0, 1) }
 
-    .containerright { display: none; }
+ansi .overview thead th { background-color: rgb(255, 255, 255) }
 
-}
+.overview th a { color: rgba(241, 241, 241, 1) }
 
+.overview tr.namespace a { margin-left: 15px; display: block }
 
+.overview td { border-collapse: collapse; padding: 5px 4px; border: 1px solid rgba(0, 0, 0, 1) }
 
-.footer { font-size: 0.7em; text-align: center; margin-top: 35px; }
+.overview tr:hover { background: rgba(37, 37, 38, 1) }
 
+div.currenthistory { margin: -6px -5px 0; padding: 2px 4px 6px; height: 16px }
 
+.coverage { border: 1px solid rgb(193, 193, 193); border-collapse: collapse; font-size: 5px; height: 10px }
 
-th { text-align: left; }
+.coverage td { padding: 0; border: none }
 
-.table-fixed-ignore-me { table-layout: fixed; }
+.customizebox { font-size: 0.75em; margin-bottom: 7px }
 
-.overview { border: solid 1px #c1c1c1; border-collapse: collapse; width: 100%; word-wrap: break-word; }
+.customizebox>div { width: 25%; display: inline-block }
 
-.overview th { border: solid 1px #c1c1c1; border-collapse: collapse; padding: 5px 4px 5px 4px; background-color: #fff}
+.customizebox div.right input { font-size: 0.8em; width: 150px }
 
-ansi
+#namespaceslider { width: 200px; display: inline-block; margin-left: 8px }
 
-.overview thead th { background-color: #fff; }
+.percentagebar { padding-left: 3px }
 
-.overview th a { color: #000; }
+a.percentagebar { padding-left: 6px }
 
-.overview tr.namespace a { margin-left: 15px; display: block; }
+.percentagebarundefined { border-left: 2px solid rgb(255, 255, 255) }
 
-.overview td { border: solid 1px #c1c1c1; border-collapse: collapse; padding: 5px 4px 5px 4px; }
+.percentagebar0 { border-left: 2px solid rgb(218, 10, 0) }
 
-.overview tr:hover { background: #f4f4f4 }
+.percentagebar10 { border-left: 2px solid; border-image: linear-gradient(to bottom, rgb(218, 10, 0) 90%, rgb(16, 124, 16) 90%, rgb(16, 124, 16) 100%) 1 }
 
-div.currenthistory { margin: -6px -5px 0 -5px; padding: 2px 4px 6px 4px; height: 16px; }
+.percentagebar20 { border-left: 2px solid; border-image: linear-gradient(to bottom, rgb(218, 10, 0) 80%, rgb(16, 124, 16) 80%, rgb(16, 124, 16) 100%) 1 }
 
-.coverage {
+.percentagebar30 { border-left: 2px solid; border-image: linear-gradient(to bottom, rgb(218, 10, 0) 70%, rgb(16, 124, 16) 70%, rgb(16, 124, 16) 100%) 1 }
 
-    border: solid 1px #c1c1c1;
+.percentagebar40 { border-left: 2px solid; border-image: linear-gradient(to bottom, rgb(218, 10, 0) 60%, rgb(16, 124, 16) 60%, rgb(16, 124, 16) 100%) 1 }
 
-    border-collapse: collapse;
+.percentagebar50 { border-left: 2px solid; border-image: linear-gradient(to bottom, rgb(218, 10, 0) 50%, rgb(16, 124, 16) 50%, rgb(16, 124, 16) 100%) 1 }
 
-    font-size: 5px;
+.percentagebar60 { border-left: 2px solid; border-image: linear-gradient(to bottom, rgb(218, 10, 0) 40%, rgb(16, 124, 16) 40%, rgb(16, 124, 16) 100%) 1 }
 
-    height: 10px;
+.percentagebar70 { border-left: 2px solid; border-image: linear-gradient(to bottom, rgb(218, 10, 0) 30%, rgb(16, 124, 16) 30%, rgb(16, 124, 16) 100%) 1 }
 
-}
+.percentagebar80 { border-left: 2px solid; border-image: linear-gradient(to bottom, rgb(218, 10, 0) 20%, rgb(16, 124, 16) 20%, rgb(16, 124, 16) 100%) 1 }
 
-.coverage td { padding: 0; border: none; }
+.percentagebar90 { border-left: 2px solid; border-image: linear-gradient(to bottom, rgb(218, 10, 0) 10%, rgb(16, 124, 16) 10%, rgb(16, 124, 16) 100%) 1 }
 
+.percentagebar100 { border-left: 2px solid rgb(16, 124, 16) }
 
+.hidden,.ng-hide { display: none }
 
-.customizebox { font-size: 0.75em; margin-bottom: 7px; }
+.right { text-align: right }
 
-.customizebox>div { width: 25%; display: inline-block; }
+.center { text-align: center }
 
-.customizebox div.right input { font-size: 0.8em; width: 150px; }
+.rightmargin { padding-right: 8px }
 
-#namespaceslider { width: 200px; display: inline-block; margin-left: 8px; }
+.leftmargin { padding-left: 5px }
 
+.green { background-color: rgb(16, 124, 16) }
 
+.lightgreen { background-color: rgb(220, 244, 220) }
 
-.percentagebar {
+.red { background-color: rgb(218, 10, 0) }
 
-    padding-left: 3px;
+.lightred { }
 
-}
+.orange { background-color: rgb(255, 165, 0) }
 
-a.percentagebar {
+.lightorange { background-color: rgb(255, 239, 213) }
 
-    padding-left: 6px;
+.gray { background-color: rgba(153, 153, 153, 1) }
 
-}
+.lightgray { color: rgb(136, 136, 136) }
 
-.percentagebarundefined {
+.lightgraybg { background-color: rgb(218, 218, 218) }
 
-    border-left: 2px solid #fff;
+.toggleZoom { text-align: right }
 
-}
+.ct-chart { position: relative }
 
-.percentagebar0 {
+.ct-chart .ct-line { stroke-width: 2px !important }
 
-    border-left: 2px solid #DA0A00;
+.ct-chart .ct-point { stroke-width: 6px !important; transition: stroke-width 0.2s }
 
-}
+.ct-chart .ct-point:hover { stroke-width: 10px !important }
 
-.percentagebar10 {
+.ct-chart .ct-series.ct-series-a .ct-line,.ct-chart .ct-series.ct-series-a .ct-point { stroke: rgb(0, 120, 212) !important }
 
-    border-left: 2px solid;
+.ct-chart .ct-series.ct-series-b .ct-line,.ct-chart .ct-series.ct-series-b .ct-point { stroke: rgb(28, 34, 152) !important }
 
-    border-image: linear-gradient(to bottom, #DA0A00 90%, #107C10 90%, #107C10 100%) 1;
+.tinylinecoveragechart,.tinybranchcoveragechart { background-color: rgb(255, 255, 255); margin-left: -3px; float: left; border: 1px solid rgb(193, 193, 193); width: 30px; height: 18px }
 
-}
+.historiccoverageoffset { margin-top: 7px }
 
-.percentagebar20 {
+.tinylinecoveragechart .ct-line,.tinybranchcoveragechart .ct-line { stroke-width: 1px !important }
 
-    border-left: 2px solid;
+.tinybranchcoveragechart .ct-series.ct-series-a .ct-line { stroke: rgb(28, 34, 152) !important }
 
-    border-image: linear-gradient(to bottom, #DA0A00 80%, #107C10 80%, #107C10 100%) 1;
+.linecoverage { background-color: rgb(0, 120, 212); width: 10px; height: 8px; border: 1px solid rgb(0, 0, 0); display: inline-block }
 
-}
+.branchcoverage { background-color: rgb(28, 34, 152); width: 10px; height: 8px; border: 1px solid rgb(0, 0, 0); display: inline-block }
 
-.percentagebar30 {
-
-    border-left: 2px solid;
-
-    border-image: linear-gradient(to bottom, #DA0A00 70%, #107C10 70%, #107C10 100%) 1;
-
-}
-
-.percentagebar40 {
-
-    border-left: 2px solid;
-
-    border-image: linear-gradient(to bottom, #DA0A00 60%, #107C10 60%, #107C10 100%) 1;
-
-}
-
-.percentagebar50 {
-
-    border-left: 2px solid;
-
-    border-image: linear-gradient(to bottom, #DA0A00 50%, #107C10 50%, #107C10 100%) 1;
-
-}
-
-.percentagebar60 {
-
-    border-left: 2px solid;
-
-    border-image: linear-gradient(to bottom, #DA0A00 40%, #107C10 40%, #107C10 100%) 1;
-
-}
-
-.percentagebar70 {
-
-    border-left: 2px solid;
-
-    border-image: linear-gradient(to bottom, #DA0A00 30%, #107C10 30%, #107C10 100%) 1;
-
-}
-
-.percentagebar80 {
-
-    border-left: 2px solid;
-
-    border-image: linear-gradient(to bottom, #DA0A00 20%, #107C10 20%, #107C10 100%) 1;
-
-}
-
-.percentagebar90 {
-
-    border-left: 2px solid;
-
-    border-image: linear-gradient(to bottom, #DA0A00 10%, #107C10 10%, #107C10 100%) 1;
-
-}
-
-.percentagebar100 {
-
-    border-left: 2px solid #107C10;
-
-}
-
-
-
-.hidden, .ng-hide { display: none; }
-
-.right { text-align: right; }
-
-.center { text-align: center; }
-
-.rightmargin  { padding-right: 8px; }
-
-.leftmargin { padding-left: 5px; }
-
-.green { background-color: #107C10; }
-
-.lightgreen { background-color: #dcf4dc; }
-
-.red { background-color: #DA0A00; }
-
-.lightred { background-color: #f7dede; }
-
-.orange { background-color: #FFA500; }
-
-.lightorange { background-color: #FFEFD5; }
-
-.gray { background-color: #dcdcdc; }
-
-.lightgray { color: #888888; }
-
-.lightgraybg { background-color: #dadada; }
-
-
-
-.toggleZoom { text-align:right; }
-
-
-
-.ct-chart { position: relative; }
-
-.ct-chart .ct-line { stroke-width: 2px !important; }
-
-.ct-chart .ct-point { stroke-width: 6px !important; transition: stroke-width .2s; }
-
-.ct-chart .ct-point:hover { stroke-width: 10px !important; }
-
-.ct-chart .ct-series.ct-series-a .ct-line, .ct-chart .ct-series.ct-series-a .ct-point { stroke: #0078D4 !important;}
-
-.ct-chart .ct-series.ct-series-b .ct-line, .ct-chart .ct-series.ct-series-b .ct-point { stroke: #1c2298 !important;}
-
-
-
-.tinylinecoveragechart, .tinybranchcoveragechart { background-color: #fff; margin-left: -3px; float: left; border: solid 1px #c1c1c1; width: 30px; height: 18px; }
-
-.historiccoverageoffset { margin-top: 7px; }
-
-
-
-.tinylinecoveragechart .ct-line, .tinybranchcoveragechart .ct-line { stroke-width: 1px !important; }
-
-.tinybranchcoveragechart .ct-series.ct-series-a .ct-line { stroke: #1c2298 !important; }
-
-
-
-.linecoverage { background-color: #0078D4; width: 10px; height: 8px; border: 1px solid #000; display: inline-block; }
-
-.branchcoverage { background-color: #1c2298; width: 10px; height: 8px; border: 1px solid #000; display: inline-block; }
-
-
-
-.tooltip { position: absolute; display: none; padding: 5px; background: #F4C63D; color: #453D3F; pointer-events: none; z-index: 1; min-width: 250px; }
-
-
+.tooltip { position: absolute; display: none; padding: 5px; background: rgb(244, 198, 61); color: rgb(69, 61, 63); z-index: 1; min-width: 250px }
 
 .column1324  {white-space: nowrap; width:1%;}
 
@@ -314,657 +194,581 @@ a.percentagebar {
 
 .column150  {white-space: nowrap; width:1%;}
 
+.covered0 { width: 0 }
 
+.covered1 { width: 1px }
 
-.covered0 { width: 0px; }
+.covered2 { width: 2px }
 
-.covered1 { width: 1px; }
+.covered3 { width: 3px }
 
-.covered2 { width: 2px; }
+.covered4 { width: 4px }
 
-.covered3 { width: 3px; }
+.covered5 { width: 5px }
 
-.covered4 { width: 4px; }
+.covered6 { width: 6px }
 
-.covered5 { width: 5px; }
+.covered7 { width: 7px }
 
-.covered6 { width: 6px; }
+.covered8 { width: 8px }
 
-.covered7 { width: 7px; }
+.covered9 { width: 9px }
 
-.covered8 { width: 8px; }
+.covered10 { width: 10px }
 
-.covered9 { width: 9px; }
+.covered11 { width: 11px }
 
-.covered10 { width: 10px; }
+.covered12 { width: 12px }
 
-.covered11 { width: 11px; }
+.covered13 { width: 13px }
 
-.covered12 { width: 12px; }
+.covered14 { width: 14px }
 
-.covered13 { width: 13px; }
+.covered15 { width: 15px }
 
-.covered14 { width: 14px; }
+.covered16 { width: 16px }
 
-.covered15 { width: 15px; }
+.covered17 { width: 17px }
 
-.covered16 { width: 16px; }
+.covered18 { width: 18px }
 
-.covered17 { width: 17px; }
+.covered19 { width: 19px }
 
-.covered18 { width: 18px; }
+.covered20 { width: 20px }
 
-.covered19 { width: 19px; }
+.covered21 { width: 21px }
 
-.covered20 { width: 20px; }
+.covered22 { width: 22px }
 
-.covered21 { width: 21px; }
+.covered23 { width: 23px }
 
-.covered22 { width: 22px; }
+.covered24 { width: 24px }
 
-.covered23 { width: 23px; }
+.covered25 { width: 25px }
 
-.covered24 { width: 24px; }
+.covered26 { width: 26px }
 
-.covered25 { width: 25px; }
+.covered27 { width: 27px }
 
-.covered26 { width: 26px; }
+.covered28 { width: 28px }
 
-.covered27 { width: 27px; }
+.covered29 { width: 29px }
 
-.covered28 { width: 28px; }
+.covered30 { width: 30px }
 
-.covered29 { width: 29px; }
+.covered31 { width: 31px }
 
-.covered30 { width: 30px; }
+.covered32 { width: 32px }
 
-.covered31 { width: 31px; }
+.covered33 { width: 33px }
 
-.covered32 { width: 32px; }
+.covered34 { width: 34px }
 
-.covered33 { width: 33px; }
+.covered35 { width: 35px }
 
-.covered34 { width: 34px; }
+.covered36 { width: 36px }
 
-.covered35 { width: 35px; }
+.covered37 { width: 37px }
 
-.covered36 { width: 36px; }
+.covered38 { width: 38px }
 
-.covered37 { width: 37px; }
+.covered39 { width: 39px }
 
-.covered38 { width: 38px; }
+.covered40 { width: 40px }
 
-.covered39 { width: 39px; }
+.covered41 { width: 41px }
 
-.covered40 { width: 40px; }
+.covered42 { width: 42px }
 
-.covered41 { width: 41px; }
+.covered43 { width: 43px }
 
-.covered42 { width: 42px; }
+.covered44 { width: 44px }
 
-.covered43 { width: 43px; }
+.covered45 { width: 45px }
 
-.covered44 { width: 44px; }
+.covered46 { width: 46px }
 
-.covered45 { width: 45px; }
+.covered47 { width: 47px }
 
-.covered46 { width: 46px; }
+.covered48 { width: 48px }
 
-.covered47 { width: 47px; }
+.covered49 { width: 49px }
 
-.covered48 { width: 48px; }
+.covered50 { width: 50px }
 
-.covered49 { width: 49px; }
+.covered51 { width: 51px }
 
-.covered50 { width: 50px; }
+.covered52 { width: 52px }
 
-.covered51 { width: 51px; }
+.covered53 { width: 53px }
 
-.covered52 { width: 52px; }
+.covered54 { width: 54px }
 
-.covered53 { width: 53px; }
+.covered55 { width: 55px }
 
-.covered54 { width: 54px; }
+.covered56 { width: 56px }
 
-.covered55 { width: 55px; }
+.covered57 { width: 57px }
 
-.covered56 { width: 56px; }
+.covered58 { width: 58px }
 
-.covered57 { width: 57px; }
+.covered59 { width: 59px }
 
-.covered58 { width: 58px; }
+.covered60 { width: 60px }
 
-.covered59 { width: 59px; }
+.covered61 { width: 61px }
 
-.covered60 { width: 60px; }
+.covered62 { width: 62px }
 
-.covered61 { width: 61px; }
+.covered63 { width: 63px }
 
-.covered62 { width: 62px; }
+.covered64 { width: 64px }
 
-.covered63 { width: 63px; }
+.covered65 { width: 65px }
 
-.covered64 { width: 64px; }
+.covered66 { width: 66px }
 
-.covered65 { width: 65px; }
+.covered67 { width: 67px }
 
-.covered66 { width: 66px; }
+.covered68 { width: 68px }
 
-.covered67 { width: 67px; }
+.covered69 { width: 69px }
 
-.covered68 { width: 68px; }
+.covered70 { width: 70px }
 
-.covered69 { width: 69px; }
+.covered71 { width: 71px }
 
-.covered70 { width: 70px; }
+.covered72 { width: 72px }
 
-.covered71 { width: 71px; }
+.covered73 { width: 73px }
 
-.covered72 { width: 72px; }
+.covered74 { width: 74px }
 
-.covered73 { width: 73px; }
+.covered75 { width: 75px }
 
-.covered74 { width: 74px; }
+.covered76 { width: 76px }
 
-.covered75 { width: 75px; }
+.covered77 { width: 77px }
 
-.covered76 { width: 76px; }
+.covered78 { width: 78px }
 
-.covered77 { width: 77px; }
+.covered79 { width: 79px }
 
-.covered78 { width: 78px; }
+.covered80 { width: 80px }
 
-.covered79 { width: 79px; }
+.covered81 { width: 81px }
 
-.covered80 { width: 80px; }
+.covered82 { width: 82px }
 
-.covered81 { width: 81px; }
+.covered83 { width: 83px }
 
-.covered82 { width: 82px; }
+.covered84 { width: 84px }
 
-.covered83 { width: 83px; }
+.covered85 { width: 85px }
 
-.covered84 { width: 84px; }
+.covered86 { width: 86px }
 
-.covered85 { width: 85px; }
+.covered87 { width: 87px }
 
-.covered86 { width: 86px; }
+.covered88 { width: 88px }
 
-.covered87 { width: 87px; }
+.covered89 { width: 89px }
 
-.covered88 { width: 88px; }
+.covered90 { width: 90px }
 
-.covered89 { width: 89px; }
+.covered91 { width: 91px }
 
-.covered90 { width: 90px; }
+.covered92 { width: 92px }
 
-.covered91 { width: 91px; }
+.covered93 { width: 93px }
 
-.covered92 { width: 92px; }
+.covered94 { width: 94px }
 
-.covered93 { width: 93px; }
+.covered95 { width: 95px }
 
-.covered94 { width: 94px; }
+.covered96 { width: 96px }
 
-.covered95 { width: 95px; }
+.covered97 { width: 97px }
 
-.covered96 { width: 96px; }
+.covered98 { width: 98px }
 
-.covered97 { width: 97px; }
+.covered99 { width: 99px }
 
-.covered98 { width: 98px; }
+.covered100 { width: 100px }
 
-.covered99 { width: 99px; }
+@media print { html,body { background-color: rgb(255, 255, 255) } .container { max-width: 100%; width: 100%; padding: 0 } .overview colgroup col:first-child { width: 300px } }
 
-.covered100 { width: 100px; }
+.icon-up-dir_active { background-repeat: no-repeat; background-size: contain; padding-left: 15px; height: 0.9em; display: inline-block; position: relative; top: 3px; background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sbnM6eG1sPSJodHRwOi8vd3d3LnczLm9yZy9YTUwvMTk5OC9uYW1lc3BhY2UiIHdpZHRoPSIxNzkyIiBoZWlnaHQ9IjE3OTIiIHZpZXdCb3g9IjAsIDAsIDE3OTIsIDE3OTIiPg0KICA8cGF0aCBkPSJNMTQwOCAxMjE2IFExNDA4IDEyNDIgMTM4OSAxMjYxIFExMzcwIDEyODAgMTM0NCAxMjgwIEw0NDggMTI4MCBRNDIyIDEyODAgNDAzIDEyNjEgUTM4NCAxMjQyIDM4NCAxMjE2IFEzODQgMTE5MCA0MDMgMTE3MSBMODUxIDcyMyBRODcwIDcwNCA4OTYgNzA0IFE5MjIgNzA0IDk0MSA3MjMgTDEzODkgMTE3MSBRMTQwOCAxMTkwIDE0MDggMTIxNiB6IiBzdHlsZT0iZmlsbDojMzM5OUZGOyIgLz4NCjwvc3ZnPg==") }
 
+.icon-down-dir_active { background-repeat: no-repeat; background-size: contain; padding-left: 15px; height: 0.9em; display: inline-block; position: relative; top: 3px; background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sbnM6eG1sPSJodHRwOi8vd3d3LnczLm9yZy9YTUwvMTk5OC9uYW1lc3BhY2UiIHdpZHRoPSIxNzkyIiBoZWlnaHQ9IjE3OTIiIHZpZXdCb3g9IjAsIDAsIDE3OTIsIDE3OTIiPg0KICA8cGF0aCBkPSJNMTQwOCA3MDQgUTE0MDggNzMwIDEzODkgNzQ5IEw5NDEgMTE5NyBROTIyIDEyMTYgODk2IDEyMTYgUTg3MCAxMjE2IDg1MSAxMTk3IEw0MDMgNzQ5IFEzODQgNzMwIDM4NCA3MDQgUTM4NCA2NzggNDAzIDY1OSBRNDIyIDY0MCA0NDggNjQwIEwxMzQ0IDY0MCBRMTM3MCA2NDAgMTM4OSA2NTkgUTE0MDggNjc4IDE0MDggNzA0IHoiIHN0eWxlPSJmaWxsOiMzMzk5RkY7IiAvPg0KPC9zdmc+") }
 
+.icon-down-dir { background-repeat: no-repeat; background-size: contain; padding-left: 15px; height: 0.9em; display: inline-block; position: relative; top: 3px; background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sbnM6eG1sPSJodHRwOi8vd3d3LnczLm9yZy9YTUwvMTk5OC9uYW1lc3BhY2UiIHdpZHRoPSIxNzkyIiBoZWlnaHQ9IjE3OTIiIHZpZXdCb3g9IjAsIDAsIDE3OTIsIDE3OTIiPg0KICA8cGF0aCBkPSJNMTQwOCA3MDQgUTE0MDggNzMwIDEzODkgNzQ5IEw5NDEgMTE5NyBROTIyIDEyMTYgODk2IDEyMTYgUTg3MCAxMjE2IDg1MSAxMTk3IEw0MDMgNzQ5IFEzODQgNzMwIDM4NCA3MDQgUTM4NCA2NzggNDAzIDY1OSBRNDIyIDY0MCA0NDggNjQwIEwxMzQ0IDY0MCBRMTM3MCA2NDAgMTM4OSA2NTkgUTE0MDggNjc4IDE0MDggNzA0IHoiIHN0eWxlPSJmaWxsOiNGMUYxRjE7IiAvPg0KPC9zdmc+") }
 
-@media print {
+.icon-info-circled { background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB3aWR0aD0iMTc5MiIgaGVpZ2h0PSIxNzkyIiB2aWV3Qm94PSIwIDAgMTc5MiAxNzkyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxjaXJjbGUgY3g9Ijg5NiIgY3k9Ijg5NiIgcj0iNzUwIiBmaWxsPSIjZmZmIiAvPjxwYXRoIGZpbGw9IiMyOEE1RkYiIGQ9Ik0xMTUyIDEzNzZ2LTE2MHEwLTE0LTktMjN0LTIzLTloLTk2di01MTJxMC0xNC05LTIzdC0yMy05aC0zMjBxLTE0IDAtMjMgOXQtOSAyM3YxNjBxMCAxNCA5IDIzdDIzIDloOTZ2MzIwaC05NnEtMTQgMC0yMyA5dC05IDIzdjE2MHEwIDE0IDkgMjN0MjMgOWg0NDhxMTQgMCAyMy05dDktMjN6bS0xMjgtODk2di0xNjBxMC0xNC05LTIzdC0yMy05aC0xOTJxLTE0IDAtMjMgOXQtOSAyM3YxNjBxMCAxNCA5IDIzdDIzIDloMTkycTE0IDAgMjMtOXQ5LTIzem02NDAgNDE2cTAgMjA5LTEwMyAzODUuNXQtMjc5LjUgMjc5LjUtMzg1LjUgMTAzLTM4NS41LTEwMy0yNzkuNS0yNzkuNS0xMDMtMzg1LjUgMTAzLTM4NS41IDI3OS41LTI3OS41IDM4NS41LTEwMyAzODUuNSAxMDMgMjc5LjUgMjc5LjUgMTAzIDM4NS41eiIvPjwvc3ZnPg=="); background-repeat: no-repeat; background-size: contain; padding-left: 15px; height: 0.9em; display: inline-block }
 
-    html, body { background-color: #fff; }
+.icon-plus { background-repeat: no-repeat; background-size: contain; padding-left: 15px; height: 0.9em; display: inline-block; position: relative; top: 3px; background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sbnM6eG1sPSJodHRwOi8vd3d3LnczLm9yZy9YTUwvMTk5OC9uYW1lc3BhY2UiIHdpZHRoPSIxNzkyIiBoZWlnaHQ9IjE3OTIiIHZpZXdCb3g9IjAsIDAsIDE3OTIsIDE3OTIiPg0KICA8cGF0aCBkPSJNMTYwMCA3MzYgTDE2MDAgOTI4IFExNjAwIDk2OCAxNTcyIDk5NiBRMTU0NCAxMDI0IDE1MDQgMTAyNCBMMTA4OCAxMDI0IEwxMDg4IDE0NDAgUTEwODggMTQ4MCAxMDYwIDE1MDggUTEwMzIgMTUzNiA5OTIgMTUzNiBMODAwIDE1MzYgUTc2MCAxNTM2IDczMiAxNTA4IFE3MDQgMTQ4MCA3MDQgMTQ0MCBMNzA0IDEwMjQgTDI4OCAxMDI0IFEyNDggMTAyNCAyMjAgOTk2IFExOTIgOTY4IDE5MiA5MjggTDE5MiA3MzYgUTE5MiA2OTYgMjIwIDY2OCBRMjQ4IDY0MCAyODggNjQwIEw3MDQgNjQwIEw3MDQgMjI0IFE3MDQgMTg0IDczMiAxNTYgUTc2MCAxMjggODAwIDEyOCBMOTkyIDEyOCBRMTAzMiAxMjggMTA2MCAxNTYgUTEwODggMTg0IDEwODggMjI0IEwxMDg4IDY0MCBMMTUwNCA2NDAgUTE1NDQgNjQwIDE1NzIgNjY4IFExNjAwIDY5NiAxNjAwIDczNiB6IiBzdHlsZT0iZmlsbDojRjFGMUYxOyIgLz4NCjwvc3ZnPg==") }
 
-    .container { max-width: 100%; width: 100%; padding: 0; }
+.icon-minus { background-repeat: no-repeat; background-size: contain; padding-left: 15px; height: 0.9em; display: inline-block; position: relative; top: 3px; background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sbnM6eG1sPSJodHRwOi8vd3d3LnczLm9yZy9YTUwvMTk5OC9uYW1lc3BhY2UiIHdpZHRoPSIxNzkyIiBoZWlnaHQ9IjE3OTIiIHZpZXdCb3g9IjAsIDAsIDE3OTIsIDE3OTIiPg0KICA8cGF0aCBkPSJNMTYwMCA3MzYgTDE2MDAgOTI4IFExNjAwIDk2OCAxNTcyIDk5NiBRMTU0NCAxMDI0IDE1MDQgMTAyNCBMMjg4IDEwMjQgUTI0OCAxMDI0IDIyMCA5OTYgUTE5MiA5NjggMTkyIDkyOCBMMTkyIDczNiBRMTkyIDY5NiAyMjAgNjY4IFEyNDggNjQwIDI4OCA2NDAgTDE1MDQgNjQwIFExNTQ0IDY0MCAxNTcyIDY2OCBRMTYwMCA2OTYgMTYwMCA3MzYgeiIgc3R5bGU9ImZpbGw6I0YxRjFGMTsiIC8+DQo8L3N2Zz4=") }
 
-    .overview colgroup col:first-child { width: 300px; }
+.icon-wrench { background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTc5MiIgaGVpZ2h0PSIxNzkyIiB2aWV3Qm94PSIwIDAgMTc5MiAxNzkyIj4NCiAgICA8cGF0aCBkPSJNNDQ4IDE0NzJxMC0yNi0xOS00NXQtNDUtMTktNDUgMTktMTkgNDUgMTkgNDUgNDUgMTkgNDUtMTkgMTktNDV6bTY0NC00MjBsLTY4MiA2ODJxLTM3IDM3LTkwIDM3LTUyIDAtOTEtMzdsLTEwNi0xMDhxLTM4LTM2LTM4LTkwIDAtNTMgMzgtOTFsNjgxLTY4MXEzOSA5OCAxMTQuNSAxNzMuNXQxNzMuNSAxMTQuNXptNjM0LTQzNXEwIDM5LTIzIDEwNi00NyAxMzQtMTY0LjUgMjE3LjV0LTI1OC41IDgzLjVxLTE4NSAwLTMxNi41LTEzMS41dC0xMzEuNS0zMTYuNSAxMzEuNS0zMTYuNSAzMTYuNS0xMzEuNXE1OCAwIDEyMS41IDE2LjV0MTA3LjUgNDYuNXExNiAxMSAxNiAyOHQtMTYgMjhsLTI5MyAxNjl2MjI0bDE5MyAxMDdxNS0zIDc5LTQ4LjV0MTM1LjUtODEgNzAuNS0zNS41cTE1IDAgMjMuNSAxMHQ4LjUgMjV6Ii8+DQo8L3N2Zz4NCg=="); background-repeat: no-repeat; background-size: contain; padding-left: 20px; height: 0.9em; display: inline-block }
 
-}
+.icon-fork { background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTc5MiIgaGVpZ2h0PSIxNzkyIiB2aWV3Qm94PSIwIDAgMTc5MiAxNzkyIj4NCiAgICA8cGF0aCBkPSJNNjcyIDE0NzJxMC00MC0yOC02OHQtNjgtMjgtNjggMjgtMjggNjggMjggNjggNjggMjggNjgtMjggMjgtNjh6bTAtMTE1MnEwLTQwLTI4LTY4dC02OC0yOC02OCAyOC0yOCA2OCAyOCA2OCA2OCAyOCA2OC0yOCAyOC02OHptNjQwIDEyOHEwLTQwLTI4LTY4dC02OC0yOC02OCAyOC0yOCA2OCAyOCA2OCA2OCAyOCA2OC0yOCAyOC02OHptOTYgMHEwIDUyLTI2IDk2LjV0LTcwIDY5LjVxLTIgMjg3LTIyNiA0MTQtNjcgMzgtMjAzIDgxLTEyOCA0MC0xNjkuNSA3MXQtNDEuNSAxMDB2MjZxNDQgMjUgNzAgNjkuNXQyNiA5Ni41cTAgODAtNTYgMTM2dC0xMzYgNTYtMTM2LTU2LTU2LTEzNnEwLTUyIDI2LTk2LjV0NzAtNjkuNXYtODIwcS00NC0yNS03MC02OS41dC0yNi05Ni41cTAtODAgNTYtMTM2dDEzNi01NiAxMzYgNTYgNTYgMTM2cTAgNTItMjYgOTYuNXQtNzAgNjkuNXY0OTdxNTQtMjYgMTU0LTU3IDU1LTE3IDg3LjUtMjkuNXQ3MC41LTMxIDU5LTM5LjUgNDAuNS01MSAyOC02OS41IDguNS05MS41cS00NC0yNS03MC02OS41dC0yNi05Ni41cTAtODAgNTYtMTM2dDEzNi01NiAxMzYgNTYgNTYgMTM2eiIvPg0KPC9zdmc+DQo="); background-repeat: no-repeat; background-size: contain; padding-left: 20px; height: 0.9em; display: inline-block }
 
+.icon-cube { background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTc5MiIgaGVpZ2h0PSIxNzkyIiB2aWV3Qm94PSIwIDAgMTc5MiAxNzkyIj4NCiAgICA8cGF0aCBkPSJNODk2IDE2MjlsNjQwLTM0OXYtNjM2bC02NDAgMjMzdjc1MnptLTY0LTg2NWw2OTgtMjU0LTY5OC0yNTQtNjk4IDI1NHptODMyLTI1MnY3NjhxMCAzNS0xOCA2NXQtNDkgNDdsLTcwNCAzODRxLTI4IDE2LTYxIDE2dC02MS0xNmwtNzA0LTM4NHEtMzEtMTctNDktNDd0LTE4LTY1di03NjhxMC00MCAyMy03M3Q2MS00N2w3MDQtMjU2cTIyLTggNDQtOHQ0NCA4bDcwNCAyNTZxMzggMTQgNjEgNDd0MjMgNzN6Ii8+DQo8L3N2Zz4NCg=="); background-repeat: no-repeat; background-size: contain; padding-left: 20px; height: 0.9em; display: inline-block }
 
+.icon-search-plus { background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB3aWR0aD0iMTc5MiIgaGVpZ2h0PSIxNzkyIiB2aWV3Qm94PSIwIDAgMTc5MiAxNzkyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGZpbGw9IiM2ZjZmNmYiIGQ9Ik0xMDg4IDgwMHY2NHEwIDEzLTkuNSAyMi41dC0yMi41IDkuNWgtMjI0djIyNHEwIDEzLTkuNSAyMi41dC0yMi41IDkuNWgtNjRxLTEzIDAtMjIuNS05LjV0LTkuNS0yMi41di0yMjRoLTIyNHEtMTMgMC0yMi41LTkuNXQtOS41LTIyLjV2LTY0cTAtMTMgOS41LTIyLjV0MjIuNS05LjVoMjI0di0yMjRxMC0xMyA5LjUtMjIuNXQyMi41LTkuNWg2NHExMyAwIDIyLjUgOS41dDkuNSAyMi41djIyNGgyMjRxMTMgMCAyMi41IDkuNXQ5LjUgMjIuNXptMTI4IDMycTAtMTg1LTEzMS41LTMxNi41dC0zMTYuNS0xMzEuNS0zMTYuNSAxMzEuNS0xMzEuNSAzMTYuNSAxMzEuNSAzMTYuNSAzMTYuNSAxMzEuNSAzMTYuNS0xMzEuNSAxMzEuNS0zMTYuNXptNTEyIDgzMnEwIDUzLTM3LjUgOTAuNXQtOTAuNSAzNy41cS01NCAwLTkwLTM4bC0zNDMtMzQycS0xNzkgMTI0LTM5OSAxMjQtMTQzIDAtMjczLjUtNTUuNXQtMjI1LTE1MC0xNTAtMjI1LTU1LjUtMjczLjUgNTUuNS0yNzMuNSAxNTAtMjI1IDIyNS0xNTAgMjczLjUtNTUuNSAyNzMuNSA1NS41IDIyNSAxNTAgMTUwIDIyNSA1NS41IDI3My41cTAgMjIwLTEyNCAzOTlsMzQzIDM0M3EzNyAzNyAzNyA5MHoiLz48L3N2Zz4="); background-repeat: no-repeat; background-size: contain; padding-left: 20px; height: 0.9em; display: inline-block }
 
-.icon-up-dir_active {
+.icon-search-minus { background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB3aWR0aD0iMTc5MiIgaGVpZ2h0PSIxNzkyIiB2aWV3Qm94PSIwIDAgMTc5MiAxNzkyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGZpbGw9IiM2ZjZmNmYiIGQ9Ik0xMDg4IDgwMHY2NHEwIDEzLTkuNSAyMi41dC0yMi41IDkuNWgtNTc2cS0xMyAwLTIyLjUtOS41dC05LjUtMjIuNXYtNjRxMC0xMyA5LjUtMjIuNXQyMi41LTkuNWg1NzZxMTMgMCAyMi41IDkuNXQ5LjUgMjIuNXptMTI4IDMycTAtMTg1LTEzMS41LTMxNi41dC0zMTYuNS0xMzEuNS0zMTYuNSAxMzEuNS0xMzEuNSAzMTYuNSAxMzEuNSAzMTYuNSAzMTYuNSAxMzEuNSAzMTYuNS0xMzEuNSAxMzEuNS0zMTYuNXptNTEyIDgzMnEwIDUzLTM3LjUgOTAuNXQtOTAuNSAzNy41cS01NCAwLTkwLTM4bC0zNDMtMzQycS0xNzkgMTI0LTM5OSAxMjQtMTQzIDAtMjczLjUtNTUuNXQtMjI1LTE1MC0xNTAtMjI1LTU1LjUtMjczLjUgNTUuNS0yNzMuNSAxNTAtMjI1IDIyNS0xNTAgMjczLjUtNTUuNSAyNzMuNSA1NS41IDIyNSAxNTAgMTUwIDIyNSA1NS41IDI3My41cTAgMjIwLTEyNCAzOTlsMzQzIDM0M3EzNyAzNyAzNyA5MHoiLz48L3N2Zz4="); background-repeat: no-repeat; background-size: contain; padding-left: 20px; height: 0.9em; display: inline-block }
 
-    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgd2lkdGg9IjE3OTIiIGhlaWdodD0iMTc5MiIgdmlld0JveD0iMCAwIDE3OTIgMTc5MiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsPSIjMDA3OEQ0IiBkPSJNMTQwOCAxMjE2cTAgMjYtMTkgNDV0LTQ1IDE5aC04OTZxLTI2IDAtNDUtMTl0LTE5LTQ1IDE5LTQ1bDQ0OC00NDhxMTktMTkgNDUtMTl0NDUgMTlsNDQ4IDQ0OHExOSAxOSAxOSA0NXoiLz48L3N2Zz4=);
+.icon-star { background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB3aWR0aD0iMTc5MiIgaGVpZ2h0PSIxNzkyIiB2aWV3Qm94PSIwIDAgMTc5MiAxNzkyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xNzI4IDY0N3EwIDIyLTI2IDQ4bC0zNjMgMzU0IDg2IDUwMHExIDcgMSAyMCAwIDIxLTEwLjUgMzUuNXQtMzAuNSAxNC41cS0xOSAwLTQwLTEybC00NDktMjM2LTQ0OSAyMzZxLTIyIDEyLTQwIDEyLTIxIDAtMzEuNS0xNC41dC0xMC41LTM1LjVxMC02IDItMjBsODYtNTAwLTM2NC0zNTRxLTI1LTI3LTI1LTQ4IDAtMzcgNTYtNDZsNTAyLTczIDIyNS00NTVxMTktNDEgNDktNDF0NDkgNDFsMjI1IDQ1NSA1MDIgNzNxNTYgOSA1NiA0NnoiIGZpbGw9IiMwMDAiLz48L3N2Zz4="); background-repeat: no-repeat; background-size: contain; padding-left: 20px; height: 0.9em; display: inline-block }
 
-    background-repeat: no-repeat;
+.icon-sponsor { background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB3aWR0aD0iMTc5MiIgaGVpZ2h0PSIxNzkyIiB2aWV3Qm94PSIwIDAgMTc5MiAxNzkyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik04OTYgMTY2NHEtMjYgMC00NC0xOGwtNjI0LTYwMnEtMTAtOC0yNy41LTI2dC01NS41LTY1LjUtNjgtOTcuNS01My41LTEyMS0yMy41LTEzOHEwLTIyMCAxMjctMzQ0dDM1MS0xMjRxNjIgMCAxMjYuNSAyMS41dDEyMCA1OCA5NS41IDY4LjUgNzYgNjhxMzYtMzYgNzYtNjh0OTUuNS02OC41IDEyMC01OCAxMjYuNS0yMS41cTIyNCAwIDM1MSAxMjR0MTI3IDM0NHEwIDIyMS0yMjkgNDUwbC02MjMgNjAwcS0xOCAxOC00NCAxOHoiIGZpbGw9IiNlYTRhYWEiLz48L3N2Zz4="); background-repeat: no-repeat; background-size: contain; padding-left: 20px; height: 0.9em; display: inline-block }
 
-    background-size: contain;
+.ct-double-octave::after,.ct-major-eleventh::after,.ct-major-second::after,.ct-major-seventh::after,.ct-major-sixth::after,.ct-major-tenth::after,.ct-major-third::after,.ct-major-twelfth::after,.ct-minor-second::after,.ct-minor-seventh::after,.ct-minor-sixth::after,.ct-minor-third::after,.ct-octave::after,.ct-perfect-fifth::after,.ct-perfect-fourth::after,.ct-square::after { content: ""; clear: both }
 
-    padding-left: 15px;
+.ct-label { fill: rgba(0, 0, 0, 0.4); color: rgba(0, 0, 0, 0.4); font-size: 0.75rem; line-height: 1 }
 
-    height: 0.9em;
+.ct-grid-background,.ct-line { fill: none }
 
-    display: inline-block;
+.ct-chart-bar .ct-label,.ct-chart-line .ct-label { display: flex }
 
-    position: relative;
+.ct-chart-donut .ct-label,.ct-chart-pie .ct-label { }
 
-    top: 3px;
+.ct-label.ct-horizontal.ct-start { text-align: left; text-anchor: start }
 
-}
+.ct-label.ct-horizontal.ct-end { text-align: left; text-anchor: start }
 
-.icon-down-dir_active {
+.ct-label.ct-vertical.ct-start { text-align: right; text-anchor: end }
 
-    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgd2lkdGg9IjE3OTIiIGhlaWdodD0iMTc5MiIgdmlld0JveD0iMCAwIDE3OTIgMTc5MiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsPSIjMDA3OEQ0IiBkPSJNMTQwOCA3MDRxMCAyNi0xOSA0NWwtNDQ4IDQ0OHEtMTkgMTktNDUgMTl0LTQ1LTE5bC00NDgtNDQ4cS0xOS0xOS0xOS00NXQxOS00NSA0NS0xOWg4OTZxMjYgMCA0NSAxOXQxOSA0NXoiLz48L3N2Zz4=);
+.ct-label.ct-vertical.ct-end { text-align: left; text-anchor: start }
 
-    background-repeat: no-repeat;
+.ct-chart-bar .ct-label.ct-horizontal.ct-start { justify-content: center; text-align: center; text-anchor: start }
 
-    background-size: contain;
+.ct-chart-bar .ct-label.ct-horizontal.ct-end { justify-content: center; text-align: center; text-anchor: start }
 
-    padding-left: 15px;
+.ct-chart-bar.ct-horizontal-bars .ct-label.ct-horizontal.ct-start { text-align: left; text-anchor: start }
 
-    height: 0.9em;
+.ct-chart-bar.ct-horizontal-bars .ct-label.ct-horizontal.ct-end { text-align: left; text-anchor: start }
 
-    display: inline-block;
+.ct-chart-bar.ct-horizontal-bars .ct-label.ct-vertical.ct-start { text-align: right; text-anchor: end }
 
-    position: relative;
+.ct-chart-bar.ct-horizontal-bars .ct-label.ct-vertical.ct-end { text-align: left; text-anchor: end }
 
-    top: 3px;
+.ct-grid { stroke: rgba(0, 0, 0, 0.2); stroke-width: 1px; stroke-dasharray: 2px }
 
-}
+.ct-point { stroke-width: 10px; stroke-linecap: round }
 
-.icon-down-dir {
+.ct-line { stroke-width: 4px }
 
-    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB3aWR0aD0iMTc5MiIgaGVpZ2h0PSIxNzkyIiB2aWV3Qm94PSIwIDAgMTc5MiAxNzkyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xNDA4IDcwNHEwIDI2LTE5IDQ1bC00NDggNDQ4cS0xOSAxOS00NSAxOXQtNDUtMTlsLTQ0OC00NDhxLTE5LTE5LTE5LTQ1dDE5LTQ1IDQ1LTE5aDg5NnEyNiAwIDQ1IDE5dDE5IDQ1eiIvPjwvc3ZnPg==);
+.ct-area { stroke: none; fill-opacity: 0.1 }
 
-    background-repeat: no-repeat;
+.ct-bar { fill: none; stroke-width: 10px }
 
-    background-size: contain;
+.ct-slice-donut { fill: none; stroke-width: 60px }
 
-    padding-left: 15px;
+.ct-series-a .ct-bar,.ct-series-a .ct-line,.ct-series-a .ct-point,.ct-series-a .ct-slice-donut { stroke: rgb(215, 2, 6) }
 
-    height: 0.9em;
+.ct-series-a .ct-area,.ct-series-a .ct-slice-donut-solid,.ct-series-a .ct-slice-pie { fill: rgb(215, 2, 6) }
 
-    display: inline-block;
+.ct-series-b .ct-bar,.ct-series-b .ct-line,.ct-series-b .ct-point,.ct-series-b .ct-slice-donut { stroke: rgb(240, 91, 79) }
 
-    position: relative;
+.ct-series-b .ct-area,.ct-series-b .ct-slice-donut-solid,.ct-series-b .ct-slice-pie { fill: rgb(240, 91, 79) }
 
-    top: 3px;
+.ct-series-c .ct-bar,.ct-series-c .ct-line,.ct-series-c .ct-point,.ct-series-c .ct-slice-donut { stroke: rgb(244, 198, 61) }
 
-}
+.ct-series-c .ct-area,.ct-series-c .ct-slice-donut-solid,.ct-series-c .ct-slice-pie { fill: rgb(244, 198, 61) }
 
-.icon-info-circled {
+.ct-series-d .ct-bar,.ct-series-d .ct-line,.ct-series-d .ct-point,.ct-series-d .ct-slice-donut { stroke: rgb(209, 121, 5) }
 
-    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB3aWR0aD0iMTc5MiIgaGVpZ2h0PSIxNzkyIiB2aWV3Qm94PSIwIDAgMTc5MiAxNzkyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxjaXJjbGUgY3g9Ijg5NiIgY3k9Ijg5NiIgcj0iNzUwIiBmaWxsPSIjZmZmIiAvPjxwYXRoIGZpbGw9IiMyOEE1RkYiIGQ9Ik0xMTUyIDEzNzZ2LTE2MHEwLTE0LTktMjN0LTIzLTloLTk2di01MTJxMC0xNC05LTIzdC0yMy05aC0zMjBxLTE0IDAtMjMgOXQtOSAyM3YxNjBxMCAxNCA5IDIzdDIzIDloOTZ2MzIwaC05NnEtMTQgMC0yMyA5dC05IDIzdjE2MHEwIDE0IDkgMjN0MjMgOWg0NDhxMTQgMCAyMy05dDktMjN6bS0xMjgtODk2di0xNjBxMC0xNC05LTIzdC0yMy05aC0xOTJxLTE0IDAtMjMgOXQtOSAyM3YxNjBxMCAxNCA5IDIzdDIzIDloMTkycTE0IDAgMjMtOXQ5LTIzem02NDAgNDE2cTAgMjA5LTEwMyAzODUuNXQtMjc5LjUgMjc5LjUtMzg1LjUgMTAzLTM4NS41LTEwMy0yNzkuNS0yNzkuNS0xMDMtMzg1LjUgMTAzLTM4NS41IDI3OS41LTI3OS41IDM4NS41LTEwMyAzODUuNSAxMDMgMjc5LjUgMjc5LjUgMTAzIDM4NS41eiIvPjwvc3ZnPg==);
+.ct-series-d .ct-area,.ct-series-d .ct-slice-donut-solid,.ct-series-d .ct-slice-pie { fill: rgb(209, 121, 5) }
 
-    background-repeat: no-repeat;
+.ct-series-e .ct-bar,.ct-series-e .ct-line,.ct-series-e .ct-point,.ct-series-e .ct-slice-donut { stroke: rgb(69, 61, 63) }
 
-    background-size: contain;
+.ct-series-e .ct-area,.ct-series-e .ct-slice-donut-solid,.ct-series-e .ct-slice-pie { fill: rgb(69, 61, 63) }
 
-    padding-left: 15px;
+.ct-series-f .ct-bar,.ct-series-f .ct-line,.ct-series-f .ct-point,.ct-series-f .ct-slice-donut { stroke: rgb(89, 146, 43) }
 
-    height: 0.9em;
+.ct-series-f .ct-area,.ct-series-f .ct-slice-donut-solid,.ct-series-f .ct-slice-pie { fill: rgb(89, 146, 43) }
 
-    display: inline-block;
+.ct-series-g .ct-bar,.ct-series-g .ct-line,.ct-series-g .ct-point,.ct-series-g .ct-slice-donut { stroke: rgb(5, 68, 211) }
 
-}
+.ct-series-g .ct-area,.ct-series-g .ct-slice-donut-solid,.ct-series-g .ct-slice-pie { fill: rgb(5, 68, 211) }
 
-.icon-plus {
+.ct-series-h .ct-bar,.ct-series-h .ct-line,.ct-series-h .ct-point,.ct-series-h .ct-slice-donut { stroke: rgb(107, 3, 146) }
 
-    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB3aWR0aD0iMTc5MiIgaGVpZ2h0PSIxNzkyIiB2aWV3Qm94PSIwIDAgMTc5MiAxNzkyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xNjAwIDczNnYxOTJxMCA0MC0yOCA2OHQtNjggMjhoLTQxNnY0MTZxMCA0MC0yOCA2OHQtNjggMjhoLTE5MnEtNDAgMC02OC0yOHQtMjgtNjh2LTQxNmgtNDE2cS00MCAwLTY4LTI4dC0yOC02OHYtMTkycTAtNDAgMjgtNjh0NjgtMjhoNDE2di00MTZxMC00MCAyOC02OHQ2OC0yOGgxOTJxNDAgMCA2OCAyOHQyOCA2OHY0MTZoNDE2cTQwIDAgNjggMjh0MjggNjh6Ii8+PC9zdmc+);
+.ct-series-h .ct-area,.ct-series-h .ct-slice-donut-solid,.ct-series-h .ct-slice-pie { fill: rgb(107, 3, 146) }
 
-    background-repeat: no-repeat;
+.ct-series-i .ct-bar,.ct-series-i .ct-line,.ct-series-i .ct-point,.ct-series-i .ct-slice-donut { stroke: rgb(240, 91, 79) }
 
-    background-size: contain;
+.ct-series-i .ct-area,.ct-series-i .ct-slice-donut-solid,.ct-series-i .ct-slice-pie { fill: rgb(240, 91, 79) }
 
-    padding-left: 15px;
+.ct-series-j .ct-bar,.ct-series-j .ct-line,.ct-series-j .ct-point,.ct-series-j .ct-slice-donut { stroke: rgb(221, 164, 88) }
 
-    height: 0.9em;
+.ct-series-j .ct-area,.ct-series-j .ct-slice-donut-solid,.ct-series-j .ct-slice-pie { fill: rgb(221, 164, 88) }
 
-    display: inline-block;
+.ct-series-k .ct-bar,.ct-series-k .ct-line,.ct-series-k .ct-point,.ct-series-k .ct-slice-donut { stroke: rgb(234, 207, 125) }
 
-    position: relative;
+.ct-series-k .ct-area,.ct-series-k .ct-slice-donut-solid,.ct-series-k .ct-slice-pie { fill: rgb(234, 207, 125) }
 
-    top: 3px;
+.ct-series-l .ct-bar,.ct-series-l .ct-line,.ct-series-l .ct-point,.ct-series-l .ct-slice-donut { stroke: rgb(134, 121, 125) }
 
-}
+.ct-series-l .ct-area,.ct-series-l .ct-slice-donut-solid,.ct-series-l .ct-slice-pie { fill: rgb(134, 121, 125) }
 
-.icon-minus {
+.ct-series-m .ct-bar,.ct-series-m .ct-line,.ct-series-m .ct-point,.ct-series-m .ct-slice-donut { stroke: rgb(178, 195, 38) }
 
-    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgd2lkdGg9IjE3OTIiIGhlaWdodD0iMTc5MiIgdmlld0JveD0iMCAwIDE3OTIgMTc5MiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsPSIjMDAwIiBkPSJNMTYwMCA3MzZ2MTkycTAgNDAtMjggNjh0LTY4IDI4aC0xMjE2cS00MCAwLTY4LTI4dC0yOC02OHYtMTkycTAtNDAgMjgtNjh0NjgtMjhoMTIxNnE0MCAwIDY4IDI4dDI4IDY4eiIvPjwvc3ZnPg==);
+.ct-series-m .ct-area,.ct-series-m .ct-slice-donut-solid,.ct-series-m .ct-slice-pie { fill: rgb(178, 195, 38) }
 
-    background-repeat: no-repeat;
+.ct-series-n .ct-bar,.ct-series-n .ct-line,.ct-series-n .ct-point,.ct-series-n .ct-slice-donut { stroke: rgb(97, 136, 226) }
 
-    background-size: contain;
+.ct-series-n .ct-area,.ct-series-n .ct-slice-donut-solid,.ct-series-n .ct-slice-pie { fill: rgb(97, 136, 226) }
 
-    padding-left: 15px;
+.ct-series-o .ct-bar,.ct-series-o .ct-line,.ct-series-o .ct-point,.ct-series-o .ct-slice-donut { stroke: rgb(167, 72, 202) }
 
-    height: 0.9em;
+.ct-series-o .ct-area,.ct-series-o .ct-slice-donut-solid,.ct-series-o .ct-slice-pie { fill: rgb(167, 72, 202) }
 
-    display: inline-block;
+.ct-square { display: block; position: relative; width: 100% }
 
-    position: relative;
+.ct-square::before { display: block; float: left; content: ""; width: 0; height: 0; padding-bottom: 100% }
 
-    top: 3px;
+.ct-square::after { display: table }
 
-}
+.ct-square>svg { display: block; position: absolute; top: 0; left: 0 }
 
-.icon-wrench {
+.ct-minor-second { display: block; position: relative; width: 100% }
 
-    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTc5MiIgaGVpZ2h0PSIxNzkyIiB2aWV3Qm94PSIwIDAgMTc5MiAxNzkyIj4NCiAgICA8cGF0aCBkPSJNNDQ4IDE0NzJxMC0yNi0xOS00NXQtNDUtMTktNDUgMTktMTkgNDUgMTkgNDUgNDUgMTkgNDUtMTkgMTktNDV6bTY0NC00MjBsLTY4MiA2ODJxLTM3IDM3LTkwIDM3LTUyIDAtOTEtMzdsLTEwNi0xMDhxLTM4LTM2LTM4LTkwIDAtNTMgMzgtOTFsNjgxLTY4MXEzOSA5OCAxMTQuNSAxNzMuNXQxNzMuNSAxMTQuNXptNjM0LTQzNXEwIDM5LTIzIDEwNi00NyAxMzQtMTY0LjUgMjE3LjV0LTI1OC41IDgzLjVxLTE4NSAwLTMxNi41LTEzMS41dC0xMzEuNS0zMTYuNSAxMzEuNS0zMTYuNSAzMTYuNS0xMzEuNXE1OCAwIDEyMS41IDE2LjV0MTA3LjUgNDYuNXExNiAxMSAxNiAyOHQtMTYgMjhsLTI5MyAxNjl2MjI0bDE5MyAxMDdxNS0zIDc5LTQ4LjV0MTM1LjUtODEgNzAuNS0zNS41cTE1IDAgMjMuNSAxMHQ4LjUgMjV6Ii8+DQo8L3N2Zz4NCg==);
+.ct-minor-second::before { display: block; float: left; content: ""; width: 0; height: 0; padding-bottom: 93.75% }
 
-    background-repeat: no-repeat;
+.ct-minor-second::after { display: table }
 
-    background-size: contain;
+.ct-minor-second>svg { display: block; position: absolute; top: 0; left: 0 }
 
-    padding-left: 20px;
+.ct-major-second { display: block; position: relative; width: 100% }
 
-    height: 0.9em;
+.ct-major-second::before { display: block; float: left; content: ""; width: 0; height: 0; padding-bottom: 88.88889% }
 
-    display: inline-block;
+.ct-major-second::after { display: table }
 
-}
+.ct-major-second>svg { display: block; position: absolute; top: 0; left: 0 }
 
-.icon-fork {
+.ct-minor-third { display: block; position: relative; width: 100% }
 
-    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTc5MiIgaGVpZ2h0PSIxNzkyIiB2aWV3Qm94PSIwIDAgMTc5MiAxNzkyIj4NCiAgICA8cGF0aCBkPSJNNjcyIDE0NzJxMC00MC0yOC02OHQtNjgtMjgtNjggMjgtMjggNjggMjggNjggNjggMjggNjgtMjggMjgtNjh6bTAtMTE1MnEwLTQwLTI4LTY4dC02OC0yOC02OCAyOC0yOCA2OCAyOCA2OCA2OCAyOCA2OC0yOCAyOC02OHptNjQwIDEyOHEwLTQwLTI4LTY4dC02OC0yOC02OCAyOC0yOCA2OCAyOCA2OCA2OCAyOCA2OC0yOCAyOC02OHptOTYgMHEwIDUyLTI2IDk2LjV0LTcwIDY5LjVxLTIgMjg3LTIyNiA0MTQtNjcgMzgtMjAzIDgxLTEyOCA0MC0xNjkuNSA3MXQtNDEuNSAxMDB2MjZxNDQgMjUgNzAgNjkuNXQyNiA5Ni41cTAgODAtNTYgMTM2dC0xMzYgNTYtMTM2LTU2LTU2LTEzNnEwLTUyIDI2LTk2LjV0NzAtNjkuNXYtODIwcS00NC0yNS03MC02OS41dC0yNi05Ni41cTAtODAgNTYtMTM2dDEzNi01NiAxMzYgNTYgNTYgMTM2cTAgNTItMjYgOTYuNXQtNzAgNjkuNXY0OTdxNTQtMjYgMTU0LTU3IDU1LTE3IDg3LjUtMjkuNXQ3MC41LTMxIDU5LTM5LjUgNDAuNS01MSAyOC02OS41IDguNS05MS41cS00NC0yNS03MC02OS41dC0yNi05Ni41cTAtODAgNTYtMTM2dDEzNi01NiAxMzYgNTYgNTYgMTM2eiIvPg0KPC9zdmc+DQo=);
+.ct-minor-third::before { display: block; float: left; content: ""; width: 0; height: 0; padding-bottom: 83.33334% }
 
-    background-repeat: no-repeat;
+.ct-minor-third::after { display: table }
 
-    background-size: contain;
+.ct-minor-third>svg { display: block; position: absolute; top: 0; left: 0 }
 
-    padding-left: 20px;
+.ct-major-third { display: block; position: relative; width: 100% }
 
-    height: 0.9em;
+.ct-major-third::before { display: block; float: left; content: ""; width: 0; height: 0; padding-bottom: 80% }
 
-    display: inline-block;
+.ct-major-third::after { display: table }
 
-}
+.ct-major-third>svg { display: block; position: absolute; top: 0; left: 0 }
 
-.icon-cube {
+.ct-perfect-fourth { display: block; position: relative; width: 100% }
 
-    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTc5MiIgaGVpZ2h0PSIxNzkyIiB2aWV3Qm94PSIwIDAgMTc5MiAxNzkyIj4NCiAgICA8cGF0aCBkPSJNODk2IDE2MjlsNjQwLTM0OXYtNjM2bC02NDAgMjMzdjc1MnptLTY0LTg2NWw2OTgtMjU0LTY5OC0yNTQtNjk4IDI1NHptODMyLTI1MnY3NjhxMCAzNS0xOCA2NXQtNDkgNDdsLTcwNCAzODRxLTI4IDE2LTYxIDE2dC02MS0xNmwtNzA0LTM4NHEtMzEtMTctNDktNDd0LTE4LTY1di03NjhxMC00MCAyMy03M3Q2MS00N2w3MDQtMjU2cTIyLTggNDQtOHQ0NCA4bDcwNCAyNTZxMzggMTQgNjEgNDd0MjMgNzN6Ii8+DQo8L3N2Zz4NCg==);
+.ct-perfect-fourth::before { display: block; float: left; content: ""; width: 0; height: 0; padding-bottom: 75% }
 
-    background-repeat: no-repeat;
+.ct-perfect-fourth::after { display: table }
 
-    background-size: contain;
+.ct-perfect-fourth>svg { display: block; position: absolute; top: 0; left: 0 }
 
-    padding-left: 20px;
+.ct-perfect-fifth { display: block; position: relative; width: 100% }
 
-    height: 0.9em;
+.ct-perfect-fifth::before { display: block; float: left; content: ""; width: 0; height: 0; padding-bottom: 66.66666% }
 
-    display: inline-block;
+.ct-perfect-fifth::after { display: table }
 
-}
+.ct-perfect-fifth>svg { display: block; position: absolute; top: 0; left: 0 }
 
-.icon-search-plus {
+.ct-minor-sixth { display: block; position: relative; width: 100% }
 
-    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB3aWR0aD0iMTc5MiIgaGVpZ2h0PSIxNzkyIiB2aWV3Qm94PSIwIDAgMTc5MiAxNzkyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGZpbGw9IiM2ZjZmNmYiIGQ9Ik0xMDg4IDgwMHY2NHEwIDEzLTkuNSAyMi41dC0yMi41IDkuNWgtMjI0djIyNHEwIDEzLTkuNSAyMi41dC0yMi41IDkuNWgtNjRxLTEzIDAtMjIuNS05LjV0LTkuNS0yMi41di0yMjRoLTIyNHEtMTMgMC0yMi41LTkuNXQtOS41LTIyLjV2LTY0cTAtMTMgOS41LTIyLjV0MjIuNS05LjVoMjI0di0yMjRxMC0xMyA5LjUtMjIuNXQyMi41LTkuNWg2NHExMyAwIDIyLjUgOS41dDkuNSAyMi41djIyNGgyMjRxMTMgMCAyMi41IDkuNXQ5LjUgMjIuNXptMTI4IDMycTAtMTg1LTEzMS41LTMxNi41dC0zMTYuNS0xMzEuNS0zMTYuNSAxMzEuNS0xMzEuNSAzMTYuNSAxMzEuNSAzMTYuNSAzMTYuNSAxMzEuNSAzMTYuNS0xMzEuNSAxMzEuNS0zMTYuNXptNTEyIDgzMnEwIDUzLTM3LjUgOTAuNXQtOTAuNSAzNy41cS01NCAwLTkwLTM4bC0zNDMtMzQycS0xNzkgMTI0LTM5OSAxMjQtMTQzIDAtMjczLjUtNTUuNXQtMjI1LTE1MC0xNTAtMjI1LTU1LjUtMjczLjUgNTUuNS0yNzMuNSAxNTAtMjI1IDIyNS0xNTAgMjczLjUtNTUuNSAyNzMuNSA1NS41IDIyNSAxNTAgMTUwIDIyNSA1NS41IDI3My41cTAgMjIwLTEyNCAzOTlsMzQzIDM0M3EzNyAzNyAzNyA5MHoiLz48L3N2Zz4=);
+.ct-minor-sixth::before { display: block; float: left; content: ""; width: 0; height: 0; padding-bottom: 62.5% }
 
-    background-repeat: no-repeat;
+.ct-minor-sixth::after { display: table }
 
-    background-size: contain;
+.ct-minor-sixth>svg { display: block; position: absolute; top: 0; left: 0 }
 
-    padding-left: 20px;
+.ct-golden-section { display: block; position: relative; width: 100% }
 
-    height: 0.9em;
+.ct-golden-section::before { display: block; float: left; content: ""; width: 0; height: 0; padding-bottom: 61.8047% }
 
-    display: inline-block;
+.ct-golden-section::after { content: ""; display: table; clear: both }
 
-}
+.ct-golden-section>svg { display: block; position: absolute; top: 0; left: 0 }
 
-.icon-search-minus {
+.ct-major-sixth { display: block; position: relative; width: 100% }
 
-    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB3aWR0aD0iMTc5MiIgaGVpZ2h0PSIxNzkyIiB2aWV3Qm94PSIwIDAgMTc5MiAxNzkyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGZpbGw9IiM2ZjZmNmYiIGQ9Ik0xMDg4IDgwMHY2NHEwIDEzLTkuNSAyMi41dC0yMi41IDkuNWgtNTc2cS0xMyAwLTIyLjUtOS41dC05LjUtMjIuNXYtNjRxMC0xMyA5LjUtMjIuNXQyMi41LTkuNWg1NzZxMTMgMCAyMi41IDkuNXQ5LjUgMjIuNXptMTI4IDMycTAtMTg1LTEzMS41LTMxNi41dC0zMTYuNS0xMzEuNS0zMTYuNSAxMzEuNS0xMzEuNSAzMTYuNSAxMzEuNSAzMTYuNSAzMTYuNSAxMzEuNSAzMTYuNS0xMzEuNSAxMzEuNS0zMTYuNXptNTEyIDgzMnEwIDUzLTM3LjUgOTAuNXQtOTAuNSAzNy41cS01NCAwLTkwLTM4bC0zNDMtMzQycS0xNzkgMTI0LTM5OSAxMjQtMTQzIDAtMjczLjUtNTUuNXQtMjI1LTE1MC0xNTAtMjI1LTU1LjUtMjczLjUgNTUuNS0yNzMuNSAxNTAtMjI1IDIyNS0xNTAgMjczLjUtNTUuNSAyNzMuNSA1NS41IDIyNSAxNTAgMTUwIDIyNSA1NS41IDI3My41cTAgMjIwLTEyNCAzOTlsMzQzIDM0M3EzNyAzNyAzNyA5MHoiLz48L3N2Zz4=);
+.ct-major-sixth::before { display: block; float: left; content: ""; width: 0; height: 0; padding-bottom: 60% }
 
-    background-repeat: no-repeat;
+.ct-major-sixth::after { display: table }
 
-    background-size: contain;
+.ct-major-sixth>svg { display: block; position: absolute; top: 0; left: 0 }
 
-    padding-left: 20px;
+.ct-minor-seventh { display: block; position: relative; width: 100% }
 
-    height: 0.9em;
+.ct-minor-seventh::before { display: block; float: left; content: ""; width: 0; height: 0; padding-bottom: 56.25% }
 
-    display: inline-block;
+.ct-minor-seventh::after { display: table }
 
-}
+.ct-minor-seventh>svg { display: block; position: absolute; top: 0; left: 0 }
 
-.icon-star {
+.ct-major-seventh { display: block; position: relative; width: 100% }
 
-    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB3aWR0aD0iMTc5MiIgaGVpZ2h0PSIxNzkyIiB2aWV3Qm94PSIwIDAgMTc5MiAxNzkyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xNzI4IDY0N3EwIDIyLTI2IDQ4bC0zNjMgMzU0IDg2IDUwMHExIDcgMSAyMCAwIDIxLTEwLjUgMzUuNXQtMzAuNSAxNC41cS0xOSAwLTQwLTEybC00NDktMjM2LTQ0OSAyMzZxLTIyIDEyLTQwIDEyLTIxIDAtMzEuNS0xNC41dC0xMC41LTM1LjVxMC02IDItMjBsODYtNTAwLTM2NC0zNTRxLTI1LTI3LTI1LTQ4IDAtMzcgNTYtNDZsNTAyLTczIDIyNS00NTVxMTktNDEgNDktNDF0NDkgNDFsMjI1IDQ1NSA1MDIgNzNxNTYgOSA1NiA0NnoiIGZpbGw9IiMwMDAiLz48L3N2Zz4=);
+.ct-major-seventh::before { display: block; float: left; content: ""; width: 0; height: 0; padding-bottom: 53.33333% }
 
-    background-repeat: no-repeat;
+.ct-major-seventh::after { display: table }
 
-    background-size: contain;
+.ct-major-seventh>svg { display: block; position: absolute; top: 0; left: 0 }
 
-    padding-left: 20px;
+.ct-octave { display: block; position: relative; width: 100% }
 
-    height: 0.9em;
+.ct-octave::before { display: block; float: left; content: ""; width: 0; height: 0; padding-bottom: 50% }
 
-    display: inline-block;
+.ct-octave::after { display: table }
 
-}
+.ct-octave>svg { display: block; position: absolute; top: 0; left: 0 }
 
-.icon-sponsor {
+.ct-major-tenth { display: block; position: relative; width: 100% }
 
-    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB3aWR0aD0iMTc5MiIgaGVpZ2h0PSIxNzkyIiB2aWV3Qm94PSIwIDAgMTc5MiAxNzkyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik04OTYgMTY2NHEtMjYgMC00NC0xOGwtNjI0LTYwMnEtMTAtOC0yNy41LTI2dC01NS41LTY1LjUtNjgtOTcuNS01My41LTEyMS0yMy41LTEzOHEwLTIyMCAxMjctMzQ0dDM1MS0xMjRxNjIgMCAxMjYuNSAyMS41dDEyMCA1OCA5NS41IDY4LjUgNzYgNjhxMzYtMzYgNzYtNjh0OTUuNS02OC41IDEyMC01OCAxMjYuNS0yMS41cTIyNCAwIDM1MSAxMjR0MTI3IDM0NHEwIDIyMS0yMjkgNDUwbC02MjMgNjAwcS0xOCAxOC00NCAxOHoiIGZpbGw9IiNlYTRhYWEiLz48L3N2Zz4=);
+.ct-major-tenth::before { display: block; float: left; content: ""; width: 0; height: 0; padding-bottom: 40% }
 
-    background-repeat: no-repeat;
+.ct-major-tenth::after { display: table }
 
-    background-size: contain;
+.ct-major-tenth>svg { display: block; position: absolute; top: 0; left: 0 }
 
-    padding-left: 20px;
+.ct-major-eleventh { display: block; position: relative; width: 100% }
 
-    height: 0.9em;
+.ct-major-eleventh::before { display: block; float: left; content: ""; width: 0; height: 0; padding-bottom: 37.5% }
 
-    display: inline-block;
+.ct-major-eleventh::after { display: table }
 
-}
+.ct-major-eleventh>svg { display: block; position: absolute; top: 0; left: 0 }
 
+.ct-major-twelfth { display: block; position: relative; width: 100% }
 
+.ct-major-twelfth::before { display: block; float: left; content: ""; width: 0; height: 0; padding-bottom: 33.33333% }
 
+.ct-major-twelfth::after { display: table }
 
+.ct-major-twelfth>svg { display: block; position: absolute; top: 0; left: 0 }
 
+.ct-double-octave { display: block; position: relative; width: 100% }
 
+.ct-double-octave::before { display: block; float: left; content: ""; width: 0; height: 0; padding-bottom: 25% }
 
+.ct-double-octave::after { display: table }
 
+.ct-double-octave>svg { display: block; position: absolute; top: 0; left: 0 }</style>
 
-@media screen {
 
-    html { background-color: #292827; color: #fff; }
 
-    body { color: #fff; }
+				<style id="fccStyle1" type="text/css">
 
-    h1 { background-color: #252423; color: #fff; }
+					*, body { font-size: small;  color: rgba(241,241,241,255)}
 
-    .container { background-color: #292827; }
+					table td { white-space: nowrap; }
 
-    .containerrightfixed { background-color: #3D3C3C; border-left: solid 1px #515050; }
+					table.coverage { width:150px;height:13px }
 
-    .containerrightfixed h1 { background-color: #484747; }
+					body { padding-left:3px;padding-right:3px;padding-bottom:3px }
 
-    .overview tr:hover { background: #2E2D2C }
+					table,tr,th,td { font-size: small; }
 
-    .overview th { background: #292827 }
+					body { -webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none }
 
-    .overview th a { color: #fff; color: rgba(255, 255, 255, 0.95); }
-
-    .overview th a:hover { color: #0078d4; }
-
-    input, select { background-color: #292827; color: #fff; border: 1px solid #fff; }
-
-    a { color: #fff; color: rgba(255, 255, 255, 0.95); }
-
-    a:hover { color: #0078d4; }
-
-    h1 a.back { background-color: #4a4846; }
-
-    h1 a.button { color: #fff; background-color: #565656; border-color: #c1c1c1; }
-
-    h1 a.button:hover { background-color: #8d8d8d; }
-
-    .gray { background-color: #484747; }
-
-    .lightgray { color: #ebebeb; }
-
-    .lightgraybg { background-color: #474747; }
-
-    .lightgreen {background-color: #406540; }
-
-    .lightorange { background-color: #ab7f36; }
-
-    .lightred { background-color: #954848; }
-
-    .ct-label { color: #fff !important; }
-
-    .ct-grid{ stroke:#fff !important; }
-
-    .ct-chart .ct-series.ct-series-a .ct-line, .ct-chart .ct-series.ct-series-a .ct-point { stroke: #0078D4  !important; }
-
-    .ct-chart .ct-series.ct-series-b .ct-line, .ct-chart .ct-series.ct-series-b .ct-point { stroke: #6dc428 !important; }
-
-
-
-    .linecoverage { background-color: #0078D4; }
-
-    .branchcoverage { background-color: #6dc428; }
-
-    .tinylinecoveragechart, .tinybranchcoveragechart { background-color: #292827; }
-
-    .tinybranchcoveragechart .ct-series.ct-series-a .ct-line { stroke: #6dc428 !important; }
-
-
-
-    .icon-down-dir {
-
-        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHdpZHRoPSIxNzkyIiBoZWlnaHQ9IjE3OTIiIHZpZXdCb3g9IjAgMCAxNzkyIDE3OTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0iI0JGQkZDMCIgZD0iTTE0MDggNzA0cTAgMjYtMTkgNDVsLTQ0OCA0NDhxLTE5IDE5LTQ1IDE5dC00NS0xOWwtNDQ4LTQ0OHEtMTktMTktMTktNDV0MTktNDUgNDUtMTloODk2cTI2IDAgNDUgMTl0MTkgNDV6Ii8+PC9zdmc+);
-
-    }
-
-    .icon-info-circled {
-
-        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB3aWR0aD0iMTc5MiIgaGVpZ2h0PSIxNzkyIiB2aWV3Qm94PSIwIDAgMTc5MiAxNzkyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxjaXJjbGUgY3g9Ijg5NiIgY3k9Ijg5NiIgcj0iNzUwIiBmaWxsPSIjZmZmIiAvPjxwYXRoIGZpbGw9IiMyOEE1RkYiIGQ9Ik0xMTUyIDEzNzZ2LTE2MHEwLTE0LTktMjN0LTIzLTloLTk2di01MTJxMC0xNC05LTIzdC0yMy05aC0zMjBxLTE0IDAtMjMgOXQtOSAyM3YxNjBxMCAxNCA5IDIzdDIzIDloOTZ2MzIwaC05NnEtMTQgMC0yMyA5dC05IDIzdjE2MHEwIDE0IDkgMjN0MjMgOWg0NDhxMTQgMCAyMy05dDktMjN6bS0xMjgtODk2di0xNjBxMC0xNC05LTIzdC0yMy05aC0xOTJxLTE0IDAtMjMgOXQtOSAyM3YxNjBxMCAxNCA5IDIzdDIzIDloMTkycTE0IDAgMjMtOXQ5LTIzem02NDAgNDE2cTAgMjA5LTEwMyAzODUuNXQtMjc5LjUgMjc5LjUtMzg1LjUgMTAzLTM4NS41LTEwMy0yNzkuNS0yNzkuNS0xMDMtMzg1LjUgMTAzLTM4NS41IDI3OS41LTI3OS41IDM4NS41LTEwMyAzODUuNSAxMDMgMjc5LjUgMjc5LjUgMTAzIDM4NS41eiIvPjwvc3ZnPg==);
-
-    }
-
-    .icon-plus {
-
-        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHdpZHRoPSIxNzkyIiBoZWlnaHQ9IjE3OTIiIHZpZXdCb3g9IjAgMCAxNzkyIDE3OTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0iI0JGQkZDMCIgZD0iTTE2MDAgNzM2djE5MnEwIDQwLTI4IDY4dC02OCAyOGgtNDE2djQxNnEwIDQwLTI4IDY4dC02OCAyOGgtMTkycS00MCAwLTY4LTI4dC0yOC02OHYtNDE2aC00MTZxLTQwIDAtNjgtMjh0LTI4LTY4di0xOTJxMC00MCAyOC02OHQ2OC0yOGg0MTZ2LTQxNnEwLTQwIDI4LTY4dDY4LTI4aDE5MnE0MCAwIDY4IDI4dDI4IDY4djQxNmg0MTZxNDAgMCA2OCAyOHQyOCA2OHoiLz48L3N2Zz4=);
-
-    }
-
-    .icon-minus {
-
-        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHdpZHRoPSIxNzkyIiBoZWlnaHQ9IjE3OTIiIHZpZXdCb3g9IjAgMCAxNzkyIDE3OTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0iI0JGQkZDMCIgZD0iTTE2MDAgNzM2djE5MnEwIDQwLTI4IDY4dC02OCAyOGgtMTIxNnEtNDAgMC02OC0yOHQtMjgtNjh2LTE5MnEwLTQwIDI4LTY4dDY4LTI4aDEyMTZxNDAgMCA2OCAyOHQyOCA2OHoiLz48L3N2Zz4=);
-
-    }
-
-    .icon-wrench {
-
-        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHdpZHRoPSIxNzkyIiBoZWlnaHQ9IjE3OTIiIHZpZXdCb3g9IjAgMCAxNzkyIDE3OTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0iI0JEQkRCRiIgZD0iTTQ0OCAxNDcycTAtMjYtMTktNDV0LTQ1LTE5LTQ1IDE5LTE5IDQ1IDE5IDQ1IDQ1IDE5IDQ1LTE5IDE5LTQ1em02NDQtNDIwbC02ODIgNjgycS0zNyAzNy05MCAzNy01MiAwLTkxLTM3bC0xMDYtMTA4cS0zOC0zNi0zOC05MCAwLTUzIDM4LTkxbDY4MS02ODFxMzkgOTggMTE0LjUgMTczLjV0MTczLjUgMTE0LjV6bTYzNC00MzVxMCAzOS0yMyAxMDYtNDcgMTM0LTE2NC41IDIxNy41dC0yNTguNSA4My41cS0xODUgMC0zMTYuNS0xMzEuNXQtMTMxLjUtMzE2LjUgMTMxLjUtMzE2LjUgMzE2LjUtMTMxLjVxNTggMCAxMjEuNSAxNi41dDEwNy41IDQ2LjVxMTYgMTEgMTYgMjh0LTE2IDI4bC0yOTMgMTY5djIyNGwxOTMgMTA3cTUtMyA3OS00OC41dDEzNS41LTgxIDcwLjUtMzUuNXExNSAwIDIzLjUgMTB0OC41IDI1eiIvPjwvc3ZnPg==);
-
-    }
-
-    .icon-fork {
-
-        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHdpZHRoPSIxNzkyIiBoZWlnaHQ9IjE3OTIiIHZpZXdCb3g9IjAgMCAxNzkyIDE3OTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0iI0JGQkZDMCIgZD0iTTY3MiAxNDcycTAtNDAtMjgtNjh0LTY4LTI4LTY4IDI4LTI4IDY4IDI4IDY4IDY4IDI4IDY4LTI4IDI4LTY4em0wLTExNTJxMC00MC0yOC02OHQtNjgtMjgtNjggMjgtMjggNjggMjggNjggNjggMjggNjgtMjggMjgtNjh6bTY0MCAxMjhxMC00MC0yOC02OHQtNjgtMjgtNjggMjgtMjggNjggMjggNjggNjggMjggNjgtMjggMjgtNjh6bTk2IDBxMCA1Mi0yNiA5Ni41dC03MCA2OS41cS0yIDI4Ny0yMjYgNDE0LTY3IDM4LTIwMyA4MS0xMjggNDAtMTY5LjUgNzF0LTQxLjUgMTAwdjI2cTQ0IDI1IDcwIDY5LjV0MjYgOTYuNXEwIDgwLTU2IDEzNnQtMTM2IDU2LTEzNi01Ni01Ni0xMzZxMC01MiAyNi05Ni41dDcwLTY5LjV2LTgyMHEtNDQtMjUtNzAtNjkuNXQtMjYtOTYuNXEwLTgwIDU2LTEzNnQxMzYtNTYgMTM2IDU2IDU2IDEzNnEwIDUyLTI2IDk2LjV0LTcwIDY5LjV2NDk3cTU0LTI2IDE1NC01NyA1NS0xNyA4Ny41LTI5LjV0NzAuNS0zMSA1OS0zOS41IDQwLjUtNTEgMjgtNjkuNSA4LjUtOTEuNXEtNDQtMjUtNzAtNjkuNXQtMjYtOTYuNXEwLTgwIDU2LTEzNnQxMzYtNTYgMTM2IDU2IDU2IDEzNnoiLz48L3N2Zz4=);
-
-    }
-
-    .icon-cube {
-
-        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHdpZHRoPSIxNzkyIiBoZWlnaHQ9IjE3OTIiIHZpZXdCb3g9IjAgMCAxNzkyIDE3OTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0iI0JGQkZDMCIgZD0iTTg5NiAxNjI5bDY0MC0zNDl2LTYzNmwtNjQwIDIzM3Y3NTJ6bS02NC04NjVsNjk4LTI1NC02OTgtMjU0LTY5OCAyNTR6bTgzMi0yNTJ2NzY4cTAgMzUtMTggNjV0LTQ5IDQ3bC03MDQgMzg0cS0yOCAxNi02MSAxNnQtNjEtMTZsLTcwNC0zODRxLTMxLTE3LTQ5LTQ3dC0xOC02NXYtNzY4cTAtNDAgMjMtNzN0NjEtNDdsNzA0LTI1NnEyMi04IDQ0LTh0NDQgOGw3MDQgMjU2cTM4IDE0IDYxIDQ3dDIzIDczeiIvPjwvc3ZnPg==);
-
-    }
-
-    .icon-search-plus {
-
-        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHdpZHRoPSIxNzkyIiBoZWlnaHQ9IjE3OTIiIHZpZXdCb3g9IjAgMCAxNzkyIDE3OTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0iI0JGQkZDMCIgZD0iTTEwODggODAwdjY0cTAgMTMtOS41IDIyLjV0LTIyLjUgOS41aC0yMjR2MjI0cTAgMTMtOS41IDIyLjV0LTIyLjUgOS41aC02NHEtMTMgMC0yMi41LTkuNXQtOS41LTIyLjV2LTIyNGgtMjI0cS0xMyAwLTIyLjUtOS41dC05LjUtMjIuNXYtNjRxMC0xMyA5LjUtMjIuNXQyMi41LTkuNWgyMjR2LTIyNHEwLTEzIDkuNS0yMi41dDIyLjUtOS41aDY0cTEzIDAgMjIuNSA5LjV0OS41IDIyLjV2MjI0aDIyNHExMyAwIDIyLjUgOS41dDkuNSAyMi41em0xMjggMzJxMC0xODUtMTMxLjUtMzE2LjV0LTMxNi41LTEzMS41LTMxNi41IDEzMS41LTEzMS41IDMxNi41IDEzMS41IDMxNi41IDMxNi41IDEzMS41IDMxNi41LTEzMS41IDEzMS41LTMxNi41em01MTIgODMycTAgNTMtMzcuNSA5MC41dC05MC41IDM3LjVxLTU0IDAtOTAtMzhsLTM0My0zNDJxLTE3OSAxMjQtMzk5IDEyNC0xNDMgMC0yNzMuNS01NS41dC0yMjUtMTUwLTE1MC0yMjUtNTUuNS0yNzMuNSA1NS41LTI3My41IDE1MC0yMjUgMjI1LTE1MCAyNzMuNS01NS41IDI3My41IDU1LjUgMjI1IDE1MCAxNTAgMjI1IDU1LjUgMjczLjVxMCAyMjAtMTI0IDM5OWwzNDMgMzQzcTM3IDM3IDM3IDkweiIvPjwvc3ZnPg==);
-
-    }
-
-    .icon-search-minus {
-
-        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHdpZHRoPSIxNzkyIiBoZWlnaHQ9IjE3OTIiIHZpZXdCb3g9IjAgMCAxNzkyIDE3OTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbD0iI0JGQkZDMCIgZD0iTTEwODggODAwdjY0cTAgMTMtOS41IDIyLjV0LTIyLjUgOS41aC01NzZxLTEzIDAtMjIuNS05LjV0LTkuNS0yMi41di02NHEwLTEzIDkuNS0yMi41dDIyLjUtOS41aDU3NnExMyAwIDIyLjUgOS41dDkuNSAyMi41em0xMjggMzJxMC0xODUtMTMxLjUtMzE2LjV0LTMxNi41LTEzMS41LTMxNi41IDEzMS41LTEzMS41IDMxNi41IDEzMS41IDMxNi41IDMxNi41IDEzMS41IDMxNi41LTEzMS41IDEzMS41LTMxNi41em01MTIgODMycTAgNTMtMzcuNSA5MC41dC05MC41IDM3LjVxLTU0IDAtOTAtMzhsLTM0My0zNDJxLTE3OSAxMjQtMzk5IDEyNC0xNDMgMC0yNzMuNS01NS41dC0yMjUtMTUwLTE1MC0yMjUtNTUuNS0yNzMuNSA1NS41LTI3My41IDE1MC0yMjUgMjI1LTE1MCAyNzMuNS01NS41IDI3My41IDU1LjUgMjI1IDE1MCAxNTAgMjI1IDU1LjUgMjczLjVxMCAyMjAtMTI0IDM5OWwzNDMgMzQzcTM3IDM3IDM3IDkweiIvPjwvc3ZnPg==);
-
-    }
-
-    .icon-star {
-
-        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB3aWR0aD0iMTc5MiIgaGVpZ2h0PSIxNzkyIiB2aWV3Qm94PSIwIDAgMTc5MiAxNzkyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xNzI4IDY0N3EwIDIyLTI2IDQ4bC0zNjMgMzU0IDg2IDUwMHExIDcgMSAyMCAwIDIxLTEwLjUgMzUuNXQtMzAuNSAxNC41cS0xOSAwLTQwLTEybC00NDktMjM2LTQ0OSAyMzZxLTIyIDEyLTQwIDEyLTIxIDAtMzEuNS0xNC41dC0xMC41LTM1LjVxMC02IDItMjBsODYtNTAwLTM2NC0zNTRxLTI1LTI3LTI1LTQ4IDAtMzcgNTYtNDZsNTAyLTczIDIyNS00NTVxMTktNDEgNDktNDF0NDkgNDFsMjI1IDQ1NSA1MDIgNzNxNTYgOSA1NiA0NnoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=);
-
-    }
-
-}
-
-
-
-
-
-
-
-.ct-double-octave:after,.ct-major-eleventh:after,.ct-major-second:after,.ct-major-seventh:after,.ct-major-sixth:after,.ct-major-tenth:after,.ct-major-third:after,.ct-major-twelfth:after,.ct-minor-second:after,.ct-minor-seventh:after,.ct-minor-sixth:after,.ct-minor-third:after,.ct-octave:after,.ct-perfect-fifth:after,.ct-perfect-fourth:after,.ct-square:after{content:"";clear:both}.ct-label{fill:rgba(0,0,0,.4);color:rgba(0,0,0,.4);font-size:.75rem;line-height:1}.ct-grid-background,.ct-line{fill:none}.ct-chart-bar .ct-label,.ct-chart-line .ct-label{display:block;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex}.ct-chart-donut .ct-label,.ct-chart-pie .ct-label{dominant-baseline:central}.ct-label.ct-horizontal.ct-start{-webkit-box-align:flex-end;-webkit-align-items:flex-end;-ms-flex-align:flex-end;align-items:flex-end;-webkit-box-pack:flex-start;-webkit-justify-content:flex-start;-ms-flex-pack:flex-start;justify-content:flex-start;text-align:left;text-anchor:start}.ct-label.ct-horizontal.ct-end{-webkit-box-align:flex-start;-webkit-align-items:flex-start;-ms-flex-align:flex-start;align-items:flex-start;-webkit-box-pack:flex-start;-webkit-justify-content:flex-start;-ms-flex-pack:flex-start;justify-content:flex-start;text-align:left;text-anchor:start}.ct-label.ct-vertical.ct-start{-webkit-box-align:flex-end;-webkit-align-items:flex-end;-ms-flex-align:flex-end;align-items:flex-end;-webkit-box-pack:flex-end;-webkit-justify-content:flex-end;-ms-flex-pack:flex-end;justify-content:flex-end;text-align:right;text-anchor:end}.ct-label.ct-vertical.ct-end{-webkit-box-align:flex-end;-webkit-align-items:flex-end;-ms-flex-align:flex-end;align-items:flex-end;-webkit-box-pack:flex-start;-webkit-justify-content:flex-start;-ms-flex-pack:flex-start;justify-content:flex-start;text-align:left;text-anchor:start}.ct-chart-bar .ct-label.ct-horizontal.ct-start{-webkit-box-align:flex-end;-webkit-align-items:flex-end;-ms-flex-align:flex-end;align-items:flex-end;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;text-align:center;text-anchor:start}.ct-chart-bar .ct-label.ct-horizontal.ct-end{-webkit-box-align:flex-start;-webkit-align-items:flex-start;-ms-flex-align:flex-start;align-items:flex-start;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;text-align:center;text-anchor:start}.ct-chart-bar.ct-horizontal-bars .ct-label.ct-horizontal.ct-start{-webkit-box-align:flex-end;-webkit-align-items:flex-end;-ms-flex-align:flex-end;align-items:flex-end;-webkit-box-pack:flex-start;-webkit-justify-content:flex-start;-ms-flex-pack:flex-start;justify-content:flex-start;text-align:left;text-anchor:start}.ct-chart-bar.ct-horizontal-bars .ct-label.ct-horizontal.ct-end{-webkit-box-align:flex-start;-webkit-align-items:flex-start;-ms-flex-align:flex-start;align-items:flex-start;-webkit-box-pack:flex-start;-webkit-justify-content:flex-start;-ms-flex-pack:flex-start;justify-content:flex-start;text-align:left;text-anchor:start}.ct-chart-bar.ct-horizontal-bars .ct-label.ct-vertical.ct-start{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:flex-end;-webkit-justify-content:flex-end;-ms-flex-pack:flex-end;justify-content:flex-end;text-align:right;text-anchor:end}.ct-chart-bar.ct-horizontal-bars .ct-label.ct-vertical.ct-end{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:flex-start;-webkit-justify-content:flex-start;-ms-flex-pack:flex-start;justify-content:flex-start;text-align:left;text-anchor:end}.ct-grid{stroke:rgba(0,0,0,.2);stroke-width:1px;stroke-dasharray:2px}.ct-point{stroke-width:10px;stroke-linecap:round}.ct-line{stroke-width:4px}.ct-area{stroke:none;fill-opacity:.1}.ct-bar{fill:none;stroke-width:10px}.ct-slice-donut{fill:none;stroke-width:60px}.ct-series-a .ct-bar,.ct-series-a .ct-line,.ct-series-a .ct-point,.ct-series-a .ct-slice-donut{stroke:#d70206}.ct-series-a .ct-area,.ct-series-a .ct-slice-donut-solid,.ct-series-a .ct-slice-pie{fill:#d70206}.ct-series-b .ct-bar,.ct-series-b .ct-line,.ct-series-b .ct-point,.ct-series-b .ct-slice-donut{stroke:#f05b4f}.ct-series-b .ct-area,.ct-series-b .ct-slice-donut-solid,.ct-series-b .ct-slice-pie{fill:#f05b4f}.ct-series-c .ct-bar,.ct-series-c .ct-line,.ct-series-c .ct-point,.ct-series-c .ct-slice-donut{stroke:#f4c63d}.ct-series-c .ct-area,.ct-series-c .ct-slice-donut-solid,.ct-series-c .ct-slice-pie{fill:#f4c63d}.ct-series-d .ct-bar,.ct-series-d .ct-line,.ct-series-d .ct-point,.ct-series-d .ct-slice-donut{stroke:#d17905}.ct-series-d .ct-area,.ct-series-d .ct-slice-donut-solid,.ct-series-d .ct-slice-pie{fill:#d17905}.ct-series-e .ct-bar,.ct-series-e .ct-line,.ct-series-e .ct-point,.ct-series-e .ct-slice-donut{stroke:#453d3f}.ct-series-e .ct-area,.ct-series-e .ct-slice-donut-solid,.ct-series-e .ct-slice-pie{fill:#453d3f}.ct-series-f .ct-bar,.ct-series-f .ct-line,.ct-series-f .ct-point,.ct-series-f .ct-slice-donut{stroke:#59922b}.ct-series-f .ct-area,.ct-series-f .ct-slice-donut-solid,.ct-series-f .ct-slice-pie{fill:#59922b}.ct-series-g .ct-bar,.ct-series-g .ct-line,.ct-series-g .ct-point,.ct-series-g .ct-slice-donut{stroke:#0544d3}.ct-series-g .ct-area,.ct-series-g .ct-slice-donut-solid,.ct-series-g .ct-slice-pie{fill:#0544d3}.ct-series-h .ct-bar,.ct-series-h .ct-line,.ct-series-h .ct-point,.ct-series-h .ct-slice-donut{stroke:#6b0392}.ct-series-h .ct-area,.ct-series-h .ct-slice-donut-solid,.ct-series-h .ct-slice-pie{fill:#6b0392}.ct-series-i .ct-bar,.ct-series-i .ct-line,.ct-series-i .ct-point,.ct-series-i .ct-slice-donut{stroke:#f05b4f}.ct-series-i .ct-area,.ct-series-i .ct-slice-donut-solid,.ct-series-i .ct-slice-pie{fill:#f05b4f}.ct-series-j .ct-bar,.ct-series-j .ct-line,.ct-series-j .ct-point,.ct-series-j .ct-slice-donut{stroke:#dda458}.ct-series-j .ct-area,.ct-series-j .ct-slice-donut-solid,.ct-series-j .ct-slice-pie{fill:#dda458}.ct-series-k .ct-bar,.ct-series-k .ct-line,.ct-series-k .ct-point,.ct-series-k .ct-slice-donut{stroke:#eacf7d}.ct-series-k .ct-area,.ct-series-k .ct-slice-donut-solid,.ct-series-k .ct-slice-pie{fill:#eacf7d}.ct-series-l .ct-bar,.ct-series-l .ct-line,.ct-series-l .ct-point,.ct-series-l .ct-slice-donut{stroke:#86797d}.ct-series-l .ct-area,.ct-series-l .ct-slice-donut-solid,.ct-series-l .ct-slice-pie{fill:#86797d}.ct-series-m .ct-bar,.ct-series-m .ct-line,.ct-series-m .ct-point,.ct-series-m .ct-slice-donut{stroke:#b2c326}.ct-series-m .ct-area,.ct-series-m .ct-slice-donut-solid,.ct-series-m .ct-slice-pie{fill:#b2c326}.ct-series-n .ct-bar,.ct-series-n .ct-line,.ct-series-n .ct-point,.ct-series-n .ct-slice-donut{stroke:#6188e2}.ct-series-n .ct-area,.ct-series-n .ct-slice-donut-solid,.ct-series-n .ct-slice-pie{fill:#6188e2}.ct-series-o .ct-bar,.ct-series-o .ct-line,.ct-series-o .ct-point,.ct-series-o .ct-slice-donut{stroke:#a748ca}.ct-series-o .ct-area,.ct-series-o .ct-slice-donut-solid,.ct-series-o .ct-slice-pie{fill:#a748ca}.ct-square{display:block;position:relative;width:100%}.ct-square:before{display:block;float:left;content:"";width:0;height:0;padding-bottom:100%}.ct-square:after{display:table}.ct-square>svg{display:block;position:absolute;top:0;left:0}.ct-minor-second{display:block;position:relative;width:100%}.ct-minor-second:before{display:block;float:left;content:"";width:0;height:0;padding-bottom:93.75%}.ct-minor-second:after{display:table}.ct-minor-second>svg{display:block;position:absolute;top:0;left:0}.ct-major-second{display:block;position:relative;width:100%}.ct-major-second:before{display:block;float:left;content:"";width:0;height:0;padding-bottom:88.8888888889%}.ct-major-second:after{display:table}.ct-major-second>svg{display:block;position:absolute;top:0;left:0}.ct-minor-third{display:block;position:relative;width:100%}.ct-minor-third:before{display:block;float:left;content:"";width:0;height:0;padding-bottom:83.3333333333%}.ct-minor-third:after{display:table}.ct-minor-third>svg{display:block;position:absolute;top:0;left:0}.ct-major-third{display:block;position:relative;width:100%}.ct-major-third:before{display:block;float:left;content:"";width:0;height:0;padding-bottom:80%}.ct-major-third:after{display:table}.ct-major-third>svg{display:block;position:absolute;top:0;left:0}.ct-perfect-fourth{display:block;position:relative;width:100%}.ct-perfect-fourth:before{display:block;float:left;content:"";width:0;height:0;padding-bottom:75%}.ct-perfect-fourth:after{display:table}.ct-perfect-fourth>svg{display:block;position:absolute;top:0;left:0}.ct-perfect-fifth{display:block;position:relative;width:100%}.ct-perfect-fifth:before{display:block;float:left;content:"";width:0;height:0;padding-bottom:66.6666666667%}.ct-perfect-fifth:after{display:table}.ct-perfect-fifth>svg{display:block;position:absolute;top:0;left:0}.ct-minor-sixth{display:block;position:relative;width:100%}.ct-minor-sixth:before{display:block;float:left;content:"";width:0;height:0;padding-bottom:62.5%}.ct-minor-sixth:after{display:table}.ct-minor-sixth>svg{display:block;position:absolute;top:0;left:0}.ct-golden-section{display:block;position:relative;width:100%}.ct-golden-section:before{display:block;float:left;content:"";width:0;height:0;padding-bottom:61.804697157%}.ct-golden-section:after{content:"";display:table;clear:both}.ct-golden-section>svg{display:block;position:absolute;top:0;left:0}.ct-major-sixth{display:block;position:relative;width:100%}.ct-major-sixth:before{display:block;float:left;content:"";width:0;height:0;padding-bottom:60%}.ct-major-sixth:after{display:table}.ct-major-sixth>svg{display:block;position:absolute;top:0;left:0}.ct-minor-seventh{display:block;position:relative;width:100%}.ct-minor-seventh:before{display:block;float:left;content:"";width:0;height:0;padding-bottom:56.25%}.ct-minor-seventh:after{display:table}.ct-minor-seventh>svg{display:block;position:absolute;top:0;left:0}.ct-major-seventh{display:block;position:relative;width:100%}.ct-major-seventh:before{display:block;float:left;content:"";width:0;height:0;padding-bottom:53.3333333333%}.ct-major-seventh:after{display:table}.ct-major-seventh>svg{display:block;position:absolute;top:0;left:0}.ct-octave{display:block;position:relative;width:100%}.ct-octave:before{display:block;float:left;content:"";width:0;height:0;padding-bottom:50%}.ct-octave:after{display:table}.ct-octave>svg{display:block;position:absolute;top:0;left:0}.ct-major-tenth{display:block;position:relative;width:100%}.ct-major-tenth:before{display:block;float:left;content:"";width:0;height:0;padding-bottom:40%}.ct-major-tenth:after{display:table}.ct-major-tenth>svg{display:block;position:absolute;top:0;left:0}.ct-major-eleventh{display:block;position:relative;width:100%}.ct-major-eleventh:before{display:block;float:left;content:"";width:0;height:0;padding-bottom:37.5%}.ct-major-eleventh:after{display:table}.ct-major-eleventh>svg{display:block;position:absolute;top:0;left:0}.ct-major-twelfth{display:block;position:relative;width:100%}.ct-major-twelfth:before{display:block;float:left;content:"";width:0;height:0;padding-bottom:33.3333333333%}.ct-major-twelfth:after{display:table}.ct-major-twelfth>svg{display:block;position:absolute;top:0;left:0}.ct-double-octave{display:block;position:relative;width:100%}.ct-double-octave:before{display:block;float:left;content:"";width:0;height:0;padding-bottom:25%}.ct-double-octave:after{display:table}.ct-double-octave>svg{display:block;position:absolute;top:0;left:0}</style>
-
-
-
-					<style type="text/css">
-
-						*, body { font-size: small; }
-
-						table td { white-space: nowrap; }
-
-						table.coverage { width:150px;height:13px }
-
-						body { padding-left:3px;padding-right:3px;padding-bottom:3px }
-
-						table,tr,th,td { border: 1px solid #3f3f46; font-size: small; }
-
-						a, a:hover { color: #0078D4; text-decoration: none; cursor: pointer; }
-
-						body { -webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none }
-
-						table.overview th, table.overview td { font-size: small; white-space: nowrap; word-break: normal; padding-left:10px;padding-right:10px; }
-
-						coverage-info div.customizebox div:nth-child(2) { opacity:0;font-size:1px;height:1px;padding:0;border:0;margin:0 }
-
-						coverage-info div.customizebox div:nth-child(2) * { opacity:0;font-size:1px;height:1px;padding:0;border:0;margin:0 }
-
-					</style>
+					table.overview th, table.overview td { font-size: small; white-space: nowrap; word-break: normal; padding-left:10px;padding-right:10px; }
 
 					
 
-						<style type="text/css">
+					table,tr,th,td { border: 1px solid; font-size: small; }
 
-							*, body { color: #f1f1f1 }
+					input[type=text] { color:rgba(241,241,241,255); background-color:rgba(51,51,55,255);border-color:rgba(67,67,70,255) }
 
-							table.overview.table-fixed { border: 1px solid #3f3f46; }
+					select { color:rgba(241,241,241,255); background-color:rgba(51,51,55,255);border-color:rgba(67,67,70,255) }
 
-							body, html { scrollbar-arrow-color:#999;scrollbar-track-color:#3e3e42;scrollbar-face-color:#686868;scrollbar-shadow-color:#686868;scrollbar-highlight-color:#686868;scrollbar-3dlight-color:#686868;scrollbar-darkshadow-Color:#686868; }
+                    body, html { scrollbar-arrow-color:rgba(62,62,66,255);scrollbar-track-color:rgba(62,62,66,255);scrollbar-face-color:rgba(104,104,104,255);scrollbar-shadow-color:rgba(104,104,104,255);scrollbar-highlight-color:rgba(104,104,104,255);scrollbar-3dlight-color:rgba(104,104,104,255);scrollbar-darkshadow-color:rgba(104,104,104,255) }				
 
-						</style>
+					input[type=range]::-ms-thumb {
 
-						
+					  background: rgba(104,104,104,255);
 
-					<style type="text/css">
+					  border: rgba(104,104,104,255)
 
-						table.overview.table-fixed.stripped > thead > tr > th:nth-of-type(4) > a:nth-of-type(2) { display: none; }
+					}
 
-					</style>
+					input[type=range]::-ms-track {
 
-					</head>
+						color: transparent;
 
-				
+						border-color: transparent;
+
+						background: transparent;
+
+					}
 
 					
 
+					input[type=range]::-ms-fill-lower {
+
+					  background: rgba(62,62,66,255);  
+
+					}
+
+					input[type=range]::-ms-fill-upper {
+
+					  background: rgba(62,62,66,255); 
+
+					}
+
+				</style>
+
 				
 
-						
+				<style type="text/css" id='fccMediaStyle'>
+
+					@media screen and (-ms-high-contrast:active){
+
+						table.coverage > td.green{ background-color: windowText }
+
+						table.coverage > td.gray{ 
+
+							background-color: rgba(153,153,153,255)
+
+						}
+
+	
+
+					}
+
+				</style>
+
+
+
+				</head>
+
+			
+
+			
 
 					<body oncontextmenu='return false;'>
 
-					<style>
+					<style id='fccStyle2'>
 
-						
+						#divHeader {
+
+							background-color: rgba(37,37,38,255);
+
+						}
+
+						table#headerTabs td {
+
+							color: rgba(255,255,255,255);
+
+							border-color: rgba(45,45,48,255);
+
+						}	
 
 						table#headerTabs td {
 
@@ -982,6 +786,8 @@ a.percentagebar {
 
 							cursor: pointer;
 
+							background-color : rgba(45,45,48,255);
+
 						}
 
 						table#headerTabs td.active {
@@ -992,13 +798,11 @@ a.percentagebar {
 
 						}
 
-						
+					
 
 					</style>
 
 					<script>
-
-					
 
 						var body = document.getElementsByTagName('body')[0];
 
@@ -1266,27 +1070,7 @@ a.percentagebar {
 
 					</div>
 
-				
-
-						<style>
-
-							#divHeader {
-
-								background-color: #252526;
-
-							}
-
-							table#headerTabs td {
-
-								color: #969696;
-
-								border-color:#969696;
-
-							}
-
-						</style>
-
-					<div class="container" style="margin:0;padding:0;border:0"><div class="containerleft" style="margin:0;padding:0;border:0">
+				<div class="container" style="margin:0;padding:0;border:0"><div class="containerleft" style="margin:0;padding:0;border:0">
 
 <h1 style="display:none">Summary<a class="button" href="https://github.com/danielpalme/ReportGenerator" title="Star on GitHub"><i class="icon-star"></i>Star</a><a class="button" href="https://github.com/sponsors/danielpalme" title="Become a sponsor"><i class="icon-sponsor"></i>Sponsor</a></h1>
 
@@ -1302,31 +1086,31 @@ a.percentagebar {
 
 <tbody>
 
-<tr style="display:none"><th>Generated on:</th><td>11/16/2021 - 1:00:02 PM</td></tr>
+<tr style="display:none"><th>Generated on:</th><td>11/17/2021 - 9:52:23 AM</td></tr>
 
 <tr style="display:none"><th>Parser:</th><td>CoberturaParser</td></tr>
 
 <tr><th>Assemblies:</th><td>4</td></tr>
 
-<tr><th>Classes:</th><td>86</td></tr>
+<tr><th>Classes:</th><td>88</td></tr>
 
-<tr><th>Files:</th><td>84</td></tr>
+<tr><th>Files:</th><td>86</td></tr>
 
-<tr><th>Covered lines:</th><td>4198</td></tr>
+<tr><th>Covered lines:</th><td>4835</td></tr>
 
-<tr><th>Uncovered lines:</th><td>393</td></tr>
+<tr><th>Uncovered lines:</th><td>78</td></tr>
 
-<tr><th>Coverable lines:</th><td>4591</td></tr>
+<tr><th>Coverable lines:</th><td>4913</td></tr>
 
-<tr><th>Total lines:</th><td>6361</td></tr>
+<tr><th>Total lines:</th><td>6780</td></tr>
 
-<tr><th>Line coverage:</th><td>91.4% (4198 of 4591)</td></tr>
+<tr><th>Line coverage:</th><td>98.4% (4835 of 4913)</td></tr>
 
-<tr style="display:none"><th>Covered branches:</th><td>80</td></tr>
+<tr><th>Covered branches:</th><td>108</td></tr>
 
-<tr style="display:none"><th>Total branches:</th><td>116</td></tr>
+<tr><th>Total branches:</th><td>116</td></tr>
 
-<tr style="display:none"><th>Branch coverage:</th><td>68.9% (80 of 116)</td></tr>
+<tr><th>Branch coverage:</th><td>93.1% (108 of 116)</td></tr>
 
 </tbody>
 
@@ -1376,7 +1160,7 @@ a.percentagebar {
 
 <tbody>
 
-<tr><th>Lulus.BAL</th><th class="right">486</th><th class="right">295</th><th class="right">781</th><th class="right">1092</th><th title="LineCoverage: 486/781" class="right">62.2%</th><th><table class="coverage"><tr><td class="green covered62">&nbsp;</td><td class="red covered38">&nbsp;</td></tr></table></th><th class="right">80</th><th class="right">116</th><th class="right" title="80/116">68.9%</th><th><table class="coverage"><tr><td class="green covered69">&nbsp;</td><td class="red covered31">&nbsp;</td></tr></table></th></tr>
+<tr><th>Lulus.BAL</th><th class="right">761</th><th class="right">20</th><th class="right">781</th><th class="right">1092</th><th title="LineCoverage: 761/781" class="right">97.4%</th><th><table class="coverage"><tr><td class="green covered97">&nbsp;</td><td class="red covered3">&nbsp;</td></tr></table></th><th class="right">108</th><th class="right">116</th><th class="right" title="108/116">93.1%</th><th><table class="coverage"><tr><td class="green covered93">&nbsp;</td><td class="red covered7">&nbsp;</td></tr></table></th></tr>
 
 <tr><td><a href="Lulus.BAL_CategoryService.html">Lulus.BAL.Catalog.Categories.CategoryService</a></td><td class="right">15</td><td class="right">0</td><td class="right">15</td><td class="right">34</td><td title="LineCoverage: 15/15" class="right">100%</td><td><table class="coverage"><tr><td class="green covered100">&nbsp;</td></tr></table></td><td class="right">0</td><td class="right">0</td><td class="right" title="-"></td><td><table class="coverage"><tr><td class="gray covered100">&nbsp;</td></tr></table></td></tr>
 
@@ -1386,9 +1170,9 @@ a.percentagebar {
 
 <tr><td><a href="Lulus.BAL_ManageProductLineService.html">Lulus.BAL.Catalog.ProductLines.ManageProductLineService</a></td><td class="right">124</td><td class="right">0</td><td class="right">124</td><td class="right">160</td><td title="LineCoverage: 124/124" class="right">100%</td><td><table class="coverage"><tr><td class="green covered100">&nbsp;</td></tr></table></td><td class="right">14</td><td class="right">14</td><td class="right" title="14/14">100%</td><td><table class="coverage"><tr><td class="green covered100">&nbsp;</td></tr></table></td></tr>
 
-<tr><td><a href="Lulus.BAL_ManageProductService.html">Lulus.BAL.Catalog.Products.ManageProductService</a></td><td class="right">0</td><td class="right">93</td><td class="right">93</td><td class="right">132</td><td title="LineCoverage: 0/93" class="right">0%</td><td><table class="coverage"><tr><td class="red covered100">&nbsp;</td></tr></table></td><td class="right">0</td><td class="right">10</td><td class="right" title="0/10">0%</td><td><table class="coverage"><tr><td class="red covered100">&nbsp;</td></tr></table></td></tr>
+<tr><td><a href="Lulus.BAL_ManageProductService.html">Lulus.BAL.Catalog.Products.ManageProductService</a></td><td class="right">93</td><td class="right">0</td><td class="right">93</td><td class="right">132</td><td title="LineCoverage: 93/93" class="right">100%</td><td><table class="coverage"><tr><td class="green covered100">&nbsp;</td></tr></table></td><td class="right">10</td><td class="right">10</td><td class="right" title="10/10">100%</td><td><table class="coverage"><tr><td class="green covered100">&nbsp;</td></tr></table></td></tr>
 
-<tr><td><a href="Lulus.BAL_ProductService.html">Lulus.BAL.Catalog.Products.ProductService</a></td><td class="right">0</td><td class="right">182</td><td class="right">182</td><td class="right">216</td><td title="LineCoverage: 0/182" class="right">0%</td><td><table class="coverage"><tr><td class="red covered100">&nbsp;</td></tr></table></td><td class="right">0</td><td class="right">18</td><td class="right" title="0/18">0%</td><td><table class="coverage"><tr><td class="red covered100">&nbsp;</td></tr></table></td></tr>
+<tr><td><a href="Lulus.BAL_ProductService.html">Lulus.BAL.Catalog.Products.ProductService</a></td><td class="right">182</td><td class="right">0</td><td class="right">182</td><td class="right">216</td><td title="LineCoverage: 182/182" class="right">100%</td><td><table class="coverage"><tr><td class="green covered100">&nbsp;</td></tr></table></td><td class="right">18</td><td class="right">18</td><td class="right" title="18/18">100%</td><td><table class="coverage"><tr><td class="green covered100">&nbsp;</td></tr></table></td></tr>
 
 <tr><td><a href="Lulus.BAL_ManageSubcategoryService.html">Lulus.BAL.Catalog.SubCategories.ManageSubcategoryService</a></td><td class="right">43</td><td class="right">0</td><td class="right">43</td><td class="right">66</td><td title="LineCoverage: 43/43" class="right">100%</td><td><table class="coverage"><tr><td class="green covered100">&nbsp;</td></tr></table></td><td class="right">6</td><td class="right">6</td><td class="right" title="6/6">100%</td><td><table class="coverage"><tr><td class="green covered100">&nbsp;</td></tr></table></td></tr>
 
@@ -1456,7 +1240,7 @@ a.percentagebar {
 
 <tr><td><a href="Lulus.Data_User.html">Lulus.Data.Entities.User</a></td><td class="right">5</td><td class="right">0</td><td class="right">5</td><td class="right">21</td><td title="LineCoverage: 5/5" class="right">100%</td><td><table class="coverage"><tr><td class="green covered100">&nbsp;</td></tr></table></td><td class="right">0</td><td class="right">0</td><td class="right" title="-"></td><td><table class="coverage"><tr><td class="gray covered100">&nbsp;</td></tr></table></td></tr>
 
-<tr><th>Lulus.UnitTests</th><th class="right">1835</th><th class="right">1</th><th class="right">1836</th><th class="right">3002</th><th title="LineCoverage: 1835/1836" class="right">99.9%</th><th><table class="coverage"><tr><td class="green covered100">&nbsp;</td></tr></table></th><th class="right">0</th><th class="right">0</th><th class="right" title="-"></th><th><table class="coverage"><tr><td class="gray covered100">&nbsp;</td></tr></table></th></tr>
+<tr><th>Lulus.UnitTests</th><th class="right">2157</th><th class="right">1</th><th class="right">2158</th><th class="right">3421</th><th title="LineCoverage: 2157/2158" class="right">99.9%</th><th><table class="coverage"><tr><td class="green covered100">&nbsp;</td></tr></table></th><th class="right">0</th><th class="right">0</th><th class="right" title="-"></th><th><table class="coverage"><tr><td class="gray covered100">&nbsp;</td></tr></table></th></tr>
 
 <tr><td><a href="Lulus.UnitTests_AutoGeneratedProgram.html">AutoGeneratedProgram</a></td><td class="right">0</td><td class="right">1</td><td class="right">1</td><td class="right">4</td><td title="LineCoverage: 0/1" class="right">0%</td><td><table class="coverage"><tr><td class="red covered100">&nbsp;</td></tr></table></td><td class="right">0</td><td class="right">0</td><td class="right" title="-"></td><td><table class="coverage"><tr><td class="gray covered100">&nbsp;</td></tr></table></td></tr>
 
@@ -1468,6 +1252,10 @@ a.percentagebar {
 
 <tr><td><a href="Lulus.UnitTests_ManageProductLineTest.html">Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest</a></td><td class="right">224</td><td class="right">0</td><td class="right">224</td><td class="right">294</td><td title="LineCoverage: 224/224" class="right">100%</td><td><table class="coverage"><tr><td class="green covered100">&nbsp;</td></tr></table></td><td class="right">0</td><td class="right">0</td><td class="right" title="-"></td><td><table class="coverage"><tr><td class="gray covered100">&nbsp;</td></tr></table></td></tr>
 
+<tr><td><a href="Lulus.UnitTests_ManageProductTest.html">Lulus.UnitTests.BAL.Products.ManageProductTest</a></td><td class="right">154</td><td class="right">0</td><td class="right">154</td><td class="right">207</td><td title="LineCoverage: 154/154" class="right">100%</td><td><table class="coverage"><tr><td class="green covered100">&nbsp;</td></tr></table></td><td class="right">0</td><td class="right">0</td><td class="right" title="-"></td><td><table class="coverage"><tr><td class="gray covered100">&nbsp;</td></tr></table></td></tr>
+
+<tr><td><a href="Lulus.UnitTests_ProductTest.html">Lulus.UnitTests.BAL.Products.ProductTest</a></td><td class="right">168</td><td class="right">0</td><td class="right">168</td><td class="right">212</td><td title="LineCoverage: 168/168" class="right">100%</td><td><table class="coverage"><tr><td class="green covered100">&nbsp;</td></tr></table></td><td class="right">0</td><td class="right">0</td><td class="right" title="-"></td><td><table class="coverage"><tr><td class="gray covered100">&nbsp;</td></tr></table></td></tr>
+
 <tr><td><a href="Lulus.UnitTests_ManageSubCategoryTest.html">Lulus.UnitTests.BAL.SubCategories.ManageSubCategoryTest</a></td><td class="right">93</td><td class="right">0</td><td class="right">93</td><td class="right">138</td><td title="LineCoverage: 93/93" class="right">100%</td><td><table class="coverage"><tr><td class="green covered100">&nbsp;</td></tr></table></td><td class="right">0</td><td class="right">0</td><td class="right" title="-"></td><td><table class="coverage"><tr><td class="gray covered100">&nbsp;</td></tr></table></td></tr>
 
 <tr><td><a href="Lulus.UnitTests_SubCategoriesTest.html">Lulus.UnitTests.BAL.SubCategories.SubCategoriesTest</a></td><td class="right">18</td><td class="right">0</td><td class="right">18</td><td class="right">47</td><td title="LineCoverage: 18/18" class="right">100%</td><td><table class="coverage"><tr><td class="green covered100">&nbsp;</td></tr></table></td><td class="right">0</td><td class="right">0</td><td class="right" title="-"></td><td><table class="coverage"><tr><td class="gray covered100">&nbsp;</td></tr></table></td></tr>
@@ -1478,9 +1266,9 @@ a.percentagebar {
 
 <tr><td><a href="Lulus.UnitTests_UserTest.html">Lulus.UnitTests.BAL.Users.UserTest</a></td><td class="right">265</td><td class="right">0</td><td class="right">265</td><td class="right">357</td><td title="LineCoverage: 265/265" class="right">100%</td><td><table class="coverage"><tr><td class="green covered100">&nbsp;</td></tr></table></td><td class="right">0</td><td class="right">0</td><td class="right" title="-"></td><td><table class="coverage"><tr><td class="gray covered100">&nbsp;</td></tr></table></td></tr>
 
-<tr><th>Lulus.ViewModels</th><th class="right">82</th><th class="right">80</th><th class="right">162</th><th class="right">694</th><th title="LineCoverage: 82/162" class="right">50.6%</th><th><table class="coverage"><tr><td class="green covered51">&nbsp;</td><td class="red covered49">&nbsp;</td></tr></table></th><th class="right">0</th><th class="right">0</th><th class="right" title="-"></th><th><table class="coverage"><tr><td class="gray covered100">&nbsp;</td></tr></table></th></tr>
+<tr><th>Lulus.ViewModels</th><th class="right">122</th><th class="right">40</th><th class="right">162</th><th class="right">694</th><th title="LineCoverage: 122/162" class="right">75.3%</th><th><table class="coverage"><tr><td class="green covered75">&nbsp;</td><td class="red covered25">&nbsp;</td></tr></table></th><th class="right">0</th><th class="right">0</th><th class="right" title="-"></th><th><table class="coverage"><tr><td class="gray covered100">&nbsp;</td></tr></table></th></tr>
 
-<tr><td><a href="Lulus.ViewModels_GetProductPagingRequest.html">Lulus.BAL.Catalog.Products.DTOs.Public.GetProductPagingRequest</a></td><td class="right">0</td><td class="right">6</td><td class="right">6</td><td class="right">19</td><td title="LineCoverage: 0/6" class="right">0%</td><td><table class="coverage"><tr><td class="red covered100">&nbsp;</td></tr></table></td><td class="right">0</td><td class="right">0</td><td class="right" title="-"></td><td><table class="coverage"><tr><td class="gray covered100">&nbsp;</td></tr></table></td></tr>
+<tr><td><a href="Lulus.ViewModels_GetProductPagingRequest.html">Lulus.BAL.Catalog.Products.DTOs.Public.GetProductPagingRequest</a></td><td class="right">2</td><td class="right">4</td><td class="right">6</td><td class="right">19</td><td title="LineCoverage: 2/6" class="right">33.3%</td><td><table class="coverage"><tr><td class="green covered33">&nbsp;</td><td class="red covered67">&nbsp;</td></tr></table></td><td class="right">0</td><td class="right">0</td><td class="right" title="-"></td><td><table class="coverage"><tr><td class="gray covered100">&nbsp;</td></tr></table></td></tr>
 
 <tr><td><a href="Lulus.ViewModels_CategoryViewModel.html">Lulus.ViewModels.Categories.CategoryViewModel</a></td><td class="right">2</td><td class="right">0</td><td class="right">2</td><td class="right">14</td><td title="LineCoverage: 2/2" class="right">100%</td><td><table class="coverage"><tr><td class="green covered100">&nbsp;</td></tr></table></td><td class="right">0</td><td class="right">0</td><td class="right" title="-"></td><td><table class="coverage"><tr><td class="gray covered100">&nbsp;</td></tr></table></td></tr>
 
@@ -1488,7 +1276,7 @@ a.percentagebar {
 
 <tr><td><a href="Lulus.ViewModels_PagedViewModel_1.html">Lulus.ViewModels.Common.PagedViewModel`1</a></td><td class="right">0</td><td class="right">2</td><td class="right">2</td><td class="right">14</td><td title="LineCoverage: 0/2" class="right">0%</td><td><table class="coverage"><tr><td class="red covered100">&nbsp;</td></tr></table></td><td class="right">0</td><td class="right">0</td><td class="right" title="-"></td><td><table class="coverage"><tr><td class="gray covered100">&nbsp;</td></tr></table></td></tr>
 
-<tr><td><a href="Lulus.ViewModels_PagingRequestBase.html">Lulus.ViewModels.Common.PagingRequestBase</a></td><td class="right">0</td><td class="right">10</td><td class="right">10</td><td class="right">24</td><td title="LineCoverage: 0/10" class="right">0%</td><td><table class="coverage"><tr><td class="red covered100">&nbsp;</td></tr></table></td><td class="right">0</td><td class="right">0</td><td class="right" title="-"></td><td><table class="coverage"><tr><td class="gray covered100">&nbsp;</td></tr></table></td></tr>
+<tr><td><a href="Lulus.ViewModels_PagingRequestBase.html">Lulus.ViewModels.Common.PagingRequestBase</a></td><td class="right">5</td><td class="right">5</td><td class="right">10</td><td class="right">24</td><td title="LineCoverage: 5/10" class="right">50%</td><td><table class="coverage"><tr><td class="green covered50">&nbsp;</td><td class="red covered50">&nbsp;</td></tr></table></td><td class="right">0</td><td class="right">0</td><td class="right" title="-"></td><td><table class="coverage"><tr><td class="gray covered100">&nbsp;</td></tr></table></td></tr>
 
 <tr><td><a href="Lulus.ViewModels_CreateFeedbackRequest.html">Lulus.ViewModels.Feedbacks.CreateFeedbackRequest</a></td><td class="right">6</td><td class="right">4</td><td class="right">10</td><td class="right">22</td><td title="LineCoverage: 6/10" class="right">60%</td><td><table class="coverage"><tr><td class="green covered60">&nbsp;</td><td class="red covered40">&nbsp;</td></tr></table></td><td class="right">0</td><td class="right">0</td><td class="right" title="-"></td><td><table class="coverage"><tr><td class="gray covered100">&nbsp;</td></tr></table></td></tr>
 
@@ -1510,7 +1298,7 @@ a.percentagebar {
 
 <tr><td><a href="Lulus.ViewModels_OrderRespond.html">Lulus.ViewModels.Order.OrderRespond</a></td><td class="right">5</td><td class="right">0</td><td class="right">5</td><td class="right">20</td><td title="LineCoverage: 5/5" class="right">100%</td><td><table class="coverage"><tr><td class="green covered100">&nbsp;</td></tr></table></td><td class="right">0</td><td class="right">0</td><td class="right" title="-"></td><td><table class="coverage"><tr><td class="gray covered100">&nbsp;</td></tr></table></td></tr>
 
-<tr><td><a href="Lulus.ViewModels_ProductImageViewModel.html">Lulus.ViewModels.ProductImages.ProductImageViewModel</a></td><td class="right">0</td><td class="right">4</td><td class="right">4</td><td class="right">20</td><td title="LineCoverage: 0/4" class="right">0%</td><td><table class="coverage"><tr><td class="red covered100">&nbsp;</td></tr></table></td><td class="right">0</td><td class="right">0</td><td class="right" title="-"></td><td><table class="coverage"><tr><td class="gray covered100">&nbsp;</td></tr></table></td></tr>
+<tr><td><a href="Lulus.ViewModels_ProductImageViewModel.html">Lulus.ViewModels.ProductImages.ProductImageViewModel</a></td><td class="right">3</td><td class="right">1</td><td class="right">4</td><td class="right">20</td><td title="LineCoverage: 3/4" class="right">75%</td><td><table class="coverage"><tr><td class="green covered75">&nbsp;</td><td class="red covered25">&nbsp;</td></tr></table></td><td class="right">0</td><td class="right">0</td><td class="right" title="-"></td><td><table class="coverage"><tr><td class="gray covered100">&nbsp;</td></tr></table></td></tr>
 
 <tr><td><a href="Lulus.ViewModels_AddImageRequest.html">Lulus.ViewModels.ProductLines.AddImageRequest</a></td><td class="right">2</td><td class="right">1</td><td class="right">3</td><td class="right">16</td><td title="LineCoverage: 2/3" class="right">66.6%</td><td><table class="coverage"><tr><td class="green covered67">&nbsp;</td><td class="red covered33">&nbsp;</td></tr></table></td><td class="right">0</td><td class="right">0</td><td class="right" title="-"></td><td><table class="coverage"><tr><td class="gray covered100">&nbsp;</td></tr></table></td></tr>
 
@@ -1524,23 +1312,23 @@ a.percentagebar {
 
 <tr><td><a href="Lulus.ViewModels_GetProductLineByIDRequest.html">Lulus.ViewModels.ProductLines.GetProductLineByIDRequest</a></td><td class="right">0</td><td class="right">1</td><td class="right">1</td><td class="right">13</td><td title="LineCoverage: 0/1" class="right">0%</td><td><table class="coverage"><tr><td class="red covered100">&nbsp;</td></tr></table></td><td class="right">0</td><td class="right">0</td><td class="right" title="-"></td><td><table class="coverage"><tr><td class="gray covered100">&nbsp;</td></tr></table></td></tr>
 
-<tr><td><a href="Lulus.ViewModels_ProductLineViewModel.html">Lulus.ViewModels.ProductLines.ProductLineViewModel</a></td><td class="right">8</td><td class="right">2</td><td class="right">10</td><td class="right">31</td><td title="LineCoverage: 8/10" class="right">80%</td><td><table class="coverage"><tr><td class="green covered80">&nbsp;</td><td class="red covered20">&nbsp;</td></tr></table></td><td class="right">0</td><td class="right">0</td><td class="right" title="-"></td><td><table class="coverage"><tr><td class="gray covered100">&nbsp;</td></tr></table></td></tr>
+<tr><td><a href="Lulus.ViewModels_ProductLineViewModel.html">Lulus.ViewModels.ProductLines.ProductLineViewModel</a></td><td class="right">9</td><td class="right">1</td><td class="right">10</td><td class="right">31</td><td title="LineCoverage: 9/10" class="right">90%</td><td><table class="coverage"><tr><td class="green covered90">&nbsp;</td><td class="red covered10">&nbsp;</td></tr></table></td><td class="right">0</td><td class="right">0</td><td class="right" title="-"></td><td><table class="coverage"><tr><td class="gray covered100">&nbsp;</td></tr></table></td></tr>
 
-<tr><td><a href="Lulus.ViewModels_GetProductDetailRequest.html">Lulus.ViewModels.Products.GetProductDetailRequest</a></td><td class="right">0</td><td class="right">3</td><td class="right">3</td><td class="right">15</td><td title="LineCoverage: 0/3" class="right">0%</td><td><table class="coverage"><tr><td class="red covered100">&nbsp;</td></tr></table></td><td class="right">0</td><td class="right">0</td><td class="right" title="-"></td><td><table class="coverage"><tr><td class="gray covered100">&nbsp;</td></tr></table></td></tr>
+<tr><td><a href="Lulus.ViewModels_GetProductDetailRequest.html">Lulus.ViewModels.Products.GetProductDetailRequest</a></td><td class="right">2</td><td class="right">1</td><td class="right">3</td><td class="right">15</td><td title="LineCoverage: 2/3" class="right">66.6%</td><td><table class="coverage"><tr><td class="green covered67">&nbsp;</td><td class="red covered33">&nbsp;</td></tr></table></td><td class="right">0</td><td class="right">0</td><td class="right" title="-"></td><td><table class="coverage"><tr><td class="gray covered100">&nbsp;</td></tr></table></td></tr>
 
 <tr><td><a href="Lulus.ViewModels_GetProductPagingRequest.2.html">Lulus.ViewModels.Products.Manage.GetProductPagingRequest</a></td><td class="right">0</td><td class="right">1</td><td class="right">1</td><td class="right">15</td><td title="LineCoverage: 0/1" class="right">0%</td><td><table class="coverage"><tr><td class="red covered100">&nbsp;</td></tr></table></td><td class="right">0</td><td class="right">0</td><td class="right" title="-"></td><td><table class="coverage"><tr><td class="gray covered100">&nbsp;</td></tr></table></td></tr>
 
-<tr><td><a href="Lulus.ViewModels_ProductCreateRequest.html">Lulus.ViewModels.Products.Manage.ProductCreateRequest</a></td><td class="right">0</td><td class="right">5</td><td class="right">5</td><td class="right">22</td><td title="LineCoverage: 0/5" class="right">0%</td><td><table class="coverage"><tr><td class="red covered100">&nbsp;</td></tr></table></td><td class="right">0</td><td class="right">0</td><td class="right" title="-"></td><td><table class="coverage"><tr><td class="gray covered100">&nbsp;</td></tr></table></td></tr>
+<tr><td><a href="Lulus.ViewModels_ProductCreateRequest.html">Lulus.ViewModels.Products.Manage.ProductCreateRequest</a></td><td class="right">5</td><td class="right">0</td><td class="right">5</td><td class="right">22</td><td title="LineCoverage: 5/5" class="right">100%</td><td><table class="coverage"><tr><td class="green covered100">&nbsp;</td></tr></table></td><td class="right">0</td><td class="right">0</td><td class="right" title="-"></td><td><table class="coverage"><tr><td class="gray covered100">&nbsp;</td></tr></table></td></tr>
 
-<tr><td><a href="Lulus.ViewModels_ProductUpdateRequest.html">Lulus.ViewModels.Products.Manage.ProductUpdateRequest</a></td><td class="right">0</td><td class="right">7</td><td class="right">7</td><td class="right">26</td><td title="LineCoverage: 0/7" class="right">0%</td><td><table class="coverage"><tr><td class="red covered100">&nbsp;</td></tr></table></td><td class="right">0</td><td class="right">0</td><td class="right" title="-"></td><td><table class="coverage"><tr><td class="gray covered100">&nbsp;</td></tr></table></td></tr>
+<tr><td><a href="Lulus.ViewModels_ProductUpdateRequest.html">Lulus.ViewModels.Products.Manage.ProductUpdateRequest</a></td><td class="right">7</td><td class="right">0</td><td class="right">7</td><td class="right">26</td><td title="LineCoverage: 7/7" class="right">100%</td><td><table class="coverage"><tr><td class="green covered100">&nbsp;</td></tr></table></td><td class="right">0</td><td class="right">0</td><td class="right" title="-"></td><td><table class="coverage"><tr><td class="gray covered100">&nbsp;</td></tr></table></td></tr>
 
-<tr><td><a href="Lulus.ViewModels_UpdatePriceRequest.html">Lulus.ViewModels.Products.Manage.UpdatePriceRequest</a></td><td class="right">0</td><td class="right">3</td><td class="right">3</td><td class="right">17</td><td title="LineCoverage: 0/3" class="right">0%</td><td><table class="coverage"><tr><td class="red covered100">&nbsp;</td></tr></table></td><td class="right">0</td><td class="right">0</td><td class="right" title="-"></td><td><table class="coverage"><tr><td class="gray covered100">&nbsp;</td></tr></table></td></tr>
+<tr><td><a href="Lulus.ViewModels_UpdatePriceRequest.html">Lulus.ViewModels.Products.Manage.UpdatePriceRequest</a></td><td class="right">3</td><td class="right">0</td><td class="right">3</td><td class="right">17</td><td title="LineCoverage: 3/3" class="right">100%</td><td><table class="coverage"><tr><td class="green covered100">&nbsp;</td></tr></table></td><td class="right">0</td><td class="right">0</td><td class="right" title="-"></td><td><table class="coverage"><tr><td class="gray covered100">&nbsp;</td></tr></table></td></tr>
 
 <tr><td><a href="Lulus.ViewModels_PagedResult_1.html">Lulus.ViewModels.Products.PagedResult`1</a></td><td class="right">0</td><td class="right">1</td><td class="right">1</td><td class="right">15</td><td title="LineCoverage: 0/1" class="right">0%</td><td><table class="coverage"><tr><td class="red covered100">&nbsp;</td></tr></table></td><td class="right">0</td><td class="right">0</td><td class="right" title="-"></td><td><table class="coverage"><tr><td class="gray covered100">&nbsp;</td></tr></table></td></tr>
 
-<tr><td><a href="Lulus.ViewModels_ProductViewModel.html">Lulus.ViewModels.Products.ProductViewModel</a></td><td class="right">0</td><td class="right">9</td><td class="right">9</td><td class="right">31</td><td title="LineCoverage: 0/9" class="right">0%</td><td><table class="coverage"><tr><td class="red covered100">&nbsp;</td></tr></table></td><td class="right">0</td><td class="right">0</td><td class="right" title="-"></td><td><table class="coverage"><tr><td class="gray covered100">&nbsp;</td></tr></table></td></tr>
+<tr><td><a href="Lulus.ViewModels_ProductViewModel.html">Lulus.ViewModels.Products.ProductViewModel</a></td><td class="right">9</td><td class="right">0</td><td class="right">9</td><td class="right">31</td><td title="LineCoverage: 9/9" class="right">100%</td><td><table class="coverage"><tr><td class="green covered100">&nbsp;</td></tr></table></td><td class="right">0</td><td class="right">0</td><td class="right" title="-"></td><td><table class="coverage"><tr><td class="gray covered100">&nbsp;</td></tr></table></td></tr>
 
-<tr><td><a href="Lulus.ViewModels_SizeViewModel.html">Lulus.ViewModels.Sizes.SizeViewModel</a></td><td class="right">0</td><td class="right">3</td><td class="right">3</td><td class="right">16</td><td title="LineCoverage: 0/3" class="right">0%</td><td><table class="coverage"><tr><td class="red covered100">&nbsp;</td></tr></table></td><td class="right">0</td><td class="right">0</td><td class="right" title="-"></td><td><table class="coverage"><tr><td class="gray covered100">&nbsp;</td></tr></table></td></tr>
+<tr><td><a href="Lulus.ViewModels_SizeViewModel.html">Lulus.ViewModels.Sizes.SizeViewModel</a></td><td class="right">3</td><td class="right">0</td><td class="right">3</td><td class="right">16</td><td title="LineCoverage: 3/3" class="right">100%</td><td><table class="coverage"><tr><td class="green covered100">&nbsp;</td></tr></table></td><td class="right">0</td><td class="right">0</td><td class="right" title="-"></td><td><table class="coverage"><tr><td class="gray covered100">&nbsp;</td></tr></table></td></tr>
 
 <tr><td><a href="Lulus.ViewModels_CreateSubCategoryRequest.html">Lulus.ViewModels.SubCategories.CreateSubCategoryRequest</a></td><td class="right">2</td><td class="right">0</td><td class="right">2</td><td class="right">14</td><td title="LineCoverage: 2/2" class="right">100%</td><td><table class="coverage"><tr><td class="green covered100">&nbsp;</td></tr></table></td><td class="right">0</td><td class="right">0</td><td class="right" title="-"></td><td><table class="coverage"><tr><td class="gray covered100">&nbsp;</td></tr></table></td></tr>
 
@@ -1562,7 +1350,7 @@ a.percentagebar {
 
 </coverage-info>
 
-<div class="footer" style="display:none">Generated by: ReportGenerator 4.7.1.0<br>11/16/2021 - 1:00:02 PM<br><a href="https://github.com/danielpalme/ReportGenerator">GitHub</a> | <a href="http://www.palmmedia.de">www.palmmedia.de</a></div></div></div>
+<div class="footer" style="display:none">Generated by: ReportGenerator 4.7.1.0<br>11/17/2021 - 9:52:23 AM<br><a href="https://github.com/danielpalme/ReportGenerator">GitHub</a> | <a href="http://www.palmmedia.de">www.palmmedia.de</a></div></div></div>
 
 <script type="text/javascript">/* <![CDATA[ */ /* Chartist.js 0.11.0
 
@@ -2018,7 +1806,7 @@ var assemblies = [
 
       {
 
-        "name": "CategoryService",
+        "name": "Lulus.BAL.Catalog.Categories.CategoryService",
 
         "rp": "#Lulus.BAL!Lulus.BAL.Catalog.Categories.CategoryService.html",
 
@@ -2048,7 +1836,7 @@ var assemblies = [
 
       {
 
-        "name": "FeedbackService",
+        "name": "Lulus.BAL.Catalog.Feedbacks.FeedbackService",
 
         "rp": "#Lulus.BAL!Lulus.BAL.Catalog.Feedbacks.FeedbackService.html",
 
@@ -2078,7 +1866,7 @@ var assemblies = [
 
       {
 
-        "name": "OrderService",
+        "name": "Lulus.BAL.Catalog.Orders.OrderService",
 
         "rp": "#Lulus.BAL!Lulus.BAL.Catalog.Orders.OrderService.html",
 
@@ -2108,7 +1896,7 @@ var assemblies = [
 
       {
 
-        "name": "ManageProductLineService",
+        "name": "Lulus.BAL.Catalog.ProductLines.ManageProductLineService",
 
         "rp": "#Lulus.BAL!Lulus.BAL.Catalog.ProductLines.ManageProductLineService.html",
 
@@ -2138,13 +1926,13 @@ var assemblies = [
 
       {
 
-        "name": "ManageProductService",
+        "name": "Lulus.BAL.Catalog.Products.ManageProductService",
 
         "rp": "#Lulus.BAL!Lulus.BAL.Catalog.Products.ManageProductService.html",
 
-        "cl": 0,
+        "cl": 93,
 
-        "ucl": 93,
+        "ucl": 0,
 
         "cal": 93,
 
@@ -2154,7 +1942,7 @@ var assemblies = [
 
         "mc": "-",
 
-        "cb": 0,
+        "cb": 10,
 
         "tb": 10,
 
@@ -2168,13 +1956,13 @@ var assemblies = [
 
       {
 
-        "name": "ProductService",
+        "name": "Lulus.BAL.Catalog.Products.ProductService",
 
         "rp": "#Lulus.BAL!Lulus.BAL.Catalog.Products.ProductService.html",
 
-        "cl": 0,
+        "cl": 182,
 
-        "ucl": 182,
+        "ucl": 0,
 
         "cal": 182,
 
@@ -2184,7 +1972,7 @@ var assemblies = [
 
         "mc": "-",
 
-        "cb": 0,
+        "cb": 18,
 
         "tb": 18,
 
@@ -2198,7 +1986,7 @@ var assemblies = [
 
       {
 
-        "name": "ManageSubcategoryService",
+        "name": "Lulus.BAL.Catalog.SubCategories.ManageSubcategoryService",
 
         "rp": "#Lulus.BAL!Lulus.BAL.Catalog.SubCategories.ManageSubcategoryService.html",
 
@@ -2228,7 +2016,7 @@ var assemblies = [
 
       {
 
-        "name": "SubCategoryService",
+        "name": "Lulus.BAL.Catalog.SubCategories.SubCategoryService",
 
         "rp": "#Lulus.BAL!Lulus.BAL.Catalog.SubCategories.SubCategoryService.html",
 
@@ -2258,7 +2046,7 @@ var assemblies = [
 
       {
 
-        "name": "UserService",
+        "name": "Lulus.BAL.Catalog.Users.UserService",
 
         "rp": "#Lulus.BAL!Lulus.BAL.Catalog.Users.UserService.html",
 
@@ -2288,7 +2076,7 @@ var assemblies = [
 
       {
 
-        "name": "SignInManager",
+        "name": "Lulus.BAL.Infrastructures.SignInManager",
 
         "rp": "#Lulus.BAL!Lulus.BAL.Infrastructures.SignInManager.html",
 
@@ -2318,7 +2106,7 @@ var assemblies = [
 
       {
 
-        "name": "UserManager",
+        "name": "Lulus.BAL.Infrastructures.UserManager",
 
         "rp": "#Lulus.BAL!Lulus.BAL.Infrastructures.UserManager.html",
 
@@ -2358,7 +2146,7 @@ var assemblies = [
 
       {
 
-        "name": "CategoryConfiguration",
+        "name": "Lulus.Data.Configurations.CategoryConfiguration",
 
         "rp": "#Lulus.Data!Lulus.Data.Configurations.CategoryConfiguration.html",
 
@@ -2388,7 +2176,7 @@ var assemblies = [
 
       {
 
-        "name": "CountryConfiguration",
+        "name": "Lulus.Data.Configurations.CountryConfiguration",
 
         "rp": "#Lulus.Data!Lulus.Data.Configurations.CountryConfiguration.html",
 
@@ -2418,7 +2206,7 @@ var assemblies = [
 
       {
 
-        "name": "FeedbackConfiguration",
+        "name": "Lulus.Data.Configurations.FeedbackConfiguration",
 
         "rp": "#Lulus.Data!Lulus.Data.Configurations.FeedbackConfiguration.html",
 
@@ -2448,7 +2236,7 @@ var assemblies = [
 
       {
 
-        "name": "LineQuantityConfiguration",
+        "name": "Lulus.Data.Configurations.LineQuantityConfiguration",
 
         "rp": "#Lulus.Data!Lulus.Data.Configurations.LineQuantityConfiguration.html",
 
@@ -2478,7 +2266,7 @@ var assemblies = [
 
       {
 
-        "name": "OrderConfiguration",
+        "name": "Lulus.Data.Configurations.OrderConfiguration",
 
         "rp": "#Lulus.Data!Lulus.Data.Configurations.OrderConfiguration.html",
 
@@ -2508,7 +2296,7 @@ var assemblies = [
 
       {
 
-        "name": "OrderDetailConfiguration",
+        "name": "Lulus.Data.Configurations.OrderDetailConfiguration",
 
         "rp": "#Lulus.Data!Lulus.Data.Configurations.OrderDetailConfiguration.html",
 
@@ -2538,7 +2326,7 @@ var assemblies = [
 
       {
 
-        "name": "ProductConfiguration",
+        "name": "Lulus.Data.Configurations.ProductConfiguration",
 
         "rp": "#Lulus.Data!Lulus.Data.Configurations.ProductConfiguration.html",
 
@@ -2568,7 +2356,7 @@ var assemblies = [
 
       {
 
-        "name": "ProductImageConfiguration",
+        "name": "Lulus.Data.Configurations.ProductImageConfiguration",
 
         "rp": "#Lulus.Data!Lulus.Data.Configurations.ProductImageConfiguration.html",
 
@@ -2598,7 +2386,7 @@ var assemblies = [
 
       {
 
-        "name": "ProductLineConfiguration",
+        "name": "Lulus.Data.Configurations.ProductLineConfiguration",
 
         "rp": "#Lulus.Data!Lulus.Data.Configurations.ProductLineConfiguration.html",
 
@@ -2628,7 +2416,7 @@ var assemblies = [
 
       {
 
-        "name": "SizeConfiguration",
+        "name": "Lulus.Data.Configurations.SizeConfiguration",
 
         "rp": "#Lulus.Data!Lulus.Data.Configurations.SizeConfiguration.html",
 
@@ -2658,7 +2446,7 @@ var assemblies = [
 
       {
 
-        "name": "SubCategoryConfiguration",
+        "name": "Lulus.Data.Configurations.SubCategoryConfiguration",
 
         "rp": "#Lulus.Data!Lulus.Data.Configurations.SubCategoryConfiguration.html",
 
@@ -2688,7 +2476,7 @@ var assemblies = [
 
       {
 
-        "name": "UserConfiguration",
+        "name": "Lulus.Data.Configurations.UserConfiguration",
 
         "rp": "#Lulus.Data!Lulus.Data.Configurations.UserConfiguration.html",
 
@@ -2718,7 +2506,7 @@ var assemblies = [
 
       {
 
-        "name": "LulusDBContext",
+        "name": "Lulus.Data.EF.LulusDBContext",
 
         "rp": "#Lulus.Data!Lulus.Data.EF.LulusDBContext.html",
 
@@ -2748,7 +2536,7 @@ var assemblies = [
 
       {
 
-        "name": "LulusDBContextFactory",
+        "name": "Lulus.Data.EF.LulusDBContextFactory",
 
         "rp": "#Lulus.Data!Lulus.Data.EF.LulusDBContextFactory.html",
 
@@ -2778,7 +2566,7 @@ var assemblies = [
 
       {
 
-        "name": "ModalSeedData",
+        "name": "Lulus.Data.EF.ModalSeedData",
 
         "rp": "#Lulus.Data!Lulus.Data.EF.ModalSeedData.html",
 
@@ -2808,7 +2596,7 @@ var assemblies = [
 
       {
 
-        "name": "Category",
+        "name": "Lulus.Data.Entities.Category",
 
         "rp": "#Lulus.Data!Lulus.Data.Entities.Category.html",
 
@@ -2838,7 +2626,7 @@ var assemblies = [
 
       {
 
-        "name": "Country",
+        "name": "Lulus.Data.Entities.Country",
 
         "rp": "#Lulus.Data!Lulus.Data.Entities.Country.html",
 
@@ -2868,7 +2656,7 @@ var assemblies = [
 
       {
 
-        "name": "Feedback",
+        "name": "Lulus.Data.Entities.Feedback",
 
         "rp": "#Lulus.Data!Lulus.Data.Entities.Feedback.html",
 
@@ -2898,7 +2686,7 @@ var assemblies = [
 
       {
 
-        "name": "LineQuantity",
+        "name": "Lulus.Data.Entities.LineQuantity",
 
         "rp": "#Lulus.Data!Lulus.Data.Entities.LineQuantity.html",
 
@@ -2928,7 +2716,7 @@ var assemblies = [
 
       {
 
-        "name": "Order",
+        "name": "Lulus.Data.Entities.Order",
 
         "rp": "#Lulus.Data!Lulus.Data.Entities.Order.html",
 
@@ -2958,7 +2746,7 @@ var assemblies = [
 
       {
 
-        "name": "OrderDetail",
+        "name": "Lulus.Data.Entities.OrderDetail",
 
         "rp": "#Lulus.Data!Lulus.Data.Entities.OrderDetail.html",
 
@@ -2988,7 +2776,7 @@ var assemblies = [
 
       {
 
-        "name": "Product",
+        "name": "Lulus.Data.Entities.Product",
 
         "rp": "#Lulus.Data!Lulus.Data.Entities.Product.html",
 
@@ -3018,7 +2806,7 @@ var assemblies = [
 
       {
 
-        "name": "ProductImage",
+        "name": "Lulus.Data.Entities.ProductImage",
 
         "rp": "#Lulus.Data!Lulus.Data.Entities.ProductImage.html",
 
@@ -3048,7 +2836,7 @@ var assemblies = [
 
       {
 
-        "name": "ProductLine",
+        "name": "Lulus.Data.Entities.ProductLine",
 
         "rp": "#Lulus.Data!Lulus.Data.Entities.ProductLine.html",
 
@@ -3078,7 +2866,7 @@ var assemblies = [
 
       {
 
-        "name": "Size",
+        "name": "Lulus.Data.Entities.Size",
 
         "rp": "#Lulus.Data!Lulus.Data.Entities.Size.html",
 
@@ -3108,7 +2896,7 @@ var assemblies = [
 
       {
 
-        "name": "SubCategory",
+        "name": "Lulus.Data.Entities.SubCategory",
 
         "rp": "#Lulus.Data!Lulus.Data.Entities.SubCategory.html",
 
@@ -3138,7 +2926,7 @@ var assemblies = [
 
       {
 
-        "name": "User",
+        "name": "Lulus.Data.Entities.User",
 
         "rp": "#Lulus.Data!Lulus.Data.Entities.User.html",
 
@@ -3178,7 +2966,7 @@ var assemblies = [
 
       {
 
-        "name": "CategoryTest",
+        "name": "Lulus.UnitTests.BAL.Categories.CategoryTest",
 
         "rp": "#Lulus.UnitTests!Lulus.UnitTests.BAL.Categories.CategoryTest.html",
 
@@ -3208,7 +2996,7 @@ var assemblies = [
 
       {
 
-        "name": "FeedbackTest",
+        "name": "Lulus.UnitTests.BAL.Feedbacks.FeedbackTest",
 
         "rp": "#Lulus.UnitTests!Lulus.UnitTests.BAL.Feedbacks.FeedbackTest.html",
 
@@ -3238,7 +3026,7 @@ var assemblies = [
 
       {
 
-        "name": "OrderTest",
+        "name": "Lulus.UnitTests.BAL.Orders.OrderTest",
 
         "rp": "#Lulus.UnitTests!Lulus.UnitTests.BAL.Orders.OrderTest.html",
 
@@ -3268,7 +3056,7 @@ var assemblies = [
 
       {
 
-        "name": "ManageProductLineTest",
+        "name": "Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest",
 
         "rp": "#Lulus.UnitTests!Lulus.UnitTests.BAL.ProductLines.ManageProductLineTest.html",
 
@@ -3298,7 +3086,67 @@ var assemblies = [
 
       {
 
-        "name": "ManageSubCategoryTest",
+        "name": "Lulus.UnitTests.BAL.Products.ManageProductTest",
+
+        "rp": "#Lulus.UnitTests!Lulus.UnitTests.BAL.Products.ManageProductTest.html",
+
+        "cl": 154,
+
+        "ucl": 0,
+
+        "cal": 154,
+
+        "tl": 207,
+
+        "ct": "LineCoverage",
+
+        "mc": "-",
+
+        "cb": 0,
+
+        "tb": 0,
+
+        "lch": [],
+
+        "bch": [],
+
+        "hc": []
+
+      },
+
+      {
+
+        "name": "Lulus.UnitTests.BAL.Products.ProductTest",
+
+        "rp": "#Lulus.UnitTests!Lulus.UnitTests.BAL.Products.ProductTest.html",
+
+        "cl": 168,
+
+        "ucl": 0,
+
+        "cal": 168,
+
+        "tl": 212,
+
+        "ct": "LineCoverage",
+
+        "mc": "-",
+
+        "cb": 0,
+
+        "tb": 0,
+
+        "lch": [],
+
+        "bch": [],
+
+        "hc": []
+
+      },
+
+      {
+
+        "name": "Lulus.UnitTests.BAL.SubCategories.ManageSubCategoryTest",
 
         "rp": "#Lulus.UnitTests!Lulus.UnitTests.BAL.SubCategories.ManageSubCategoryTest.html",
 
@@ -3328,7 +3176,7 @@ var assemblies = [
 
       {
 
-        "name": "SubCategoriesTest",
+        "name": "Lulus.UnitTests.BAL.SubCategories.SubCategoriesTest",
 
         "rp": "#Lulus.UnitTests!Lulus.UnitTests.BAL.SubCategories.SubCategoriesTest.html",
 
@@ -3358,7 +3206,7 @@ var assemblies = [
 
       {
 
-        "name": "MyIdentityResult",
+        "name": "Lulus.UnitTests.BAL.Users.MyIdentityResult",
 
         "rp": "#Lulus.UnitTests!Lulus.UnitTests.BAL.Users.MyIdentityResult.html",
 
@@ -3388,7 +3236,7 @@ var assemblies = [
 
       {
 
-        "name": "MySignInResult",
+        "name": "Lulus.UnitTests.BAL.Users.MySignInResult",
 
         "rp": "#Lulus.UnitTests!Lulus.UnitTests.BAL.Users.MySignInResult.html",
 
@@ -3418,7 +3266,7 @@ var assemblies = [
 
       {
 
-        "name": "UserTest",
+        "name": "Lulus.UnitTests.BAL.Users.UserTest",
 
         "rp": "#Lulus.UnitTests!Lulus.UnitTests.BAL.Users.UserTest.html",
 
@@ -3458,13 +3306,13 @@ var assemblies = [
 
       {
 
-        "name": "GetProductPagingRequest",
+        "name": "Lulus.BAL.Catalog.Products.DTOs.Public.GetProductPagingRequest",
 
         "rp": "#Lulus.ViewModels!Lulus.BAL.Catalog.Products.DTOs.Public.GetProductPagingRequest.html",
 
-        "cl": 0,
+        "cl": 2,
 
-        "ucl": 6,
+        "ucl": 4,
 
         "cal": 6,
 
@@ -3488,7 +3336,7 @@ var assemblies = [
 
       {
 
-        "name": "CategoryViewModel",
+        "name": "Lulus.ViewModels.Categories.CategoryViewModel",
 
         "rp": "#Lulus.ViewModels!Lulus.ViewModels.Categories.CategoryViewModel.html",
 
@@ -3518,7 +3366,7 @@ var assemblies = [
 
       {
 
-        "name": "PagedResultBase",
+        "name": "Lulus.ViewModels.Common.PagedResultBase",
 
         "rp": "#Lulus.ViewModels!Lulus.ViewModels.Common.PagedResultBase.html",
 
@@ -3548,7 +3396,7 @@ var assemblies = [
 
       {
 
-        "name": "PagedViewModel`1",
+        "name": "Lulus.ViewModels.Common.PagedViewModel`1",
 
         "rp": "#Lulus.ViewModels!Lulus.ViewModels.Common.PagedViewModel`1.html",
 
@@ -3578,13 +3426,13 @@ var assemblies = [
 
       {
 
-        "name": "PagingRequestBase",
+        "name": "Lulus.ViewModels.Common.PagingRequestBase",
 
         "rp": "#Lulus.ViewModels!Lulus.ViewModels.Common.PagingRequestBase.html",
 
-        "cl": 0,
+        "cl": 5,
 
-        "ucl": 10,
+        "ucl": 5,
 
         "cal": 10,
 
@@ -3608,7 +3456,7 @@ var assemblies = [
 
       {
 
-        "name": "CreateFeedbackRequest",
+        "name": "Lulus.ViewModels.Feedbacks.CreateFeedbackRequest",
 
         "rp": "#Lulus.ViewModels!Lulus.ViewModels.Feedbacks.CreateFeedbackRequest.html",
 
@@ -3638,7 +3486,7 @@ var assemblies = [
 
       {
 
-        "name": "FeedbackViewModel",
+        "name": "Lulus.ViewModels.Feedbacks.FeedbackViewModel",
 
         "rp": "#Lulus.ViewModels!Lulus.ViewModels.Feedbacks.FeedbackViewModel.html",
 
@@ -3668,7 +3516,7 @@ var assemblies = [
 
       {
 
-        "name": "AddQuantityRequest",
+        "name": "Lulus.ViewModels.LineQuantity.AddQuantityRequest",
 
         "rp": "#Lulus.ViewModels!Lulus.ViewModels.LineQuantity.AddQuantityRequest.html",
 
@@ -3698,7 +3546,7 @@ var assemblies = [
 
       {
 
-        "name": "LineQuantityViewModel",
+        "name": "Lulus.ViewModels.LineQuantity.LineQuantityViewModel",
 
         "rp": "#Lulus.ViewModels!Lulus.ViewModels.LineQuantity.LineQuantityViewModel.html",
 
@@ -3728,7 +3576,7 @@ var assemblies = [
 
       {
 
-        "name": "UpdateQuantityRequest",
+        "name": "Lulus.ViewModels.LineQuantity.UpdateQuantityRequest",
 
         "rp": "#Lulus.ViewModels!Lulus.ViewModels.LineQuantity.UpdateQuantityRequest.html",
 
@@ -3758,7 +3606,7 @@ var assemblies = [
 
       {
 
-        "name": "AddProductToCartRequest",
+        "name": "Lulus.ViewModels.Order.AddProductToCartRequest",
 
         "rp": "#Lulus.ViewModels!Lulus.ViewModels.Order.AddProductToCartRequest.html",
 
@@ -3788,7 +3636,7 @@ var assemblies = [
 
       {
 
-        "name": "ChangeQuantityRequest",
+        "name": "Lulus.ViewModels.Order.ChangeQuantityRequest",
 
         "rp": "#Lulus.ViewModels!Lulus.ViewModels.Order.ChangeQuantityRequest.html",
 
@@ -3818,7 +3666,7 @@ var assemblies = [
 
       {
 
-        "name": "CurrentCartRespond",
+        "name": "Lulus.ViewModels.Order.CurrentCartRespond",
 
         "rp": "#Lulus.ViewModels!Lulus.ViewModels.Order.CurrentCartRespond.html",
 
@@ -3848,7 +3696,7 @@ var assemblies = [
 
       {
 
-        "name": "OrderDetailInCart",
+        "name": "Lulus.ViewModels.Order.OrderDetailInCart",
 
         "rp": "#Lulus.ViewModels!Lulus.ViewModels.Order.OrderDetailInCart.html",
 
@@ -3878,7 +3726,7 @@ var assemblies = [
 
       {
 
-        "name": "OrderRespond",
+        "name": "Lulus.ViewModels.Order.OrderRespond",
 
         "rp": "#Lulus.ViewModels!Lulus.ViewModels.Order.OrderRespond.html",
 
@@ -3908,13 +3756,13 @@ var assemblies = [
 
       {
 
-        "name": "ProductImageViewModel",
+        "name": "Lulus.ViewModels.ProductImages.ProductImageViewModel",
 
         "rp": "#Lulus.ViewModels!Lulus.ViewModels.ProductImages.ProductImageViewModel.html",
 
-        "cl": 0,
+        "cl": 3,
 
-        "ucl": 4,
+        "ucl": 1,
 
         "cal": 4,
 
@@ -3938,7 +3786,7 @@ var assemblies = [
 
       {
 
-        "name": "AddImageRequest",
+        "name": "Lulus.ViewModels.ProductLines.AddImageRequest",
 
         "rp": "#Lulus.ViewModels!Lulus.ViewModels.ProductLines.AddImageRequest.html",
 
@@ -3968,7 +3816,7 @@ var assemblies = [
 
       {
 
-        "name": "CreateProductLineRequest",
+        "name": "Lulus.ViewModels.ProductLines.CreateProductLineRequest",
 
         "rp": "#Lulus.ViewModels!Lulus.ViewModels.ProductLines.CreateProductLineRequest.html",
 
@@ -3998,7 +3846,7 @@ var assemblies = [
 
       {
 
-        "name": "DeleteImageRequest",
+        "name": "Lulus.ViewModels.ProductLines.DeleteImageRequest",
 
         "rp": "#Lulus.ViewModels!Lulus.ViewModels.ProductLines.DeleteImageRequest.html",
 
@@ -4028,7 +3876,7 @@ var assemblies = [
 
       {
 
-        "name": "GetAllImageByIDRequest",
+        "name": "Lulus.ViewModels.ProductLines.GetAllImageByIDRequest",
 
         "rp": "#Lulus.ViewModels!Lulus.ViewModels.ProductLines.GetAllImageByIDRequest.html",
 
@@ -4058,7 +3906,7 @@ var assemblies = [
 
       {
 
-        "name": "GetAllLinesByIDRequest",
+        "name": "Lulus.ViewModels.ProductLines.GetAllLinesByIDRequest",
 
         "rp": "#Lulus.ViewModels!Lulus.ViewModels.ProductLines.GetAllLinesByIDRequest.html",
 
@@ -4088,7 +3936,7 @@ var assemblies = [
 
       {
 
-        "name": "GetProductLineByIDRequest",
+        "name": "Lulus.ViewModels.ProductLines.GetProductLineByIDRequest",
 
         "rp": "#Lulus.ViewModels!Lulus.ViewModels.ProductLines.GetProductLineByIDRequest.html",
 
@@ -4118,13 +3966,13 @@ var assemblies = [
 
       {
 
-        "name": "ProductLineViewModel",
+        "name": "Lulus.ViewModels.ProductLines.ProductLineViewModel",
 
         "rp": "#Lulus.ViewModels!Lulus.ViewModels.ProductLines.ProductLineViewModel.html",
 
-        "cl": 8,
+        "cl": 9,
 
-        "ucl": 2,
+        "ucl": 1,
 
         "cal": 10,
 
@@ -4148,13 +3996,13 @@ var assemblies = [
 
       {
 
-        "name": "GetProductDetailRequest",
+        "name": "Lulus.ViewModels.Products.GetProductDetailRequest",
 
         "rp": "#Lulus.ViewModels!Lulus.ViewModels.Products.GetProductDetailRequest.html",
 
-        "cl": 0,
+        "cl": 2,
 
-        "ucl": 3,
+        "ucl": 1,
 
         "cal": 3,
 
@@ -4178,7 +4026,7 @@ var assemblies = [
 
       {
 
-        "name": "GetProductPagingRequest",
+        "name": "Lulus.ViewModels.Products.Manage.GetProductPagingRequest",
 
         "rp": "#Lulus.ViewModels!Lulus.ViewModels.Products.Manage.GetProductPagingRequest.html",
 
@@ -4208,13 +4056,13 @@ var assemblies = [
 
       {
 
-        "name": "ProductCreateRequest",
+        "name": "Lulus.ViewModels.Products.Manage.ProductCreateRequest",
 
         "rp": "#Lulus.ViewModels!Lulus.ViewModels.Products.Manage.ProductCreateRequest.html",
 
-        "cl": 0,
+        "cl": 5,
 
-        "ucl": 5,
+        "ucl": 0,
 
         "cal": 5,
 
@@ -4238,13 +4086,13 @@ var assemblies = [
 
       {
 
-        "name": "ProductUpdateRequest",
+        "name": "Lulus.ViewModels.Products.Manage.ProductUpdateRequest",
 
         "rp": "#Lulus.ViewModels!Lulus.ViewModels.Products.Manage.ProductUpdateRequest.html",
 
-        "cl": 0,
+        "cl": 7,
 
-        "ucl": 7,
+        "ucl": 0,
 
         "cal": 7,
 
@@ -4268,13 +4116,13 @@ var assemblies = [
 
       {
 
-        "name": "UpdatePriceRequest",
+        "name": "Lulus.ViewModels.Products.Manage.UpdatePriceRequest",
 
         "rp": "#Lulus.ViewModels!Lulus.ViewModels.Products.Manage.UpdatePriceRequest.html",
 
-        "cl": 0,
+        "cl": 3,
 
-        "ucl": 3,
+        "ucl": 0,
 
         "cal": 3,
 
@@ -4298,7 +4146,7 @@ var assemblies = [
 
       {
 
-        "name": "PagedResult`1",
+        "name": "Lulus.ViewModels.Products.PagedResult`1",
 
         "rp": "#Lulus.ViewModels!Lulus.ViewModels.Products.PagedResult`1.html",
 
@@ -4328,13 +4176,13 @@ var assemblies = [
 
       {
 
-        "name": "ProductViewModel",
+        "name": "Lulus.ViewModels.Products.ProductViewModel",
 
         "rp": "#Lulus.ViewModels!Lulus.ViewModels.Products.ProductViewModel.html",
 
-        "cl": 0,
+        "cl": 9,
 
-        "ucl": 9,
+        "ucl": 0,
 
         "cal": 9,
 
@@ -4358,13 +4206,13 @@ var assemblies = [
 
       {
 
-        "name": "SizeViewModel",
+        "name": "Lulus.ViewModels.Sizes.SizeViewModel",
 
         "rp": "#Lulus.ViewModels!Lulus.ViewModels.Sizes.SizeViewModel.html",
 
-        "cl": 0,
+        "cl": 3,
 
-        "ucl": 3,
+        "ucl": 0,
 
         "cal": 3,
 
@@ -4388,7 +4236,7 @@ var assemblies = [
 
       {
 
-        "name": "CreateSubCategoryRequest",
+        "name": "Lulus.ViewModels.SubCategories.CreateSubCategoryRequest",
 
         "rp": "#Lulus.ViewModels!Lulus.ViewModels.SubCategories.CreateSubCategoryRequest.html",
 
@@ -4418,7 +4266,7 @@ var assemblies = [
 
       {
 
-        "name": "EditSubCategoryRequest",
+        "name": "Lulus.ViewModels.SubCategories.EditSubCategoryRequest",
 
         "rp": "#Lulus.ViewModels!Lulus.ViewModels.SubCategories.EditSubCategoryRequest.html",
 
@@ -4448,7 +4296,7 @@ var assemblies = [
 
       {
 
-        "name": "GetAllSubCategoriesByCategoryIDRequest",
+        "name": "Lulus.ViewModels.SubCategories.GetAllSubCategoriesByCategoryIDRequest",
 
         "rp": "#Lulus.ViewModels!Lulus.ViewModels.SubCategories.GetAllSubCategoriesByCategoryIDRequest.html",
 
@@ -4478,7 +4326,7 @@ var assemblies = [
 
       {
 
-        "name": "GetSubCateDetailByID",
+        "name": "Lulus.ViewModels.SubCategories.GetSubCateDetailByID",
 
         "rp": "#Lulus.ViewModels!Lulus.ViewModels.SubCategories.GetSubCateDetailByID.html",
 
@@ -4508,7 +4356,7 @@ var assemblies = [
 
       {
 
-        "name": "SubCateViewModel",
+        "name": "Lulus.ViewModels.SubCategories.SubCateViewModel",
 
         "rp": "#Lulus.ViewModels!Lulus.ViewModels.SubCategories.SubCateViewModel.html",
 
@@ -4538,7 +4386,7 @@ var assemblies = [
 
       {
 
-        "name": "LoginRequest",
+        "name": "Lulus.ViewModels.Users.LoginRequest",
 
         "rp": "#Lulus.ViewModels!Lulus.ViewModels.Users.LoginRequest.html",
 
@@ -4568,7 +4416,7 @@ var assemblies = [
 
       {
 
-        "name": "RegisterRequest",
+        "name": "Lulus.ViewModels.Users.RegisterRequest",
 
         "rp": "#Lulus.ViewModels!Lulus.ViewModels.Users.RegisterRequest.html",
 
@@ -4616,7 +4464,7 @@ var riskHotspots = [];
 
 
 
-var branchCoverageAvailable = false;
+var branchCoverageAvailable = true;
 
 
 
@@ -4701,6 +4549,218 @@ function _slicedToArray(e,t){return _arrayWithHoles(e)||_iterableToArrayLimit(e,
 					<script type="text/javascript">
 
 						
+
+						
+
+				var customizeBox = document.getElementsByClassName('customizebox')[0];
+
+				var groupingInput = customizeBox.querySelector('input');
+
+				groupingInput.max = 1;
+
+
+
+						function getRuleBySelector(cssRules,selector){
+
+						for(var i=0;i<cssRules.length;i++){
+
+							if(cssRules[i].selectorText == selector){
+
+								return cssRules[i];
+
+							}
+
+						}
+
+					}
+
+					function getStyleBySelector(cssRules,selector){
+
+						return getRuleBySelector(cssRules,selector).style;
+
+					}
+
+
+
+					function getStyleSheetById(id){
+
+						for(var i=0;i<document.styleSheets.length;i++){
+
+							var styleSheet = document.styleSheets[i];
+
+							if(styleSheet.ownerNode && styleSheet.ownerNode.id == id){
+
+								return styleSheet;
+
+							}
+
+						}
+
+					}
+
+					function themeChanged(theme){
+
+							var fccMediaStylesheet = getStyleSheetById('fccMediaStyle');	
+
+							var highContrastRule = fccMediaStylesheet.cssRules[0]
+
+							var highContrastRules = highContrastRule.cssRules
+
+							getStyleBySelector(highContrastRules,'table.coverage > td.gray').setProperty('background-color',theme.GrayCoverage);
+
+
+
+							var fccStyleSheet1Rules = getStyleSheetById('fccStyle1').cssRules;		
+
+					
+
+							var rangeInputFillLower = getStyleBySelector(fccStyleSheet1Rules, 'input[type=range]::-ms-fill-lower');
+
+							rangeInputFillLower.setProperty('background',theme.ScrollBarTrack);
+
+							var rangeInputFillUpper = getStyleBySelector(fccStyleSheet1Rules, 'input[type=range]::-ms-fill-upper');
+
+							rangeInputFillUpper.setProperty('background',theme.ScrollBarTrack);
+
+							var rangeInputThumb = getStyleBySelector(fccStyleSheet1Rules, 'input[type=range]::-ms-thumb');
+
+							rangeInputThumb.setProperty('background',theme.ScrollBarThumb);
+
+							rangeInputThumb.setProperty('border',theme.ScrollBarThumb);
+
+
+
+							var scrollBarStyle = getStyleBySelector(fccStyleSheet1Rules,'body, html');
+
+							scrollBarStyle.setProperty('scrollbar-arrow-color',theme.ScrollBarArrow);
+
+							scrollBarStyle.setProperty('scrollbar-track-color',theme.ScrollBarTrack);
+
+							scrollBarStyle.setProperty('scrollbar-face-color',theme.ScrollBarThumb);
+
+							scrollBarStyle.setProperty('scrollbar-shadow-color',theme.ScrollBarThumb);
+
+							scrollBarStyle.setProperty('scrollbar-highlight-color',theme.ScrollBarThumb);
+
+							scrollBarStyle.setProperty('scrollbar-3dlight-color',theme.ScrollBarThumb);
+
+							scrollBarStyle.setProperty('scrollbar-darkshadow-color',theme.ScrollBarThumb);
+
+
+
+							getStyleBySelector(fccStyleSheet1Rules,'*, body').setProperty('color',theme.FontColour);
+
+							var textStyle = getStyleBySelector(fccStyleSheet1Rules,'input[type=text]');
+
+							textStyle.setProperty('color',theme.TextBoxTextColour);			
+
+							textStyle.setProperty('background-color',theme.TextBoxColour);								
+
+							textStyle.setProperty('border-color',theme.TextBoxBorderColour);
+
+
+
+							var comboStyle = getStyleBySelector(fccStyleSheet1Rules,'select');
+
+							comboStyle.setProperty('color',theme.ComboBoxText);		
+
+							comboStyle.setProperty('background-color',theme.ComboBox);	
+
+							comboStyle.setProperty('border-color',theme.ComboBoxBorder);
+
+
+
+							var fccStyleSheet2Rules = getStyleSheetById('fccStyle2').cssRules;	
+
+							getStyleBySelector(fccStyleSheet2Rules,'#divHeader').setProperty('background-color',theme.DivHeaderBackgroundColour);							
+
+							var headerTabsStyle = getStyleBySelector(fccStyleSheet2Rules,'table#headerTabs td');
+
+							headerTabsStyle.setProperty('color',theme.HeaderFontColour);
+
+							headerTabsStyle.setProperty('border-color',theme.HeaderBorderColour);
+
+							getStyleBySelector(fccStyleSheet2Rules,'table#headerTabs td.tab').setProperty('background-color',theme.TabBackgroundColour);		
+
+
+
+							var mainStyle = document.styleSheets[0];
+
+							var mainRules = mainStyle.cssRules;
+
+
+
+							getStyleBySelector(mainRules,'.gray').setProperty('background-color',theme.GrayCoverage);
+
+
+
+							getStyleBySelector(mainRules,'html').setProperty('background-color',theme.BackgroundColour);
+
+							getStyleBySelector(mainRules,'.container').setProperty('background-color',theme.BackgroundColour);
+
+
+
+							var overviewTableBorder = '1px solid ' + theme.TableBorderColour;
+
+							var overviewStyle = getStyleBySelector(mainRules,'.overview');
+
+							overviewStyle.setProperty('border',overviewTableBorder);
+
+							var overviewThStyle = getStyleBySelector(mainRules,'.overview th');
+
+							overviewThStyle.setProperty('background-color',theme.BackgroundColour);
+
+							overviewThStyle.setProperty('border',overviewTableBorder);
+
+							var overviewTdStyle = getStyleBySelector(mainRules,'.overview td');
+
+							overviewTdStyle.setProperty('border',overviewTableBorder);
+
+
+
+							var overviewHeaderLinksStyle = getStyleBySelector(mainRules,'.overview th a');
+
+							overviewHeaderLinksStyle.setProperty('color',theme.CoverageTableHeaderFontColour);
+
+
+
+							var overviewTrHoverStyle = getStyleBySelector(mainRules,'.overview tr:hover');
+
+							overviewTrHoverStyle.setProperty('background',theme.CoverageTableRowHoverBackgroundColour);
+
+
+
+							var linkStyle = getStyleBySelector(mainRules,'a');
+
+							var linkHoverStyle = getStyleBySelector(mainRules,'a:hover');
+
+							linkStyle.setProperty('color',theme.LinkColour);
+
+							linkHoverStyle.setProperty('color',theme.LinkColour);
+
+
+
+							var iconPlusStyle = getStyleBySelector(mainRules,'.icon-plus');
+
+							iconPlusStyle.setProperty('background-image',theme.PlusBase64);
+
+							var iconMinusStyle = getStyleBySelector(mainRules,'.icon-minus');
+
+							iconMinusStyle.setProperty('background-image',theme.MinusBase64);
+
+							var iconDownActiveStyle = getStyleBySelector(mainRules,'.icon-down-dir_active');
+
+							iconDownActiveStyle.setProperty('background-image',theme.DownActiveBase64);
+
+							var iconDownInactiveStyle = getStyleBySelector(mainRules,'.icon-down-dir');
+
+							iconDownInactiveStyle.setProperty('background-image',theme.DownInactiveBase64);
+
+							var iconUpActiveStyle = getStyleBySelector(mainRules,'.icon-up-dir_active');
+
+							iconUpActiveStyle.setProperty('background-image',theme.UpActiveBase64);
+
+					}
 
 						var htmlExtension = '.html';
 
