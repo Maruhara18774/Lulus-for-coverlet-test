@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.9841237533075514" branch-rate="0.9310344827586207" lines-covered="4835" lines-valid="4913" branches-covered="108" branches-valid="116" complexity="459" version="0" timestamp="1637142741">
+<coverage line-rate="0.9841237533075514" branch-rate="0.9310344827586207" lines-covered="4835" lines-valid="4913" branches-covered="108" branches-valid="116" complexity="459" version="0" timestamp="1637277972">
   <sources>
     <source>D:\.CanDelete\Git\Lulus-master\</source>
     <source>C:\</source>
